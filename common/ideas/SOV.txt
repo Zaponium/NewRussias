@@ -1,0 +1,94 @@
+ideas = {
+
+	country = {
+		broken_political_system = {
+			picture = 
+			
+			allowed = {
+			  tag = SOV  
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				political_power_factor = -0.25
+				drift_defence_factor = -0.5
+				stability_factor = -0.75
+			}
+		}
+		
+		disbanded_army = {
+			picture = 
+			
+			allowed = {
+			  tag = SOV  
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				army_org_factor = -0.5
+				army_attack_factor = -0.35
+				army_defence_factor = -0.35
+				army_speed_factor = -0.3
+				war_support_factor = -0.75
+
+				
+				
+			}
+		}
+		
+		destroyed_economy = {
+			picture = 
+			
+			allowed = {
+			  tag = SOV  
+			}
+			
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			production_speed_industrial_complex_factor = -0.5
+			industrial_capacity_factory = -0.80
+			consumer_goods_factor = 0.4
+			base_fuel_gain = -0.75
+				
+				
+				
+			}
+		}
+		
+	}
+		
+	
+}
