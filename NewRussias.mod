@@ -1,4 +1,4 @@
-version="0"
+﻿version="0"
 tags={
 	"Alternative History"
 }
