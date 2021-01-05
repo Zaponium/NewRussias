@@ -4,4 +4,4 @@ tags={
 }
 name="NewRussias"
 supported_version="1.10.3"
-path="/Documents/Paradox Interactive/Hearts of Iron IV/mod/"
+path="/mod/NewRussias"
