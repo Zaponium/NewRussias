@@ -4,4 +4,5 @@ tags={
 }
 name="NewRussias"
 supported_version="1.10.3"
+
 path="/mod/NewRussias"
