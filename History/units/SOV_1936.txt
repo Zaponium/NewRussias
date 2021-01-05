@@ -155,7 +155,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 16
 		}
-		location = 6380
+		location = 6741
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -168,7 +168,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 67
 		}
-		location = 6380
+		location = 11038
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -184,7 +184,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 16
 		}
-		location = 6380
+		location = 3086
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -195,7 +195,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 56
 		}
-		location = 6380
+		location = 3
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -206,7 +206,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 72
 		}
-		location = 6380
+		location = 7624
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -214,7 +214,7 @@ units = {
 	}
 	division= {			
 		name = "LVO Mekhanizirovanaya Gruppa"		
-		location = 6380
+		location = 1450
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -228,7 +228,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 6380
+		location = 3711
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -240,7 +240,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 6380
+		location = 7554
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -249,14 +249,14 @@ units = {
 	}			
 	division= {			
 		name = "7ya Mekhanizirovaniy Korpus"		
-		location = 6380
+		location = 1455
 		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
 		start_experience_factor = 0.3
 	}
 	# Subordinate to AG
 	division= {			
 		name = "11ya Mekhanizirovaniy Korpus"		
-		location = 6380
+		location = 9632
 		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge
 		start_experience_factor = 0.3
 	}
@@ -269,7 +269,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 27
 		}
-		location = 6380
+		location = 3667
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -280,7 +280,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 29
 		}
-		location = 6380
+		location = 11609
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -291,7 +291,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 33
 		}
-		location = 6380
+		location = 6674
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -299,7 +299,7 @@ units = {
 	}			
 	division= {			
 		name = "1ya BVO Mekhanizirovanaya Gruppa"		
-		location = 6380
+		location = 11664
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -312,7 +312,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 6380
+		location = 6692
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -323,7 +323,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 48
 		}
-		location = 6380
+		location = 11647
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -334,7 +334,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 64
 		}
-		location = 6380
+		location = 6445
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -342,7 +342,7 @@ units = {
 	}			
 	division= {			
 		name = "2ya BVO Mekhanizirovanaya Gruppa"		
-		location = 6380
+		location = 3529
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -355,7 +355,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 6380
+		location = 18
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -366,7 +366,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 36
 		}
-		location = 6380
+		location = 9082
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -379,7 +379,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 6380
+		location = 9190
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -390,7 +390,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 6380
+		location = 11059
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -401,7 +401,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 37
 		}
-		location = 6380
+		location = 9197
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -414,7 +414,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 6380
+		location = 9164
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -425,7 +425,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 6380
+		location = 3072
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -438,7 +438,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-	location = 6380
+	location = 6197
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -450,7 +450,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 6380
+		location = 11032
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -462,7 +462,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 6380
+		location = 11080
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -478,7 +478,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 6380
+		location = 9097
 		division_template = "Motostrelkovaya Diviziya"
 		start_experience_factor = 0.3
 	}			
@@ -487,7 +487,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 6380
+		location = 104
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -498,7 +498,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 49
 		}
-		location = 6380
+		location = 126
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -506,7 +506,7 @@ units = {
 	}			
 	division= {			
 		name = "MVO Mekhanizirovanaya Gruppa"		
-		location = 6380
+		location = 9120
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -519,7 +519,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 17
 		}
-		location = 6380
+		location = 415
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -530,7 +530,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 19
 		}
-		location = 6380
+		location = 3310
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -541,7 +541,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 84
 		}
-		location = 6380
+		location = 3333
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -556,7 +556,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 6380
+		location = 11259
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -568,7 +568,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 17
 		}
-		location = 6380
+		location = 9430
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -578,7 +578,7 @@ units = {
 	# Subordinate to AG
 	division= {			
 		name = "5ya Mekhanizirovaniy Korpus"		
-		location = 6380
+		location = 11434
 		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
 		start_experience_factor = 0.3
 	}
@@ -591,7 +591,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 6380
+		location = 11450
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -602,7 +602,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 52
 		}
-		location = 6380
+		location = 9488
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -613,7 +613,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 55
 		}
-		location = 6380
+		location = 3519
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -626,7 +626,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 65
 		}
-		location = 6380
+		location = 3540
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
