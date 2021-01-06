@@ -51,14 +51,14 @@ ideas = {
 				army_speed_factor = -0.3
 				war_support_factor = -0.75
 			}
-<<<<<<< Updated upstream
-=======
+
+
 		     allowed_to_remove = {
                 OR = {
                    has_completed_focus = army
 				   
                 }
->>>>>>> Stashed changes
+
 		}
 		
 		destroyed_economy = {
