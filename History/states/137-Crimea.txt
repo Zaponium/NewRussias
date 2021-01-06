@@ -36,6 +36,7 @@ state={
 				dockyard = 2
 			}
 		}
+                set_demilitarized_zone = yes
 	}
 
 	provinces={

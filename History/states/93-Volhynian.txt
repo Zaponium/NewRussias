@@ -1,8 +1,10 @@
 state={
 	id=93
 	name="STATE_93"
+       
 
 	history={
+                set_demilitarized_zone = yes
 		victory_points = {
 			6557 1
 		}

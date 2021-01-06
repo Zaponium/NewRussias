@@ -1,6 +1,7 @@
 state={
 	id=89
 	name="STATE_89"
+        set_demilitarized_zone = yes
 
 	history={
 		victory_points = {
@@ -16,6 +17,7 @@ state={
 
 		}
 		add_core_of = UKR
+		set_demilitarized_zone = yes
 
 	}
 

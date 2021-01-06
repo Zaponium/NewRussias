@@ -3,7 +3,8 @@ state={
 	id=199
 	name="STATE_199"
 	manpower = 1424022
-	
+	set_demilitarized_zone = yes
+
 	state_category = town
 
 	history={
@@ -17,6 +18,7 @@ state={
 			air_base = 3
 		}
 		add_core_of = UKR
+		set_demilitarized_zone = yes
 	}
 
 	provinces={
