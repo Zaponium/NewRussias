@@ -10,6 +10,7 @@ focus_tree = {
         }
     }
 	
+	
 	Focus = {
 	
 	id = x
@@ -18,9 +19,64 @@ focus_tree = {
 	x = x
 	Y = x
 	
-	cost = 
+	cost = x
 	mutually_exclusive = {}
 	prerequisite = {}
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	
+	Focus = {
+	
+	id = Eliviate_DMZs
+	GFX = x
+	
+	x = 25
+	Y = 2
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = UKR_ownpath focus = UKR_polishconnection}
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = negotiate_romania
+	GFX = x
+	
+	x = 27
+	Y = 3
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = Eliviate_DMZs }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = negotiate_poland
+	GFX = x
+	
+	x = 23
+	Y = 3
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = Eliviate_DMZs }
 	completion_reward = {
 	
 	
