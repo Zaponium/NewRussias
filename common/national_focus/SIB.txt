@@ -1,0 +1,192 @@
+focus_tree = {
+	id = siberian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SIB
+		}
+	}
+
+	Focus = {
+	
+	id = SIB_our_own_way
+	gfx = x
+	
+	x = 16
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_the_american_dream }
+	prerequisite = {}
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_the_american_dream
+	gfx = x
+	
+	x = 27
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_our_own_way }
+	prerequisite = {}
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+		Focus = {
+	
+	id = SIB_the_real_communist_way
+	gfx = x
+	
+	x = 12
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_new_world_order focus = SIB_stay_neutral }
+	prerequisite = { focus = SIB_our_own_way }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+		Focus = {
+	
+	id = SIB_new_world_order
+	gfx = x
+	
+	x = 16
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_the_real_communist_way focus = SIB_stay_neutral }
+	prerequisite = { focus = SIB_our_own_way }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+		Focus = {
+	
+	id = SIB_stay_neutral
+	gfx = x
+	
+	x = 20
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_new_world_order focus = SIB_the_real_communist_way }
+	prerequisite = { focus = SIB_our_own_way }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+		Focus = {
+	
+	id = SIB_our_democrat
+	gfx = x
+	
+	x = 25 
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_the_russian_exile }
+	prerequisite = { focus = SIB_the_american_dream }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+			Focus = {
+	
+	id = SIB_the_russian_exile
+	gfx = x
+	
+	x = 29
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_our_democrat }
+	prerequisite = { focus = SIB_the_american_dream }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+			Focus = {
+	
+	id = SIB_mongolian_question
+	gfx = x
+	
+	x = 14
+	y = 3
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_new_world_order  focus = SIB_the_real_communist_way }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+				Focus = {
+	
+	id = SIB_empower_the_workers
+	gfx = x
+	
+	x = 12
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_the_real_communist_way }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+				Focus = {
+	
+	id = SIB_north_sakhalin_for_alliance
+	gfx = x
+	
+	x = 16
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_new_world_order }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
