@@ -79,7 +79,7 @@
 	
 	Focus = {
 
-    id = research_bonus
+    id = research_bonus #add 10 construction speed
 	icon = GFX_goal_generic_production2
 
     x = 26
@@ -148,7 +148,7 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 	
 	Focus = {
 
-    id = 20percent_more_cons
+    id = 20percent_more_cons #change to make it
 	icon = GFX_goal_generic_production2
 
     x = 23
@@ -310,14 +310,14 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 	
 Focus = {
 
-    id = infra
+    id = infra2
 	icon = GFX_goal_generic_production2
 
     x = 29
     y = 6
     cost = 10
 	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = oil_processing_research_bonus }
+	prerequisite = { focus =  oil_processing_research_bonus }
 search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			industrial_complex_con
@@ -329,11 +329,44 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 	
 	
 	
-	
+Focus = {
+
+    id = last_cons_bonus_focus
+	icon = GFX_goal_generic_production2
+
+    x = 24
+    y = 7
+    cost = 10
+	 ai_will_do = { factor = 33 }
+	prerequisite = { focus = excav_res_bonus }
+	prerequisite = { focus = civ_factories2 }
+search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			industrial_complex_con
+			}
+		}	
+	}
+		
 	
 
 	
-	
+Focus = {
+
+    id = last_fuel_gain_bonus
+	icon = GFX_goal_generic_production2
+
+    x = 24
+    y = 8
+    cost = 10
+	 ai_will_do = { factor = 33 }
+	prerequisite = { focus = excav_res_bonus }
+	prerequisite = { focus = civ_factories2 }
+search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			industrial_complex_con
+			}
+		}	
+	}	
 	
 	
 	
