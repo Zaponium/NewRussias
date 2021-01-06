@@ -104,7 +104,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 6334
+		location = 3312
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -113,7 +113,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 12
 		}
-		location = 537
+		location = 3312
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -185,7 +185,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 6462
+		location = 3514
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -194,7 +194,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 14
 		}
-		location = 6462
+		location = 9535
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -203,7 +203,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 24
 		}
-		location = 6462
+		location = 11415
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -213,7 +213,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 8
 		}
-		location = 11467
+		location = 9496
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -222,7 +222,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 18
 		}
-		location = 11467
+		location = 3207
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -233,7 +233,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 6402
+		location = 349
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -242,7 +242,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 11
 		}
-		location = 266
+		location = 9347
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
@@ -251,13 +251,13 @@ units = {
 				is_name_ordered = yes
 				name_order = 21
 		}
-		location = 3384
+		location = 573
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Kavallerie-Kommando Insterburg" 
-		location = 281
+		location = 6559
 		division_template = "Kavallerie-Brigade"
 		start_experience_factor = 0.3
 	}
