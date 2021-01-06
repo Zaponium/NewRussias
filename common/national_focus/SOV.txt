@@ -95,7 +95,7 @@
 
     x = 25
     y = 3
-    cost = 5
+    cost = 10
 	 ai_will_do = { factor = 33 }
 	prerequisite = { focus = rebuilding }
 search_filters = { FOCUS_FILTER_RESEARCH }
