@@ -77,7 +77,7 @@ ideas = {
 			
 			modifier = {
 			production_speed_industrial_complex_factor = -0.5
-			industrial_capacity_factory = -0.80
+			industrial_capacity_factory = -0.4
 			base_fuel_gain_factor = -0.75
 				
 				
