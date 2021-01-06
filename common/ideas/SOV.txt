@@ -3,11 +3,9 @@ ideas = {
 	country = {
 		broken_political_system = {
 			picture = 
-			
 			allowed = {
 			  tag = SOV  
 			}
-			
 			available = { 
 			}
 			
