@@ -55,7 +55,7 @@ focus_tree = {
 	y = 2
 	
 	cost = 5
-	mutually_exclusive = { focus = SIB_new_world_order focus = SIB_stay_neutral }
+	mutually_exclusive = { focus = SIB_new_world_order focus = SIB_find_the_tsar_relatives }
 	prerequisite = { focus = SIB_our_own_way }
 	completion_reward = { 
 	add_political_power = 50
@@ -73,7 +73,7 @@ focus_tree = {
 	y = 2
 	
 	cost = 5
-	mutually_exclusive = { focus = SIB_the_real_communist_way focus = SIB_stay_neutral }
+	mutually_exclusive = { focus = SIB_the_real_communist_way focus = SIB_find_the_tsar_relatives }
 	prerequisite = { focus = SIB_our_own_way }
 	completion_reward = { 
 	add_political_power = 50
@@ -84,7 +84,7 @@ focus_tree = {
 	}
 		Focus = {
 	
-	id = SIB_stay_neutral
+	id = SIB_find_the_tsar_relatives
 	gfx = x
 	
 	x = 20
@@ -183,6 +183,42 @@ focus_tree = {
 	cost = 5
 	mutually_exclusive = {}
 	prerequisite = { focus = SIB_new_world_order }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+					Focus = {
+	
+	id = SIB_Tikhon_Nikolaevich
+	gfx = x
+	
+	x = 22
+	y = 4
+	
+	cost = 1
+	mutually_exclusive = { focus = SIB_Guri_Nikolaevich_Kulikovsky }
+	prerequisite = { focus = SIB_find_the_tsar_relatives }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+					Focus = {
+	
+	id = SIB_Guri_Nikolaevich_Kulikovsky
+	gfx = x
+	
+	x = 18
+	y = 4
+	
+	cost = 1
+	mutually_exclusive = { focus = SIB_Tikhon_Nikolaevich }
+	prerequisite = { focus = SIB_find_the_tsar_relatives }
 	completion_reward = { 
 	add_political_power = 50
 	
