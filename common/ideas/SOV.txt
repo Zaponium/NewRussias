@@ -26,7 +26,6 @@ ideas = {
 		}
 		
 		disbanded_army = {
-			picture = 
 			
 			allowed = {
 			  tag = SOV  
