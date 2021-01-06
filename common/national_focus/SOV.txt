@@ -83,10 +83,10 @@
 	icon = GFX_goal_generic_production2
 
     x = 25
-    y = 3
+    y = 15
     cost = 10
 	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = rebuilding }
+	prerequisite = { focus =  }
 search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -106,7 +106,7 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 	icon = GFX_goal_generic_construct_civ_factory
 
     x = 24
-    y = 4.5
+    y = 15
     cost = 5
     ai_will_do = { factor = 33 }
     mutually_exclusive = {}
@@ -163,7 +163,7 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 	icon = GFX_goal_generic_construct_mil_factory
 
     x = 26
-    y = 4.5
+    y = 15
     cost = 10
 	 ai_will_do = { factor = 33 }
 	prerequisite = { focus = industry }
@@ -277,6 +277,7 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 	
 	
 	
+
 }			
 				
 				
@@ -284,14 +285,111 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 				
 				
 				
+		Focus = {
+
+    id = infrastructure
+	icon = GFX_goal_generic_construct_infrastructure
+
+    x = 23
+    y = 15
+    cost = 10
+	 ai_will_do = { factor = 33 }
+	prerequisite = { focus = civs }
+search_filters = { FOCUS_FILTER_RESEARCH }
+	completion_reward = {
+			if = {
+				limit = {
+					all_owned_state = {
+						NOT = { infrastructure < 5 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 2
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes						
+					}
+					set_state_flag = SOV_infrastructure_effort_3Inf
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 2
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+					set_state_flag = SOV_infrastructure_effort_3Inf
+				}				
+			}
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SOV_infrastructure_effort_3Inf	
+			}
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SOV_infrastructure_effort_3Inf	
+			}
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SOV_infrastructure_effort_3Inf	
+			}
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = SOV_infrastructure_effort_3Inf	
+			}
+		}
+	}
+	
+	
+	
+}
 				
 				
 				
 				
 				
+	
 				
-				
-				
+		###########INDUSTRY ORG		
 				
 				
 				
