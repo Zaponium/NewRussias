@@ -34,6 +34,7 @@
 	
 	Focus = {
 	id = army
+	icon = GFX_goal_generic_allies_build_infantry
 
     x = 35
     y = 3
@@ -43,7 +44,7 @@
     prerequisite = { focus = rebuilding }
     required = { focus = rebuilding }
     completion_reward = { 
-      add_political_power = 50
+      army_experience = 25
 
         }
     }
@@ -52,6 +53,7 @@
 	
 	Focus = {
 	id = politics
+	icon = GFX_goal_generic_demand_territory
 
     x = 30
     y = 3
@@ -66,21 +68,7 @@
         }
     }
 	
-		Focus = {
-	id = politics
-
-    x = 30
-    y = 6
-    cost = 5
-    ai_will_do = { factor = 50 }
-    mutually_exclusive = {}
-    prerequisite = { focus = rebuilding }
-    required = { focus = rebuilding }
-    completion_reward = { 
-      add_political_power = 50
-
-        }
-    }
+	
 	
 	############################
 	##### INDUSTRY BRANCH ######
@@ -92,6 +80,7 @@
 	Focus = {
 
     id = industry
+	icon = GFX_goal_generic_production2
 
     x = 25
     y = 3
@@ -102,7 +91,7 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 			bonus = 1.0
-				uses = 1
+				uses = 2
 				category = industry
 			}
 		}
@@ -114,6 +103,7 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 	Focus = {
 
     id = civs
+	icon = GFX_goal_generic_construct_civ_factory
 
     x = 24
     y = 4.5
@@ -122,8 +112,8 @@ search_filters = { FOCUS_FILTER_RESEARCH }
     mutually_exclusive = {}
     prerequisite = { focus = industry }
     required = { focus = industry }
-    completion_reward = { 
-  			random_owned_controlled_state = {
+ 	completion_reward = {
+			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
 					free_building_slots = {
@@ -157,3 +147,151 @@ search_filters = { FOCUS_FILTER_RESEARCH }
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
+		}
+				
+}	
+
+
+		
+				
+				
+
+	
+	Focus = {
+
+    id = Mili's
+	icon = GFX_goal_generic_construct_mil_factory
+
+    x = 26
+    y = 4.5
+    cost = 10
+	 ai_will_do = { factor = 33 }
+	prerequisite = { focus = industry }
+search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+			if = {
+				limit = {
+					653 = {
+						OR = {
+							NOT = { is_controlled_by = SOV }
+							AND = {
+								is_controlled_by = SOV
+								free_building_slots = {
+									building = arms_factory
+									size < 2
+									include_locked = yes
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { 
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}	
+					set_state_flag = SOV_production_effort_2AF
+				}
+			}
+			653 = {
+				if = {
+					limit = { 
+						is_controlled_by = SOV
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = SOV_production_effort_2AF
+				}
+			}
+			if = {
+				limit = {
+					572 = {
+						OR = {
+							NOT = { is_controlled_by = SOV }
+							AND = {
+								is_controlled_by = SOV
+								free_building_slots = {
+									building = arms_factory
+									size < 2
+									include_locked = yes
+								}
+							}
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { 
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}							
+					set_state_flag = SOV_production_effort_2AF
+				}
+			}
+			572 = {
+				if = {
+					limit = { 
+						is_controlled_by = SOV
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = SOV_production_effort_2AF
+				}
+			}
+		}
+	
+	
+	
+}			
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
