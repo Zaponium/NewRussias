@@ -58,6 +58,7 @@ ideas = {
                    has_completed_focus = army
 				   
                 }
+			}
 
 		}
 		
