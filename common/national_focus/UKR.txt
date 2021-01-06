@@ -1,0 +1,306 @@
+focus_tree = {
+    id = ukrainian_focus
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = UKR
+        }
+    }
+	
+	Focus = {
+	
+	id = x
+	GFX = x
+	
+	x = x
+	Y = x
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = {}
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = UKR_polishconnection
+	GFX = x
+	
+	x = 20
+	Y = 1
+	
+	cost = 5
+	mutually_exclusive = { focus = UKR_ownpath }
+	prerequisite = {}
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = UKR_ownpath
+	GFX = x
+	
+	x = 30
+	Y = 1
+	
+	cost = 5
+	mutually_exclusive = { focus = UKR_polishconnection }
+	prerequisite = {}
+	completion_reward = {
+	
+	
+	
+	}
+    }
+	
+    Focus = {
+	
+	id = UKR_daysofold
+	GFX = x
+	
+	x = 35
+	Y = 2
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = UKR_ownpath }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = books_for_people
+	GFX = x
+	
+	x = 36
+	Y = 3
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = UKR_daysofold }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = educate_the_young
+	GFX = x
+	
+	x = 34
+	Y = 3
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = UKR_daysofold }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = elect_pavloskoropadskyi
+	GFX = x
+	
+	x = 35
+	Y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = educate_the_young }
+	prerequisite = { focus = books_for_people }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = ressurect_rus
+	GFX = x
+	
+	x = 35
+	Y = 5
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = elect_pavloskoropadskyi }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = invite_belarus
+	GFX = x
+	
+	x = 32
+	Y = 6
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = ressurect_rus }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	focus = {
+	
+	id = demand_wilno
+	GFX = x
+	
+	x = 32
+	Y = 8
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = invite_belarus }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = vassalise_moldova
+	GFX = x
+	
+	x = 35
+	Y = 6
+	
+	cost = x
+	mutually_exclusive = { focus = take_moldova }
+	prerequisite = { focus = ressurect_rus }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = ally_romania
+	GFX = x
+	
+	x = 35
+	Y = 8
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = vassalise_moldova }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = take_moldova
+	GFX = x
+	
+	x = 38
+	Y = 6
+	
+	cost = x
+	mutually_exclusive = { focus = vassalise_moldova }
+	prerequisite = { focus = ressurect_rus }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+		Focus = {
+	
+	id = seek_new_allies
+	GFX = x
+	
+	x = 38
+	Y = 7
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = take_moldova }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = divide_romania
+	GFX = x
+	
+	x = 38
+	Y = 8
+	
+	cost = x
+	mutually_exclusive = {}
+	prerequisite = { focus = seek_new_allies }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+    	Focus = {
+	
+	id = tackle_the_bear
+	GFX = x
+	
+	x = 35
+	Y = 9
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = divide_romania focus = ally_romania }
+	prerequisite = { focus = demand_wilno }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	
+	
+	
+	
