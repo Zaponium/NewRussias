@@ -50,11 +50,6 @@ ideas = {
 				army_speed_factor = -0.3
 				war_support_factor = -0.75
 			}
-		     allowed_to_remove = {
-                OR = {
-                   has_completed_focus = army
-				   has_war = yes
-                }
 		}
 		
 		destroyed_economy = {

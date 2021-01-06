@@ -271,7 +271,6 @@ set_popularities = {
 }
 
 
-
 add_ideas = {
 	broken_political_system
 	disbanded_army
