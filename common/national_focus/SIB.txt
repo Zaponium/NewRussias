@@ -76,7 +76,7 @@ focus_tree = {
 	mutually_exclusive = { focus = SIB_the_real_communist_way focus = SIB_find_the_tsar_relatives }
 	prerequisite = { focus = SIB_our_own_way }
 	completion_reward = { 
-	add_political_power = 50
+	    add_timed_idea = { idea = new_world_order days = 1095 }
 	
 	
 	}
