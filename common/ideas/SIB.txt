@@ -23,7 +23,7 @@ ideas = {
 				
 			}
 		}
-				the_american_dream = {
+		the_american_dream = {
 			picture = x
 			allowed = {
 			  tag = SIB  
@@ -45,5 +45,47 @@ ideas = {
 				
 			}
 		}
+	    payments_to_the_us = {
+		    picture = x
+			allowed = {
+			  tag = SIB
+			}
+			avaliable = {
+			}
+			
+			cancel = {
+			}
+			
+			allowed_civil_war = {
+			    always = yes
+			}
+			
+			
+			modifier = {
+			    consumer_goods_factor = 0.1
+				political_power_factor = -0.35
+		}
 	}
+		new_world_order = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				fascism_drift = 0.03
+				
+			}
+		}
 }
