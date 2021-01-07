@@ -350,13 +350,203 @@ focus_tree = {
 	prerequisite = { focus = divide_romania focus = ally_romania }
 	prerequisite = { focus = demand_wilno }
 	completion_reward = {
+	    
+		if = {
+                limit = {
+                    NOT = { SOV = { is_in_faction_with = UKR } }
+                    country_exists = SOV
+                } 
+                create_wargoal = {
+                    type = take_state_focus
+                    target = SOV
+                    expire = 0
+                    generator = { 37 }
+                }
+            }
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = the_lands_of_old
+	GFX = x
+	
+	x = 35
+	Y = 10
+	
+	cost = 
+	mutually_exclusive = {}
+	available = { SOV = { exists = no is_in_faction_with = ROOT is_subject_of = ROOT } }
+	prerequisite = { focus = tackle_the_bear }
+	completion_reward = {
 	
 	
 	
 	}
 	}
 	
+	Focus = {
+	
+	id = protect_baltic_minors
+	GFX = x
+	
+	x = 32
+	Y = 11
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = the_lands_of_old }
+	completion_reward = {
 	
 	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = protect_the_slavs
+	GFX = x
+	
+	x = 35
+	Y = 11
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = the_lands_of_old }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = international_slavic_alliance
+	GFX = x
+	
+	x = 35
+	Y = 12
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = protect_the_slavs }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = yugoslavia_united
+	GFX = x
+	
+	x = 33
+	Y = 13
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = international_slavic_alliance }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = bohemia_united
+	GFX = x
+	
+	x = 37
+	Y = 13
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = international_slavic_alliance }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = reassure_the_poles
+	GFX = x
+	
+	x = 35
+	Y = 13
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = international_slavic_alliance }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = one_slavic_empire
+	GFX = x
+	
+	x = 40
+	Y = 11
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = the_lands_of_old }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = strike_the_centre
+	GFX = x
+	
+	x = 39
+	Y = 12
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = one_slavic_empire }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = strike_the_balkans
+	GFX = x
+	
+	x = 41
+	Y = 12
+	
+	cost = 
+	mutually_exclusive = {}
+	prerequisite = { focus = one_slavic_empire }
+	completion_reward = {
+	
+	
+	
+	}
+	}
 	
 	
