@@ -32,7 +32,7 @@ focus_tree = {
 	
 	Focus = {
 	
-	id = Eliviate_DMZs
+	id = Alleviate_DMZs
 	GFX = x
 	
 	x = 25
@@ -58,7 +58,7 @@ focus_tree = {
 	
 	cost = x
 	mutually_exclusive = {}
-	prerequisite = { focus = Eliviate_DMZs }
+	prerequisite = { focus = Alleviate_DMZs }
 	completion_reward = {
 	
 	
@@ -76,7 +76,152 @@ focus_tree = {
 	
 	cost = x
 	mutually_exclusive = {}
-	prerequisite = { focus = Eliviate_DMZs }
+	prerequisite = { focus = Alleviate_DMZs }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = reform_the_government
+	GFX = x
+	
+	x = 25
+	Y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = Alleviate_DMZs }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+	Focus = {
+	
+	id = begin_reform_government
+	GFX = x
+	
+	x = 25
+	Y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = Alleviate_DMZs }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+		Focus = {
+	
+	id = rewrite_constitution
+	GFX = x
+	
+	x = 25
+	Y = 7
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = begin_reform_government }
+	prerequisite = { focus = pavloskoropadskyi_government focus = fascist_ministers }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+			Focus = {
+	
+	id = rid_the_corruption
+	GFX = x
+	
+	x = 25
+	Y = 8
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = rewrite_constitution }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+		Focus = {
+	
+	id = elect_ministers
+	GFX = x
+	
+	x = 22
+	Y = 5
+	
+	cost = 5
+	mutually_exclusive = { focus = provide_ministers }
+	prerequisite = { focus = begin_reform_government }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+			Focus = {
+	
+	id = provide_ministers
+	GFX = x
+	
+	x = 28
+	Y = 5
+	
+	cost = 5
+	mutually_exclusive = { focus = elect_ministers}
+	prerequisite = { focus = begin_reform_government }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+				Focus = {
+	
+	id = pavloskoropadskyi_government
+	GFX = x
+	
+	x = 29
+	Y = 6
+	
+	cost = 5
+	mutually_exclusive = { focus = fascist_ministers }
+	prerequisite = { focus = provide_ministers }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
+					Focus = {
+	
+	id = fascist_ministers
+	GFX = x
+	
+	x = 27
+	Y = 6
+	
+	cost = 5
+	mutually_exclusive = { focus = pavloskoropadskyi_government }
+	prerequisite = { focus = provide_ministers }
 	completion_reward = {
 	
 	

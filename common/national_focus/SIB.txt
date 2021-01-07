@@ -22,7 +22,7 @@ focus_tree = {
 	mutually_exclusive = { focus = SIB_the_american_dream }
 	prerequisite = {}
 	completion_reward = { 
-	    add_timed_idea = { idea = our_own_way days = 1095 }
+	add_political_power = 50
 	
 	
 	}
@@ -33,14 +33,14 @@ focus_tree = {
 	id = SIB_the_american_dream
 	
 	
-	x = 28
+	x = 27
 	y = 1
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_our_own_way }
 	prerequisite = {}
 	completion_reward = { 
-	    add_timed_idea = { idea = the_american_dream days = 1095 }
+	add_political_power = 50
 	
 	
 	}
@@ -51,7 +51,7 @@ focus_tree = {
 	id = SIB_the_real_communist_way
 	
 	
-	x = 10
+	x = 12
 	y = 2
 	
 	cost = 5
@@ -87,7 +87,7 @@ focus_tree = {
 	id = SIB_find_the_tsar_relatives
 	
 	
-	x = 22
+	x = 20
 	y = 2
 	
 	cost = 5
@@ -105,7 +105,7 @@ focus_tree = {
 	id = SIB_our_democrat
 	
 	
-	x = 26 
+	x = 25 
 	y = 2
 	
 	cost = 5
@@ -123,7 +123,7 @@ focus_tree = {
 	id = SIB_the_russian_exile
 	
 	
-	x = 30
+	x = 29
 	y = 2
 	
 	cost = 5
@@ -141,35 +141,14 @@ focus_tree = {
 	id = SIB_mongolian_question
 	
 	
-	x = 13
+	x = 14
 	y = 3
 	
 	cost = 5
 	mutually_exclusive = {}
 	prerequisite = { focus = SIB_new_world_order  focus = SIB_the_real_communist_way }
-	avaliable = {
-	    is_puppet = no
-		has_army_manpower = { size > 399999 }
-	}
-	cancel = {
-	    OR = {
-		    is_subject = yes
-			has_war_with = MON
-		}
-	}
-	completion_reward = {
-			if = {
-				limit = {
-					NOT = { MON = { is_in_faction_with = SIB } }
-					country_exists = MON					
-				} 
-				create_wargoal = {
-					type = take_state_focus
-					target = MON
-					expire = 0
-					generator = { 37 }
-				}
-			}
+	completion_reward = { 
+	add_political_power = 50
 	
 	
 	}
@@ -180,7 +159,7 @@ focus_tree = {
 	id = SIB_empower_the_workers
 
 	
-	x = 10
+	x = 12
 	y = 4
 	
 	cost = 5
@@ -216,7 +195,7 @@ focus_tree = {
 	id = SIB_Tikhon_Nikolaevich
 	
 	
-	x = 24
+	x = 22
 	y = 4
 	
 	cost = 1
@@ -234,7 +213,7 @@ focus_tree = {
 	id = SIB_Guri_Nikolaevich_Kulikovsky
 	
 	
-	x = 20
+	x = 18
 	y = 4
 	
 	cost = 1
