@@ -22,7 +22,7 @@ focus_tree = {
 	mutually_exclusive = { focus = SIB_the_american_dream }
 	prerequisite = {}
 	completion_reward = { 
-	add_political_power = 50
+	    add_timed_idea = { idea = our_own_way days = 1095 }
 	
 	
 	}
