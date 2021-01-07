@@ -1,0 +1,49 @@
+ideas = {
+
+	country = {
+		our_own_way = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				democratic_drift = -0.03
+				
+			}
+		}
+				the_american_dream = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				democratic_drift = 0.03
+				
+			}
+		}
+	}
+}
