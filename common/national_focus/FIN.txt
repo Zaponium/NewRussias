@@ -1,0 +1,51 @@
+focus_tree = {
+	id = finnish_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = FIN
+		}
+	}
+	Focus = {
+	
+	id = FIN_aftermath_russo_finnish_war
+	
+	
+	x = 30
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = {}
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = FIN_solidify_our_control
+	
+	
+	x = 27
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = FIN_aftermath_russo_finnish_war }
+	completion_reward = { 
+	set_province_name = {
+    id = 3151
+    name = "Nevanlinna"
+    }
+	
+	
+	}
+	
+	}
+	
