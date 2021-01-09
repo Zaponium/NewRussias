@@ -15,7 +15,7 @@ focus_tree = {
 	id = SIB_our_own_way
 	
 	
-	x = 16
+	x = 20
 	y = 1
 	
 	cost = 5
@@ -33,7 +33,7 @@ focus_tree = {
 	id = SIB_the_american_dream
 	
 	
-	x = 27
+	x = 40
 	y = 1
 	
 	cost = 5
@@ -69,7 +69,7 @@ focus_tree = {
 	id = SIB_new_world_order
 	
 	
-	x = 16
+	x = 20
 	y = 2
 	
 	cost = 5
@@ -87,7 +87,7 @@ focus_tree = {
 	id = SIB_find_the_tsar_relatives
 	
 	
-	x = 20
+	x = 28
 	y = 2
 	
 	cost = 5
@@ -105,7 +105,7 @@ focus_tree = {
 	id = SIB_our_democrat
 	
 	
-	x = 25 
+	x = 38
 	y = 2
 	
 	cost = 5
@@ -123,7 +123,7 @@ focus_tree = {
 	id = SIB_the_russian_exile
 	
 	
-	x = 29
+	x = 42
 	y = 2
 	
 	cost = 5
@@ -141,7 +141,7 @@ focus_tree = {
 	id = SIB_mongolian_question
 	
 	
-	x = 14
+	x = 16
 	y = 3
 	
 	cost = 5
@@ -159,7 +159,7 @@ focus_tree = {
 	id = SIB_empower_the_workers
 
 	
-	x = 12
+	x = 10
 	y = 4
 	
 	cost = 5
@@ -177,11 +177,11 @@ focus_tree = {
 	id = SIB_north_sakhalin_for_alliance
 	
 	
-	x = 16
+	x = 18
 	y = 4
 	
 	cost = 5
-	mutually_exclusive = {}
+	mutually_exclusive = { focus = SIB_approach_himmler }
 	prerequisite = { focus = SIB_new_world_order }
 	completion_reward = { 
 	add_political_power = 50
@@ -195,7 +195,7 @@ focus_tree = {
 	id = SIB_Tikhon_Nikolaevich
 	
 	
-	x = 22
+	x = 30
 	y = 4
 	
 	cost = 1
@@ -213,12 +213,48 @@ focus_tree = {
 	id = SIB_Guri_Nikolaevich_Kulikovsky
 	
 	
-	x = 18
+	x = 26
 	y = 4
 	
 	cost = 1
 	mutually_exclusive = { focus = SIB_Tikhon_Nikolaevich }
 	prerequisite = { focus = SIB_find_the_tsar_relatives }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+					Focus = {
+	
+	id = SIB_establish_gulags
+
+	
+	x = 14
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_the_real_communist_way }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+						Focus = {
+	
+	id = SIB_approach_himmler
+
+	
+	x = 22
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_north_sakhalin_for_alliance}
+	prerequisite = { focus = SIB_new_world_order }
 	completion_reward = { 
 	add_political_power = 50
 	
