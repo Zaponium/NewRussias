@@ -89,3 +89,30 @@ ideas = {
 			}
 		}
 }
+    political_advisor = {
+	
+		SIB_igor_kerensky = {
+		
+		visible = {
+		            original_tag = SIB
+				}
+			
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = SIB
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
