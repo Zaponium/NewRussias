@@ -14,7 +14,7 @@ set_popularities = {
 }
 
 add_ideas = {
-
+    UKR_Corruption
 }
 
 # Starting tech

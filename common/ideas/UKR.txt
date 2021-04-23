@@ -1,0 +1,61 @@
+ideas = {
+    country = { 
+	
+	UKR_Corruption = {
+	removal_cost = -1
+	picture = x
+	Modifier = {
+	
+	}
+	
+	}
+	
+	Soviet_remnants = {
+	removal_cost = -1
+	picture = x
+	Modifier = {
+	
+	}
+	
+	}
+	
+	Treaty_of_Lwow = {
+	removal_cost = -1
+	picture = x
+	Modifier = {
+	
+	}
+	
+	}
+	
+	##Military##
+	Revolutionary_military = {
+	removal_cost = -1
+	picture = x
+	Modifier = {
+	
+	}
+	
+	}
+	
+  }
+	
+	political_advisor = {
+	
+	Ihor_Kistiakovsky = {
+	
+	visible = {
+				original_tag = UKR
+			}
+	picture = generic_political_advisor_europe_5
+	available = {
+			Has_completed_focus = pavloskoropadskyi_government
+			}
+	traits = {
+	
+	        }
+	cost = 50
+	}
+		
+  }
+}
