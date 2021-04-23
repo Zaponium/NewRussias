@@ -1,0 +1,25 @@
+
+state={
+	id=807
+	name="STATE_807"
+	resources={
+	}
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = FIN
+
+	}
+
+	provinces={
+	3078 9045 11212 9055 6159 11094 6090 18 3 3086 11038 3092 140 11137 26
+	}
+	manpower=14612
+	
+	state_category = rural
+	buildings_max_level_factor=1.000
+}
