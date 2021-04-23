@@ -91,7 +91,7 @@ ideas = {
 }
     political_advisor = {
 	
-		SIB_igor_kerensky = {
+		Igor_Kerensky = {
 		
 		visible = {
 		            original_tag = SIB
