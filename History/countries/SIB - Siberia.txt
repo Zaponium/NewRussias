@@ -92,6 +92,10 @@ set_popularities = {
 	neutrality = 70
 }
 
+add_ideas = {
+	payments_to_the_us
+}
+
 create_country_leader = {
 	name = "Anatoly Turgenev"
 	desc = "The man who led the Siberian's into a revolution against the Russiansl"
