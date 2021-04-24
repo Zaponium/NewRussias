@@ -16,7 +16,7 @@ focus_tree = {
 	
 	
 	x = 20
-	y = 1
+	y = -2
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_the_american_dream }
@@ -34,7 +34,7 @@ focus_tree = {
 	
 	
 	x = 40
-	y = 1
+	y = -2
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_our_own_way }
@@ -52,7 +52,7 @@ focus_tree = {
 	
 	
 	x = 12
-	y = 2
+	y = -1
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_new_world_order focus = SIB_restore_the_monarchy }
@@ -70,7 +70,7 @@ focus_tree = {
 	
 	
 	x = 20
-	y = 2
+	y = -1
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_the_real_communist_way focus = SIB_restore_the_monarchy }
@@ -88,7 +88,7 @@ focus_tree = {
 	
 	
 	x = 28
-	y = 2
+	y = -1
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_new_world_order focus = SIB_the_real_communist_way }
@@ -106,7 +106,7 @@ focus_tree = {
 	
 	
 	x = 38
-	y = 2
+	y = -1
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_the_russian_exile }
@@ -124,7 +124,7 @@ focus_tree = {
 	
 	
 	x = 42
-	y = 2
+	y = -1
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_our_democrat }
@@ -159,11 +159,12 @@ focus_tree = {
 	id = SIB_empower_the_workers
 
 	
-	x = 10
-	y = 4
+	x = -2
+	y = 2
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_the_real_communist_way
 	prerequisite = { focus = SIB_the_real_communist_way }
 	completion_reward = { 
 	add_political_power = 50
@@ -177,11 +178,12 @@ focus_tree = {
 	id = SIB_north_sakhalin_for_alliance
 	
 	
-	x = 18
-	y = 4
+	x = -2
+	y = 2
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_approach_himmler }
+	relative_position_id = SIB_new_world_order
 	prerequisite = { focus = SIB_new_world_order }
 	completion_reward = { 
 	add_political_power = 50
@@ -195,11 +197,12 @@ focus_tree = {
 	id = SIB_visit_to_denmark
 	
 	
-	x = 26
-	y = 4
+	x = -2
+	y = 1
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_new_royal_house}
+	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_restore_the_monarchy }
 	completion_reward = { 
 	add_political_power = 50
@@ -213,11 +216,12 @@ focus_tree = {
 	id = SIB_establish_gulags
 
 	
-	x = 14
-	y = 4
+	x = 2
+	y = 2
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_the_real_communist_way
 	prerequisite = { focus = SIB_the_real_communist_way }
 	completion_reward = { 
 	add_political_power = 50
@@ -231,11 +235,12 @@ focus_tree = {
 	id = SIB_approach_himmler
 
 	
-	x = 22
-	y = 4
+	x = 2
+	y = 2
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_north_sakhalin_for_alliance}
+	relative_position_id = SIB_new_world_order
 	prerequisite = { focus = SIB_new_world_order }
 	completion_reward = { 
 	add_political_power = 50
@@ -249,11 +254,12 @@ focus_tree = {
 	id = SIB_Nikolai_Kulikovsky
 	
 	
-	x = 26
-	y = 5
+	x = -2
+	y = 2
 	
 	cost = 1
 	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_visit_to_denmark }
 	completion_reward = { 
 	add_political_power = 50
@@ -267,11 +273,12 @@ focus_tree = {
 	id = SIB_Return_of_the_tsar
 	
 	
-	x = 26
-	y = 6
+	x = -2
+	y = 3
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_Nikolai_Kulikovsky }
 	completion_reward = { 
 	add_political_power = 50
@@ -285,11 +292,12 @@ focus_tree = {
 	id = SIB_new_royal_house
 	
 	
-	x = 30
-	y = 4
+	x = 2
+	y = 1
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_visit_to_denmark}
+	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_restore_the_monarchy }
 	completion_reward = { 
 	add_political_power = 50
@@ -303,11 +311,12 @@ focus_tree = {
 	id = SIB_stop_payments
 	
 	
-	x = 26
-	y = 7
+	x = -2
+	y = 4
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_Return_of_the_tsar }
 	completion_reward = { 
 	add_political_power = 50
@@ -318,14 +327,15 @@ focus_tree = {
 	}
 	Focus = {
 	
-	id = SIB_secure_good_economy
+	id = SIB_secure_the_miltias
 	
 	
-	x = 24
-	y = 7
+	x = -4
+	y = 4
 	
 	cost = 5
-	mutually_exclusive = {} 
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_Return_of_the_tsar }
 	completion_reward = { 
 	add_political_power = 50
@@ -339,11 +349,12 @@ focus_tree = {
 	id = SIB_revive_the_white_army
 	
 	
-	x = 28
-	y = 7
+	x = 0
+	y = 4
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_Return_of_the_tsar }
 	completion_reward = { 
 	add_political_power = 50
@@ -358,7 +369,7 @@ focus_tree = {
 	
 	
 	x = 50
-	y = 1
+	y = -2
 	
 	cost = 5
 	mutually_exclusive = {}
@@ -376,7 +387,7 @@ focus_tree = {
 	
 	
 	x = 4
-	y = 0
+	y = -2
 	
 	cost = 5
 	mutually_exclusive = {}
@@ -393,11 +404,12 @@ focus_tree = {
 	id = SIB_ironside
 	
 	
-	x = 1
+	x = -3
 	y = 3
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_seawolf focus = SIB_air_controller_navy}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_marine_project }
 	completion_reward = { 
 	add_political_power = 50
@@ -411,11 +423,12 @@ focus_tree = {
 	id = SIB_seawolf
 	
 	
-	x = 4
+	x = 0
 	y = 3
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_ironside focus = SIB_air_controller_navy}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_marine_project }
 	completion_reward = { 
 	add_political_power = 50
@@ -429,11 +442,12 @@ focus_tree = {
 	id = SIB_air_controller_navy
 	
 	
-	x = 7
+	x = 3
 	y = 3
 	
 	cost = 5
 	mutually_exclusive = { focus = SIB_ironside focus = SIB_seawolf}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_marine_project }
 	completion_reward = { 
 	add_political_power = 50
@@ -447,11 +461,12 @@ focus_tree = {
 	id = SIB_naval_bombers
 	
 	
-	x = 3
+	x = -1
 	y = 1
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_siberian_naval_act }
 	completion_reward = { 
 	add_political_power = 50
@@ -465,11 +480,12 @@ focus_tree = {
 	id = SIB_order_destoryers
 	
 	
-	x = 5
+	x = 1
 	y = 1
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_siberian_naval_act }
 	completion_reward = { 
 	add_political_power = 50
@@ -483,11 +499,12 @@ focus_tree = {
 	id = SIB_seek_american_models
 	
 	
-	x = 1
+	x = -3
 	y = 4
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_ironside }
 	completion_reward = { 
 	add_political_power = 50
@@ -501,11 +518,12 @@ focus_tree = {
 	id = SIB_seek_japanese_models
 	
 	
-	x = 7
+	x = 0
 	y = 4
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_air_controller_navy }
 	completion_reward = { 
 	add_political_power = 50
@@ -519,11 +537,12 @@ focus_tree = {
 	id = SIB_seek_german_models
 	
 	
-	x = 4
+	x = 3
 	y = 4
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_seawolf }
 	completion_reward = { 
 	add_political_power = 50
@@ -537,12 +556,637 @@ focus_tree = {
 	id = SIB_marine_project
 	
 	
-	x = 4
+	x = 0
 	y = 2
 	
 	cost = 5
 	mutually_exclusive = {}
+	relative_position_id = SIB_siberian_naval_act
 	prerequisite = { focus = SIB_naval_bombers focus = SIB_order_destoryers }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_strengthen_white_army
+	
+	
+	x = 0
+	y = 5
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_revive_the_white_army }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_secure_mongolia
+	
+	
+	x = -2
+	y = 5
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_stop_payments }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_provoke_russia
+	
+	
+	x = -4
+	y = 5
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_secure_the_miltias }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_around_the_urals
+	
+	
+	x = -2
+	y = 6
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_provoke_russia}
+	prerequisite = { focus = SIB_secure_mongolia}
+	prerequisite = { focus = SIB_strengthen_white_army}
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_strike_russia
+	
+	
+	x = -4
+	y = 7
+	
+	cost = 10
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_around_the_urals }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_claim_tsardom_of_siberia
+	
+	
+	x = 0
+	y = 7
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_around_the_urals }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_claim_tsardom_of_russia
+	
+	
+	x = -2
+	y = 8
+	
+	cost = 10
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_claim_tsardom_of_siberia }
+	prerequisite = { focus = SIB_strike_russia }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_move_capital
+	
+	
+	x = -2
+	y = 9
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_claim_tsardom_of_russia }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_establish_control_of_russia
+	
+	
+	x = -4
+	y = 9
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_claim_tsardom_of_russia }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_establish_control_of_kazakhs
+	
+	
+	x = 0
+	y = 9
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_claim_tsardom_of_russia }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ambitions_of_old_empire
+	
+	
+	x = -2
+	y = 10
+	
+	cost = 20
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_establish_control_of_kazakhs }
+	prerequisite = { focus = SIB_establish_control_of_russia }
+	prerequisite = { focus = SIB_move_capital }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_baltic_expansion
+	
+	
+	x = -7
+	y = 11
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ambitions_of_old_empire }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_northern_expansion
+	
+	
+	x = -2
+	y = 11
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ambitions_of_old_empire }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_caucauses_expansion
+	
+	
+	x = 3
+	y = 11
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ambitions_of_old_empire }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ultimatum_to_latvia
+	
+	
+	x = -9
+	y = 12
+	
+	cost = 2
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_baltic_expansion }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ultimatum_to_estonia
+	
+	
+	x = -5
+	y = 12
+	
+	cost = 2
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_baltic_expansion }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ultimatum_to_lithuania
+	
+	
+	x = -7
+	y = 13
+	
+	cost = 3
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ultimatum_to_latvia }
+	prerequisite = { focus = SIB_ultimatum_to_estonia }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_demand_annexation
+	
+	
+	x = -3
+	y = 12
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_ultimatum_for_old_lands }
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_northern_expansion }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ultimatum_for_old_lands
+	
+	
+	x = -1
+	y = 12
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_demand_annexation }
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_northern_expansion }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_rename_nevanlinna
+	
+	
+	x = -2
+	y = 13
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_demand_annexation  focus = SIB_ultimatum_for_old_lands }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ultimatum_to_georgia
+	
+	
+	x = 5
+	y = 12
+	
+	cost = 3
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_caucauses_expansion }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ultimatum_to_azerbaijan
+	
+	
+	x = 1
+	y = 12
+	
+	cost = 3
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_caucauses_expansion }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ultimatum_to_armenia
+	
+	
+	x = 3
+	y = 13
+	
+	cost = 3
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ultimatum_to_azerbaijan }
+	prerequisite = { focus = SIB_ultimatum_to_georgia } 
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_european_expansion
+	
+	
+	x = -2
+	y = 14
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ultimatum_to_lithuania }
+	prerequisite = { focus = SIB_rename_nevanlinna }
+	prerequisite = { focus = SIB_ultimatum_to_armenia }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_demand_annexation_of_ukraine
+	
+	
+	x = 0
+	y = 15
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_european_expansion }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_demand_annexation_of_belarus
+	
+	
+	x = -4
+	y = 15
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_european_expansion }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ultimatum_to_moldova
+	
+	
+	x = -3
+	y = 16
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_demand_annexation_of_belarus }
+	prerequisite = { focus = SIB_demand_annexation_of_ukraine }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_demand_bucovina
+	
+	
+	x = -1
+	y = 16
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_demand_annexation_of_belarus }
+	prerequisite = { focus = SIB_demand_annexation_of_ukraine }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_secure_the_black_sea_strait
+	
+	
+	x = -2
+	y = 17
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ultimatum_to_moldova }
+	prerequisite = { focus = SIB_demand_bucovina }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_split_poland
+	
+	
+	x = -4
+	y = 17
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ultimatum_to_moldova }
+	prerequisite = { focus = SIB_demand_bucovina }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_russian_defense_scheme
+	
+	
+	x = 0
+	y = 17
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_ultimatum_to_moldova }
+	prerequisite = { focus = SIB_demand_bucovina }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_prepare_for_theinevitable
+	
+	
+	x = -2
+	y = 18
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_split_poland }
+	prerequisite = { focus = SIB_secure_the_black_sea_strait }
+	prerequisite = { focus = SIB_russian_defense_scheme }
 	completion_reward = { 
 	add_political_power = 50
 	

@@ -50,7 +50,7 @@ ideas = {
 			allowed = {
 			  tag = SIB
 			}
-			avaliable = {
+			available = {
 			}
 			
 			cancel = {
@@ -85,6 +85,53 @@ ideas = {
 			
 			modifier = {
 				fascism_drift = 0.03
+				
+			}
+		}
+		disorganised_army = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				army_org_factor = -0.4
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_speed_factor = -0.2
+			}
+		}
+		rogue_militias = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+				war_support_factor = -0.40
+				stability_factor = -0.45
 				
 			}
 		}

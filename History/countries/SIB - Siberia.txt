@@ -94,6 +94,8 @@ set_popularities = {
 
 add_ideas = {
 	payments_to_the_us
+	rogue_militias
+	disorganised_army
 }
 
 create_country_leader = {
