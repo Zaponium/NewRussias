@@ -363,4 +363,46 @@
     completion_reward = { 
         }
     }
+	Focus = {
+
+    id = demand_strait_control
+    x = 0
+    y = 15
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = comintern}
+	prerequisite = {focus = invest_in_tanks}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = influence_moldova
+    x = -2
+    y = 15
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = comintern}
+	prerequisite = {focus = invest_in_tanks}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = influence_romania
+    x = 2
+    y = 15
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = comintern}
+	prerequisite = {focus = invest_in_tanks}
+    required = {}
+    completion_reward = { 
+        }
+    }
 }
