@@ -39,7 +39,7 @@ bookmarks = {
 	        Revolutionary_military
 			}
 			focuses = {
-			UKR_Alleviate_DMZs
+			UKR_alleviate_dmzs
 			UKR_elect_pavloskoropadskyi
 
 			}	

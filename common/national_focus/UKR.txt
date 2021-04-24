@@ -32,17 +32,20 @@ focus_tree = {
 	
 	Focus = {
 	
-	id = Alleviate_DMZs
-	GFX = x
+	id = alleviate_dmzs
+	icon = GFX_focus_generic_provoke_border_clashes
 	
 	x = 25
 	Y = 2
 	
-	cost = x
+	cost = 2
 	mutually_exclusive = {}
 	prerequisite = { focus = UKR_ownpath focus = UKR_polishconnection}
 	completion_reward = {
-	
+	        199 = { set_demilitarized_zone = no }
+			198 = { set_demilitarized_zone = no }
+			192 = { set_demilitarized_zone = no }
+			add_threat = 2
 	
 	
 	}
@@ -51,49 +54,45 @@ focus_tree = {
 	Focus = {
 	
 	id = negotiate_romania
-	GFX = x
+	icon = GFX_romania_deal
 	
 	x = 27
 	Y = 3
 	
 	cost = x
 	mutually_exclusive = {}
-	prerequisite = { focus = Alleviate_DMZs }
+	prerequisite = { focus = alleviate_dmzs }
 	completion_reward = {
-	
-	
-	
+	ROM = { country_event = UKR.5 }
 	}
 	}
 	
 	Focus = {
 	
 	id = negotiate_poland
-	GFX = x
+	icon = GFX_poland_deal
 	
 	x = 23
 	Y = 3
 	
 	cost = x
 	mutually_exclusive = {}
-	prerequisite = { focus = Alleviate_DMZs }
+	prerequisite = { focus = alleviate_dmzs }
 	completion_reward = {
-	
-	
-	
+	POL = { country_event = UKR.1 }
 	}
 	}	
 	Focus = {
 	
 	id = begin_reform_government
-	GFX = x
+	icon = x
 	
 	x = 25
 	Y = 4
 	
 	cost = 5
 	mutually_exclusive = {}
-	prerequisite = { focus = Alleviate_DMZs }
+	prerequisite = { focus = alleviate_dmzs }
 	completion_reward = {
 	
 	
@@ -104,7 +103,7 @@ focus_tree = {
 		Focus = {
 	
 	id = rewrite_constitution
-	GFX = x
+	icon = x
 	
 	x = 25
 	Y = 7
@@ -123,7 +122,7 @@ focus_tree = {
 			Focus = {
 	
 	id = rid_the_corruption
-	GFX = x
+	icon = x
 	
 	x = 25
 	Y = 8
@@ -140,7 +139,7 @@ focus_tree = {
 	Focus = {
 	
 	id = the_remnants
-	GFX = x
+	icon = x
 	
 	x = 29
 	Y = 9
@@ -157,7 +156,7 @@ focus_tree = {
 	Focus = {
 	
 	id = challenge_remnants
-	GFX = x
+	icon = x
 	
 	x = 32
 	Y = 10
@@ -175,7 +174,7 @@ focus_tree = {
 	Focus = {
 	
 	id = absorb_remnants
-	GFX = x
+	icon = x
 	
 	x = 30
 	Y = 10
@@ -193,7 +192,7 @@ focus_tree = {
 	Focus = {
 	
 	id = decriminalize_remnants
-	GFX = x
+	icon = x
 	
 	x = 28
 	Y = 10
@@ -211,7 +210,7 @@ focus_tree = {
 	Focus = {
 	
 	id = the_treaty
-	GFX = x
+	icon = x
 	
 	x = 25
 	Y = 9
@@ -228,7 +227,7 @@ focus_tree = {
 	Focus = {
 	
 	id = the_army_problem
-	GFX = x
+	icon = x
 	
 	x = 21
 	Y = 9
@@ -246,7 +245,7 @@ focus_tree = {
 		Focus = {
 	
 	id = elect_ministers
-	GFX = x
+	icon = x
 	
 	x = 22
 	Y = 5
@@ -264,7 +263,7 @@ focus_tree = {
 			Focus = {
 	
 	id = provide_ministers
-	GFX = x
+	icon = x
 	
 	x = 28
 	Y = 5
@@ -282,7 +281,7 @@ focus_tree = {
 				Focus = {
 	
 	id = pavloskoropadskyi_government
-	GFX = x
+	icon = x
 	
 	x = 29
 	Y = 6
@@ -299,7 +298,7 @@ focus_tree = {
 					Focus = {
 	
 	id = fascist_ministers
-	GFX = x
+	icon = x
 	
 	x = 27
 	Y = 6
@@ -317,7 +316,7 @@ focus_tree = {
 	Focus = {
 	
 	id = UKR_polishconnection
-	GFX = x
+	icon = x
 	
 	x = 20
 	Y = 1
@@ -335,7 +334,7 @@ focus_tree = {
 	Focus = {
 	
 	id = UKR_ownpath
-	GFX = x
+	icon = x
 	
 	x = 30
 	Y = 1
@@ -353,7 +352,7 @@ focus_tree = {
     Focus = {
 	
 	id = UKR_daysofold
-	GFX = x
+	icon = x
 	
 	x = 35
 	Y = 2
@@ -371,7 +370,7 @@ focus_tree = {
 	Focus = {
 	
 	id = books_for_people
-	GFX = x
+	icon = x
 	
 	x = 36
 	Y = 3
@@ -389,7 +388,7 @@ focus_tree = {
 	Focus = {
 	
 	id = educate_the_young
-	GFX = x
+	icon = x
 	
 	x = 34
 	Y = 3
@@ -406,7 +405,7 @@ focus_tree = {
 	Focus = {
 	
 	id = nationalist_coup
-	GFX = x
+	icon = x
 	
 	x = 40
 	Y = 4
@@ -424,7 +423,7 @@ focus_tree = {
 	Focus = {
 	
 	id = stay_the_course
-	GFX = x
+	icon = x
 	
 	x = 45
 	Y = 5
@@ -441,7 +440,7 @@ focus_tree = {
 	Focus = {
 	
 	id = the_people_pov
-	GFX = x
+	icon = x
 	
 	x = 35
 	Y = 5
@@ -459,7 +458,7 @@ focus_tree = {
 	Focus = {
 	
 	id = elect_pavloskoropadskyi
-	GFX = x
+	icon = x
 	
 	x = 50
 	Y = 4
@@ -478,7 +477,7 @@ focus_tree = {
 	Focus = {
 	
 	id = ressurect_rus
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 1
@@ -497,7 +496,7 @@ focus_tree = {
 	Focus = {
 	
 	id = invite_belarus
-	GFX = x
+	icon = x
 	
 	x = -3
 	Y = 2
@@ -516,7 +515,7 @@ focus_tree = {
 	focus = {
 	
 	id = demand_wilno
-	GFX = x
+	icon = x
 	
 	x = -3
 	Y = 4
@@ -535,7 +534,7 @@ focus_tree = {
 	Focus = {
 	
 	id = vassalise_moldova
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 2
@@ -554,7 +553,7 @@ focus_tree = {
 	Focus = {
 	
 	id = ally_romania
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 4
@@ -573,7 +572,7 @@ focus_tree = {
 	Focus = {
 	
 	id = take_moldova
-	GFX = x
+	icon = x
 	
 	x = 3
 	Y = 2
@@ -592,7 +591,7 @@ focus_tree = {
 		Focus = {
 	
 	id = seek_new_allies
-	GFX = x
+	icon = x
 	
 	x = 3
 	Y = 3
@@ -611,7 +610,7 @@ focus_tree = {
 	Focus = {
 	
 	id = divide_romania
-	GFX = x
+	icon = x
 	
 	x = 3
 	Y = 4
@@ -630,7 +629,7 @@ focus_tree = {
     	Focus = {
 	
 	id = tackle_the_bear
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 5	
@@ -662,7 +661,7 @@ focus_tree = {
 	Focus = {
 	
 	id = the_lands_of_old
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 6
@@ -681,7 +680,7 @@ focus_tree = {
 	Focus = {
 	
 	id = protect_the_slavs
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 7
@@ -700,7 +699,7 @@ focus_tree = {
 	Focus = {
 	
 	id = international_slavic_alliance
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 8
@@ -719,7 +718,7 @@ focus_tree = {
 	Focus = {
 	
 	id = yugoslavia_invited
-	GFX = x
+	icon = x
 	
 	x = -2
 	Y = 9
@@ -738,7 +737,7 @@ focus_tree = {
 	Focus = {
 	
 	id = bohemia_united
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 9
@@ -757,7 +756,7 @@ focus_tree = {
 	Focus = {
 	
 	id = poles_awaited
-	GFX = x
+	icon = x
 	
 	x = 2
 	Y = 9
@@ -775,7 +774,7 @@ focus_tree = {
 	Focus = {
 	
 	id = balkan_solidarity
-	GFX = x
+	icon = x
 	
 	x = 1
 	Y = 10
@@ -795,7 +794,7 @@ focus_tree = {
 	Focus = {
 	
 	id = true_slavs
-	GFX = x
+	icon = x
 	
 	x = -1
 	Y = 10
@@ -815,7 +814,7 @@ focus_tree = {
 	Focus = {
 	
 	id = bulgaria_ahead
-	GFX = x
+	icon = x
 	
 	x = 0
 	Y = 11
@@ -835,7 +834,7 @@ focus_tree = {
 	Focus = {
 	
 	id = one_slavic_empire
-	GFX = x
+	icon = x
 	
 	x = 6
 	Y = 7
@@ -854,7 +853,7 @@ focus_tree = {
 	Focus = {
 	
 	id = strike_the_centre
-	GFX = x
+	icon = x
 	
 	x = 5
 	Y = 8
@@ -872,7 +871,7 @@ focus_tree = {
 	Focus = {
 	
 	id = polish_advance
-	GFX = x
+	icon = x
 	
 	x = 6
 	Y = 9
@@ -890,7 +889,7 @@ focus_tree = {
 	Focus = {
 	
 	id = german_conference
-	GFX = x
+	icon = x
 	
 	x = 4
 	Y = 9
@@ -909,7 +908,7 @@ focus_tree = {
 	Focus = {
 	
 	id = strike_the_balkans
-	GFX = x
+	icon = x
 	
 	x = 10
 	Y = 8
@@ -927,7 +926,7 @@ focus_tree = {
 	Focus = {
 	
 	id = look_at_danzig
-	GFX = x
+	icon = x
 	
 	x = 8
 	Y = 9
@@ -945,7 +944,7 @@ focus_tree = {
     Focus = {
 	
 	id = acceptable_corridor
-	GFX = x
+	icon = x
 	
 	x = 12
 	Y = 9
@@ -963,7 +962,7 @@ focus_tree = {
     Focus = {
 	
 	id = ultimatum_bulgaria
-	GFX = x
+	icon = x
 	
 	x = 9
 	Y = 10
@@ -981,7 +980,7 @@ focus_tree = {
 	Focus = {
 	
 	id = ultimatum_yugoslavia
-	GFX = x
+	icon = x
 	
 	x = 11
 	Y = 10
@@ -999,7 +998,7 @@ focus_tree = {
 	Focus = {
 	
 	id = slavs_united_at_last
-	GFX = x
+	icon = x
 	
 	x = 7
 	Y = 11
@@ -1019,7 +1018,7 @@ focus_tree = {
 	Focus = {
 	
 	id = slavic_will
-	GFX = x
+	icon = x
 	
 	x = 3
 	Y = 12

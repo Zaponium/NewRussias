@@ -1,2 +1,25 @@
 ﻿l_english:
-pavlo_completion.d:0 "Da comradya"
+
+##EVENTS##
+UKR.1.t:0 "Ukraine seeks to remilitarize its border with us"
+UKR.1.d:0 "Ever since it's creation as a state, the Ukrainains have had very limited border authority, being required to not have any military precense in the border areas around Moldova, Romania and ofcourse us. But with tensions rising in europe, and the status of the Rhienland demilitarization being obviously shaky, the Ukrainians have now demanded that we let them remilitarize our borders, for the sake of preserving peace"
+UKR.1.a:0 "We shall let them"
+UKR.1.b:0 "This is a bit too far"
+UKR.2.t:0 "Poland is sceptical to remilitarization"
+UKR.2.d:0 "Poland seems a bit sceptical to allow us to remilitarize, but they have not outright denied our notion. We could back down, or perhaps increase political effort on the poles for our remilitarization"
+UKR.2.a:0 "We shall increase our efforts"
+UKR.2.b:0 "There is no use, we will back down"
+UKR.3.t:0 "Ukraine increases their efforts"
+UKR.3.d:0 "In response to our unsertain response, the Ukrainian gouvernment has increasingly ensure us of their peaceful intent, and have noticably increased their efforts and preassure on us. In this situation it would be hard to remain on good terms with them without letting them remilitarize, however some parts of our gouvernment suggest a second treaty of Lwow is needed to limit them further, if we are to ensure peace with a non-demilitarized border"
+UKR.3.a:0 "We will allow them to demilitarize"
+UKR.3.b:0 "We will allow it, but a new treaty is to be signed"
+UKR.4.t:0 "The Second treaty of Lwow"
+UKR.4.d:0 "They have allowed us to remilitarize, under the conditions of a second limitations treaty. They have invited us to the original town of Lwow, where we will have to sign additional limitations to ensure peace"
+UKR.4.a:0 "Off to Lwow we go"
+UKR.5.t:0 "Ukraine demands remilitarization"
+UKR.5.d:0 "The Ukranian gouvernment has demanded to be allowed to remilitarize the terratorry of southern bessarbia, after having recently remilitarized the terratorries around Moldova"
+UKR.5.a:0 "There is not much we can do to stop them"
+UKR.5.b:0 ""
+
+##MIDDLE##
+alleviate_dmzs:0 "Militarization of the Demilitarized Zones"
