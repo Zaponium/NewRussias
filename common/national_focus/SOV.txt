@@ -11,13 +11,12 @@
     }
 	Focus = {
 
-    id = rebuilding
-	icon = GFX_goal_generic_propaganda
-    x = 30
-    y = 1
-    cost = 10
+    id = dealing_with_vlad
+    x = 20
+    y = -2
+    cost = 4
     ai_will_do = { factor = 100	}
-    mutually_exclusive = {}
+    mutually_exclusive = { focus = staying_with_vlad }
     prerequisite = {}
     required = {}
     completion_reward = { 
@@ -25,380 +24,343 @@
 
         }
     }
-	
-	
-
-    ##########ARMY
-	
-	
-	
 	Focus = {
-	id = army
-	icon = GFX_goal_generic_allies_build_infantry
 
-    x = 35
-    y = 3
-    cost = 5
-    ai_will_do = { factor = 30 }
-    mutually_exclusive = {}
-    prerequisite = { focus = rebuilding }
-    required = { focus = rebuilding }
+    id = staying_with_vlad
+    x = 40
+    y = -2
+    cost = 4
+    mutually_exclusive = { focus = dealing_with_vlad }
+    prerequisite = {}
+    required = {}
     completion_reward = { 
-      army_experience = 25
+      add_political_power = 120
 
         }
     }
-	
-	########POLITICS
-	
 	Focus = {
-	id = politics
-	icon = GFX_goal_generic_demand_territory
 
-    x = 30
-    y = 3
+    id = empower_konstantin
+    x = -5
+    y = 1
     cost = 5
-    ai_will_do = { factor = 50 }
     mutually_exclusive = {}
-    prerequisite = { focus = rebuilding }
-    required = { focus = rebuilding }
+	relative_position_id = dealing_with_vlad
+    prerequisite = { focus = dealing_with_vlad }
+    required = {}
     completion_reward = { 
-      add_political_power = 50
+      add_political_power = 120
 
         }
     }
-	
-	
-	
-	############################
-	##### INDUSTRY BRANCH ######
-	############################
-	
-	
-	
-	
 	Focus = {
 
-    id = research_bonus #add 10 construction speed
-	icon = GFX_goal_generic_production2
+    id = ease_communist_tensions
+    x = 5
+    y = 1
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = dealing_with_vlad
+    prerequisite = {focus = dealing_with_vlad}
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
 
-    x = 26
+        }
+    }
+	Focus = {
+
+    id = lift_ban_on_communism
+    x = 0
+    y = 1
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = ease_communist_tensions}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = empower_the_workers
+    x = 0
+    y = 2
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = lift_ban_on_communism}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = stabilise_politics
+    x = 0
     y = 3
     cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = rebuilding }
-search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-			bonus = 1.0
-				uses = 2
-				category = industry
-			}
-		}
-	
-	
-	
-}
-	
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = empower_the_workers}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
 
-
-	
-	
-	###########INDUSTRY 1
-	
-Focus = {
-
-    id = civ_factories
-	icon = GFX_goal_generic_production2
-
-    x = 24
+    id = secure_new_field_marshals
+    x = -1
     y = 4
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = research_bonus }
-search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			industrial_complex_con
-			}
-		}
-	
-	
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = stabilise_politics}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
 
-	}
-	
-	
-Focus = {
-
-    id = infra
-	icon = GFX_goal_generic_production2
-
-    x = 28
+    id = show_of_strength
+    x = 1
     y = 4
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = research_bonus }
-search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			industrial_complex_con
-			}
-		}	
-	
-	}
-	
-	
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = stabilise_politics}
+    required = {}
+    completion_reward = { 
+        }
+    }
 	Focus = {
 
-    id = 20percent_more_cons #change to make it
-	icon = GFX_goal_generic_production2
-
-    x = 23
+    id = establish_munitions_factories
+    x = 0
     y = 5
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = civ_factories }
-search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			industrial_complex_con
-			}
-		}	
-	}
-	
-	
- 
-	
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = show_of_strength focus = secure_new_field_marshals}
+    required = {}
+    completion_reward = { 
+        }
+    }
 	Focus = {
 
-    id = excav_res_bonus
-	icon = GFX_goal_generic_production2
+    id = organise_the_army
+    x = -2
+    y = 5
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = show_of_strength}
+	prerequisite = {focus = secure_new_field_marshals}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
 
-    x = 23
+    id = tighten_army_rule
+    x = 2
+    y = 5
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = show_of_strength}
+	prerequisite = {focus = secure_new_field_marshals}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = bring_back_the_true_leader
+    x = 0
     y = 6
     cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus =  20percent_more_cons }
-search_filters = { FOCUS_FILTER_RESEARCH } 
-		completion_reward = {
-			industrial_complex_con
-			}
-		}		
-	
-
-	}
-	
-	
-
-
-
-
-
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = organise_the_army}
+	prerequisite = {focus = tighten_army_rule}
+    required = {}
+    completion_reward = { 
+        }
+    }
 	Focus = {
-    id = fuel_gain_improv
-	icon = GFX_goal_generic_production2
 
-    x = 25
-    y = 5
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = civ_factories }
-search_filters = { FOCUS_FILTER_RESEARCH } 
-		completion_reward = {
-			industrial_complex_con
-			}
-		}	
-	
-	
-
-	
-	
-	
-	}
-	
-	
-	
-	
-	Focus = {
-    id = civ_factories2
-	icon = GFX_goal_generic_production2
-
-    x = 25
-    y = 6
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = civ_factories }
-search_filters = { FOCUS_FILTER_RESEARCH } 
-		completion_reward = {
-			industrial_complex_con
-			}
-		}		
-	
-	
-	
-	
-	}
-	
-	
-	
-	
-	Focus = {
-    id = +1refinery_and_slot
-	icon = GFX_goal_generic_production2
-
-    x = 27.5
-    y = 5
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = infra }
-search_filters = { FOCUS_FILTER_RESEARCH } 
-		completion_reward = {
-			industrial_complex_con
-			}
-		}		
-	
-	
-	
-	
-	}	
-	
-	Focus = {
-    id = rubber_procesing
-	icon = GFX_goal_generic_production2
-
-    x = 27.5
-    y = 6
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = +1refinery_and_slot }
-search_filters = { FOCUS_FILTER_RESEARCH } 
-		completion_reward = {
-			industrial_complex_con
-			}
-		}		
-	
-	
-	
-	
-	}		
-
-
-
-
-	
-	
-	
-Focus = {
-    id = oil_processing_research_bonus
-	icon = GFX_goal_generic_production2
-
-    x = 29
-    y = 5
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = infra}
-search_filters = { FOCUS_FILTER_RESEARCH } 
-		completion_reward = {
-			industrial_complex_con
-			}
-		}		
-	
-	
-	
-	
-	}			
-	
-
-	
-	
-Focus = {
-
-    id = infra2
-	icon = GFX_goal_generic_production2
-
-    x = 29
-    y = 6
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus =  oil_processing_research_bonus }
-search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			industrial_complex_con
-			}
-		}	
-	
-	}	
-	
-	
-	
-	
-Focus = {
-
-    id = last_cons_bonus_focus
-	icon = GFX_goal_generic_production2
-
-    x = 24
+    id = union_with_ros
+    x = 0
     y = 7
-    cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = excav_res_bonus }
-	prerequisite = { focus = civ_factories2 }
-search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			industrial_complex_con
-			}
-		}	
-	}
-		
-	
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = bring_back_the_true_leader}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
 
-	
-Focus = {
-
-    id = last_fuel_gain_bonus
-	icon = GFX_goal_generic_production2
-
-    x = 24
+    id = form_the_kgb
+    x = 0
     y = 8
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = union_with_ros}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = interfere_with_ukraine
+    x = -1
+    y = 9
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = form_the_kgb}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = interfere_with_belarus
+    x = 1
+    y = 9
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = form_the_kgb}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = influence_the_baltics
+    x = 0
+    y = 10
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = interfere_with_belarus}
+	prerequisite = {focus = interfere_with_ukraine}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = take_back_the_caucasus
+    x = -2
+    y = 10
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = interfere_with_belarus}
+	prerequisite = {focus = interfere_with_ukraine}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = take_back_finnish_territory
+    x = 2
+    y = 10
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = interfere_with_belarus}
+	prerequisite = {focus = interfere_with_ukraine}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = reintegrate_northern_lands
+    x = -1
+    y = 11
+    cost = 4
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = influence_the_baltics}
+	prerequisite = {focus = take_back_finnish_territory}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = reintegrate_caucasus
+    x = 1
+    y = 11
+    cost = 4
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = take_back_the_caucasus}
+	prerequisite = {focus = influence_the_baltics}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = prepare_for_the_east
+    x = 0
+    y = 12
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = reintegrate_caucasus}
+	prerequisite = {focus = reintegrate_northern_lands}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = strike_the_east
+    x = 0
+    y = 13
     cost = 10
-	 ai_will_do = { factor = 33 }
-	prerequisite = { focus = excav_res_bonus }
-	prerequisite = { focus = civ_factories2 }
-search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			industrial_complex_con
-			}
-		}	
-	}	
-	
-	
-	
-	
-	
-	
-	
-	
-	}
-	
-	
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-				
-				
-				
-				
-				
-	
-	
-				
-				
-				
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = prepare_for_the_east}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = comintern
+    x = -1
+    y = 14
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = strike_the_east}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = invest_in_tanks
+    x = 1
+    y = 14
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = strike_the_east}
+    required = {}
+    completion_reward = { 
+        }
+    }
+}
