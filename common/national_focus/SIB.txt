@@ -1527,3 +1527,73 @@ focus_tree = {
 			}
 		}
 	}
+	Focus = {
+	
+	id = SIB_rising_economy
+	
+	
+	x = 0
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_educate_the_people }
+	completion_reward = { 
+    swap_ideas = {
+	    add_idea = rising_economy
+	    remove_idea = new_economy
+        }
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_excavate_oil
+	
+	
+	x = -2
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_experiment_with_synthetics }
+	completion_reward = {
+	}
+	
+	}
+    Focus = {
+	
+	id = SIB_
+	
+	
+	x = -1
+	y = 5
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_excavate_oil }
+	prerequisite = { focus = SIB_rising_economy }
+	completion_reward = {
+	}
+	
+	}
+    Focus = {
+	
+	id = SIB_finish_the_industrialisation_of_wastelandv
+	
+	
+	x = 1
+	y = 5
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_continue_industrialisation_of_wasteland }
+	prerequisite = { focus = SIB_rising_economy }
+	completion_reward = {
+	}
+	
+	}
