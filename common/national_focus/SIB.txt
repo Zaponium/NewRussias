@@ -198,7 +198,7 @@ focus_tree = {
 	x = 28
 	y = 4
 	
-	cost = 1
+	cost = 5
 	mutually_exclusive = {}
 	prerequisite = { focus = SIB_restore_the_monarchy }
 	completion_reward = { 
@@ -237,6 +237,42 @@ focus_tree = {
 	cost = 5
 	mutually_exclusive = { focus = SIB_north_sakhalin_for_alliance}
 	prerequisite = { focus = SIB_new_world_order }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+						Focus = {
+	
+	id = SIB_Nikolai_Kulikovsky
+	
+	
+	x = 28
+	y = 6
+	
+	cost = 1
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_visit_to_denmark }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+						Focus = {
+	
+	id = SIB_empower_the_throne
+	
+	
+	x = 28
+	y = 8
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_Nikolai_Kulikovsky }
 	completion_reward = { 
 	add_political_power = 50
 	
