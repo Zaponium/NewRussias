@@ -12,7 +12,7 @@ ideas = {
 	
 	Soviet_remnants = {
 	removal_cost = -1
-	picture = x
+	picture = generic_communism_drift_bonus
 	Modifier = {
 	
 	}
@@ -21,7 +21,15 @@ ideas = {
 	
 	Treaty_of_Lwow = {
 	removal_cost = -1
-	picture = x
+	picture = generic_deal_with_the_devil
+	Modifier = {
+	
+	}
+	
+	}
+	treaty_of_lwow_ii = {
+	removal_cost = -1
+	picture = generic_deal_with_the_devil2
 	Modifier = {
 	
 	}
@@ -31,7 +39,7 @@ ideas = {
 	##Military##
 	Revolutionary_military = {
 	removal_cost = -1
-	picture = x
+	picture = mex_politicised_army_2
 	Modifier = {
 	
 	}

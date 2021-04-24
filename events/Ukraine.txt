@@ -1,0 +1,103 @@
+
+add_namespace = UKR
+
+##Polish Demil##
+country_event = {
+     id = UKR.1
+	 title = UKR.1.t
+	 desc = UKR.1.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.1.a
+		 UKR = {
+		  93 = { set_demilitarized_zone = no }
+		  91 = { set_demilitarized_zone = no }
+		  89 = { set_demilitarized_zone = no }
+		 }
+	 }
+	 option = {
+	     name = UKR.1.b
+		 UKR = {
+		  country_event = { id = UKR.2 }
+		 }
+	 }
+}
+country_event = {
+     id = UKR.2
+	 title = UKR.2.t
+	 desc = UKR.2.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.2.a
+		 UKR = {
+		 add_political_power = -200
+		 POL = { country_event = { id = UKR.3 } } 
+		 }
+	 }
+	 option = {
+	     name = UKR.2.b
+	 }
+}
+country_event = {
+     id = UKR.3
+	 title = UKR.3.t
+	 desc = UKR.3.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.3.a
+		 UKR = {
+		  93 = { set_demilitarized_zone = no }
+		  91 = { set_demilitarized_zone = no }
+		  89 = { set_demilitarized_zone = no }
+		 }
+	 }
+	 option = {
+	     name = UKR.3.b
+		 UKR = {
+		  93 = { set_demilitarized_zone = no }
+		  91 = { set_demilitarized_zone = no }
+		  89 = { set_demilitarized_zone = no }
+		  country_event = { id = UKR.4 }
+		 }
+	 }
+}
+country_event = {
+     id = UKR.4
+	 title = UKR.4.t
+	 desc = UKR.4.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.4.a
+		 UKR = {
+		 swap_ideas = { add_idea = treaty_of_lwow_ii remove_idea = Treaty_of_Lwow }
+		 }
+	 }
+}
+
+
+
+
+
+
+
+
+
+
+##ROMANIAN DEMIL##
+country_event = {
+     id = UKR.5
+	 title = UKR.5.t
+	 desc = UKR.5.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.5.a
+		 UKR = {
+		  766 = { set_demilitarized_zone = no }
+		 }
+	 }
+}
