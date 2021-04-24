@@ -31,12 +31,16 @@ bookmarks = {
 			}	
 		}
 		"UKR"={
-			history = "SOV_GATHERING_STORM_DESC"
+			history = "UKR_OUR_NAME_DESC"
 			ideology = democratic
 			ideas = {
 			UKR_Corruption
+	        Treaty_of_Lwow
+	        Revolutionary_military
 			}
 			focuses = {
+			UKR_Alleviate_DMZs
+			UKR_elect_pavloskoropadskyi
 
 			}	
 		}

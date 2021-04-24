@@ -82,26 +82,7 @@ focus_tree = {
 	
 	
 	}
-	}
-	
-	Focus = {
-	
-	id = reform_the_government
-	GFX = x
-	
-	x = 25
-	Y = 4
-	
-	cost = 5
-	mutually_exclusive = {}
-	prerequisite = { focus = Alleviate_DMZs }
-	completion_reward = {
-	
-	
-	
-	}
-	}
-	
+	}	
 	Focus = {
 	
 	id = begin_reform_government
@@ -150,6 +131,111 @@ focus_tree = {
 	cost = 5
 	mutually_exclusive = {}
 	prerequisite = { focus = rewrite_constitution }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = the_remnants
+	GFX = x
+	
+	x = 29
+	Y = 9
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = rid_the_corruption }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = challenge_remnants
+	GFX = x
+	
+	x = 32
+	Y = 10
+	
+	cost = 5
+	mutually_exclusive = { focus = decriminalize_remnants focus = absorb_remnants }
+	available = { OR = { has_completed_focus = stay_the_course has_completed_focus = elect_pavloskoropadskyi } }
+	prerequisite = { focus = the_remnants }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = absorb_remnants
+	GFX = x
+	
+	x = 30
+	Y = 10
+	
+	cost = 5
+	mutually_exclusive = { focus = decriminalize_remnants focus = challenge_remnants }
+	available = { has_completed_focus = the_people_pov }
+	prerequisite = { focus = the_remnants }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = decriminalize_remnants
+	GFX = x
+	
+	x = 28
+	Y = 10
+	
+	cost = 5
+	mutually_exclusive = { focus = absorb_remnants focus = challenge_remnants }
+	available = { has_completed_focus = UKR_polishconnection }
+	prerequisite = { focus = the_remnants }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = the_treaty
+	GFX = x
+	
+	x = 25
+	Y = 9
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = rid_the_corruption }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = the_army_problem
+	GFX = x
+	
+	x = 21
+	Y = 9
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = rid_the_corruption }
 	completion_reward = {
 	
 	
@@ -317,13 +403,65 @@ focus_tree = {
 	
 	}
 	}
+	Focus = {
+	
+	id = nationalist_coup
+	GFX = x
+	
+	x = 40
+	Y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = educate_the_young }
+	prerequisite = { focus = books_for_people }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = stay_the_course
+	GFX = x
+	
+	x = 45
+	Y = 5
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = nationalist_coup }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = the_people_pov
+	GFX = x
+	
+	x = 35
+	Y = 5
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = nationalist_coup }
+	completion_reward = {
+	
+	
+	
+	}
+	}
 	
 	Focus = {
 	
 	id = elect_pavloskoropadskyi
 	GFX = x
 	
-	x = 35
+	x = 50
 	Y = 4
 	
 	cost = 5
@@ -342,11 +480,12 @@ focus_tree = {
 	id = ressurect_rus
 	GFX = x
 	
-	x = 35
-	Y = 5
+	x = 0
+	Y = 1
 	
 	cost = x
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = elect_pavloskoropadskyi }
 	completion_reward = {
 	
@@ -360,11 +499,12 @@ focus_tree = {
 	id = invite_belarus
 	GFX = x
 	
-	x = 32
-	Y = 6
+	x = -3
+	Y = 2
 	
 	cost = x
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = ressurect_rus }
 	completion_reward = {
 	
@@ -378,11 +518,12 @@ focus_tree = {
 	id = demand_wilno
 	GFX = x
 	
-	x = 32
-	Y = 8
+	x = -3
+	Y = 4
 	
 	cost = x
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = invite_belarus }
 	completion_reward = {
 	
@@ -396,11 +537,12 @@ focus_tree = {
 	id = vassalise_moldova
 	GFX = x
 	
-	x = 35
-	Y = 6
+	x = 0
+	Y = 2
 	
 	cost = x
 	mutually_exclusive = { focus = take_moldova }
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = ressurect_rus }
 	completion_reward = {
 	
@@ -414,11 +556,12 @@ focus_tree = {
 	id = ally_romania
 	GFX = x
 	
-	x = 35
-	Y = 8
+	x = 0
+	Y = 4
 	
 	cost = x
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = vassalise_moldova }
 	completion_reward = {
 	
@@ -432,11 +575,12 @@ focus_tree = {
 	id = take_moldova
 	GFX = x
 	
-	x = 38
-	Y = 6
+	x = 3
+	Y = 2
 	
 	cost = x
 	mutually_exclusive = { focus = vassalise_moldova }
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = ressurect_rus }
 	completion_reward = {
 	
@@ -450,11 +594,12 @@ focus_tree = {
 	id = seek_new_allies
 	GFX = x
 	
-	x = 38
-	Y = 7
+	x = 3
+	Y = 3
 	
 	cost = x
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = take_moldova }
 	completion_reward = {
 	
@@ -468,11 +613,12 @@ focus_tree = {
 	id = divide_romania
 	GFX = x
 	
-	x = 38
-	Y = 8
+	x = 3
+	Y = 4
 	
 	cost = x
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = seek_new_allies }
 	completion_reward = {
 	
@@ -486,11 +632,12 @@ focus_tree = {
 	id = tackle_the_bear
 	GFX = x
 	
-	x = 35
-	Y = 9
+	x = 0
+	Y = 5	
 	
-	cost = 
+	cost = 1
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = divide_romania focus = ally_romania }
 	prerequisite = { focus = demand_wilno }
 	completion_reward = {
@@ -517,11 +664,12 @@ focus_tree = {
 	id = the_lands_of_old
 	GFX = x
 	
-	x = 35
-	Y = 10
+	x = 0
+	Y = 6
 	
-	cost = 
+	cost = 1
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	available = { SOV = { exists = no is_in_faction_with = ROOT is_subject_of = ROOT } }
 	prerequisite = { focus = tackle_the_bear }
 	completion_reward = {
@@ -530,35 +678,17 @@ focus_tree = {
 	
 	}
 	}
-	
-	Focus = {
-	
-	id = protect_baltic_minors
-	GFX = x
-	
-	x = 32
-	Y = 11
-	
-	cost = 
-	mutually_exclusive = {}
-	prerequisite = { focus = the_lands_of_old }
-	completion_reward = {
-	
-	
-	
-	}
-	}
-	
 	Focus = {
 	
 	id = protect_the_slavs
 	GFX = x
 	
-	x = 35
-	Y = 11
+	x = 0
+	Y = 7
 	
-	cost = 
-	mutually_exclusive = {}
+	cost = 1
+	mutually_exclusive = {focus = one_slavic_empire }
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = the_lands_of_old }
 	completion_reward = {
 	
@@ -572,11 +702,12 @@ focus_tree = {
 	id = international_slavic_alliance
 	GFX = x
 	
-	x = 35
-	Y = 12
+	x = 0
+	Y = 8
 	
-	cost = 
+	cost = 1
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = protect_the_slavs }
 	completion_reward = {
 	
@@ -587,14 +718,15 @@ focus_tree = {
 	
 	Focus = {
 	
-	id = yugoslavia_united
+	id = yugoslavia_invited
 	GFX = x
 	
-	x = 33
-	Y = 13
+	x = -2
+	Y = 9
 	
-	cost = 
+	cost = 1
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = international_slavic_alliance }
 	completion_reward = {
 	
@@ -608,11 +740,12 @@ focus_tree = {
 	id = bohemia_united
 	GFX = x
 	
-	x = 37
-	Y = 13
+	x = 0
+	Y = 9
 	
-	cost = 
+	cost = 1
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = international_slavic_alliance }
 	completion_reward = {
 	
@@ -623,32 +756,93 @@ focus_tree = {
 	
 	Focus = {
 	
-	id = reassure_the_poles
+	id = poles_awaited
 	GFX = x
 	
-	x = 35
-	Y = 13
+	x = 2
+	Y = 9
 	
-	cost = 
+	cost = 1
 	mutually_exclusive = {}
 	prerequisite = { focus = international_slavic_alliance }
+	relative_position_id = elect_pavloskoropadskyi 
 	completion_reward = {
 	
 	
 	
 	}
 	}
+	Focus = {
+	
+	id = balkan_solidarity
+	GFX = x
+	
+	x = 1
+	Y = 10
+	
+	cost = 1
+	mutually_exclusive = { focus = true_slavs }
+	prerequisite = { focus = poles_awaited }
+	prerequisite = { focus = bohemia_united }
+	prerequisite = { focus = yugoslavia_invited }
+	relative_position_id = elect_pavloskoropadskyi 
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = true_slavs
+	GFX = x
+	
+	x = -1
+	Y = 10
+	
+	cost = 1
+	mutually_exclusive = { focus = balkan_solidarity }
+	prerequisite = { focus = poles_awaited }
+	prerequisite = { focus = bohemia_united }
+	prerequisite = { focus = yugoslavia_invited }
+	relative_position_id = elect_pavloskoropadskyi 
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = bulgaria_ahead
+	GFX = x
+	
+	x = 0
+	Y = 11
+	
+	cost = 1
+	mutually_exclusive = {}
+	prerequisite = { focus = true_slavs focus = balkan_solidarity }
+	relative_position_id = elect_pavloskoropadskyi 
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	
 	
 	Focus = {
 	
 	id = one_slavic_empire
 	GFX = x
 	
-	x = 40
-	Y = 11
+	x = 6
+	Y = 7
 	
-	cost = 
-	mutually_exclusive = {}
+	cost = 1
+	mutually_exclusive = { focus = protect_the_slavs }
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = the_lands_of_old }
 	completion_reward = {
 	
@@ -662,12 +856,49 @@ focus_tree = {
 	id = strike_the_centre
 	GFX = x
 	
-	x = 39
-	Y = 12
+	x = 5
+	Y = 8
 	
-	cost = 
+	cost = 1
 	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = one_slavic_empire }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = polish_advance
+	GFX = x
+	
+	x = 6
+	Y = 9
+	
+	cost = 1
+	mutually_exclusive = { focus = german_conference }
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = strike_the_centre }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = german_conference
+	GFX = x
+	
+	x = 4
+	Y = 9
+	
+	cost = 1
+	mutually_exclusive = { focus = polish_advance }
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = strike_the_centre }
 	completion_reward = {
 	
 	
@@ -680,12 +911,123 @@ focus_tree = {
 	id = strike_the_balkans
 	GFX = x
 	
-	x = 41
+	x = 10
+	Y = 8
+	
+	cost = 1
+	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = one_slavic_empire }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = look_at_danzig
+	GFX = x
+	
+	x = 8
+	Y = 9
+	
+	cost = 1
+	mutually_exclusive = { focus = acceptable_corridor }
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = strike_the_balkans }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+    Focus = {
+	
+	id = acceptable_corridor
+	GFX = x
+	
+	x = 12
+	Y = 9
+	
+	cost = 1
+	mutually_exclusive = { focus = look_at_danzig }
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = strike_the_balkans }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+    Focus = {
+	
+	id = ultimatum_bulgaria
+	GFX = x
+	
+	x = 9
+	Y = 10
+	
+	cost = 1
+	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = acceptable_corridor focus = look_at_danzig }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = ultimatum_yugoslavia
+	GFX = x
+	
+	x = 11
+	Y = 10
+	
+	cost = 1
+	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = acceptable_corridor focus = look_at_danzig }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = slavs_united_at_last
+	GFX = x
+	
+	x = 7
+	Y = 11
+	
+	cost = 1
+	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = ultimatum_yugoslavia }
+	prerequisite = { focus = ultimatum_bulgaria }
+	prerequisite = { focus = polish_advance focus = german_conference }
+	completion_reward = {
+	
+	
+	
+	}
+	}
+	Focus = {
+	
+	id = slavic_will
+	GFX = x
+	
+	x = 3
 	Y = 12
 	
-	cost = 
+	cost = 1
 	mutually_exclusive = {}
-	prerequisite = { focus = one_slavic_empire }
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = slavs_united_at_last focus = bulgaria_ahead }
 	completion_reward = {
 	
 	
@@ -694,3 +1036,4 @@ focus_tree = {
 	}
 	
 	
+}

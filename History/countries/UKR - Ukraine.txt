@@ -15,6 +15,9 @@ set_popularities = {
 
 add_ideas = {
     UKR_Corruption
+	Soviet_remnants
+	Treaty_of_Lwow
+	Revolutionary_military
 }
 
 # Starting tech
