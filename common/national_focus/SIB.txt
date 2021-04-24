@@ -1175,18 +1175,37 @@ focus_tree = {
 	}
 	Focus = {
 	
-	id = SIB_prepare_for_theinevitable
+	id = SIB_proclaim_greater_russia
 	
 	
 	x = -2
 	y = 18
 	
-	cost = 5
+	cost = 10
 	mutually_exclusive = {}
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_split_poland }
 	prerequisite = { focus = SIB_secure_the_black_sea_strait }
 	prerequisite = { focus = SIB_russian_defense_scheme }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_final_conquest
+	
+	
+	x = -2
+	y = 19
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_restore_the_monarchy
+	prerequisite = { focus = SIB_proclaim_greater_russia }
 	completion_reward = { 
 	add_political_power = 50
 	
