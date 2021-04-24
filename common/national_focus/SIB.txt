@@ -142,7 +142,7 @@ focus_tree = {
 	
 	
 	x = 16
-	y = 3
+	y = 0
 	
 	cost = 5
 	mutually_exclusive = {}
@@ -375,9 +375,11 @@ focus_tree = {
 	mutually_exclusive = {}
 	prerequisite = {}
 	completion_reward = { 
-	add_political_power = 50
-	
-	
+	    add_tech_bonus = {
+		    bonus = 1.0
+			uses = 2
+			category = industry
+			}
 	}
 	
 	}
@@ -1209,6 +1211,260 @@ focus_tree = {
 	completion_reward = { 
 	add_political_power = 50
 	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_establish_munitions_factories
+	
+	
+	x = -1
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_industrial_buildup }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 403 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	
+	}
+	Focus = {
+	
+	id = SIB_establish_civilian_factories
+	
+	
+	x = 1
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_industrial_buildup }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 408 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 403 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 563 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	
+	}
+	Focus = {
+	
+	id = SIB_found_university_of_vladivostok
+	
+	
+	x = 0
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_establish_civilian_factories }
+	prerequisite = { focus = SIB_establish_munitions_factories }
+	completion_reward = { 
+	add_research_slot = 1
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_mining_program
+	
+	
+	x = -2
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_establish_civilian_factories }
+	prerequisite = { focus = SIB_establish_munitions_factories }
+	completion_reward = { 
+	        add_ideas = mining_program
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_industrialise_the_wasteland
+	
+	
+	x = 2
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_establish_civilian_factories }
+	prerequisite = { focus = SIB_establish_munitions_factories } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 579 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 516 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 644 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	Focus = {
+	
+	id = SIB_upgrading_siberian_railroads
+	
+	
+	x = 2
+	y = 3
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_industrialise_the_wasteland }
+	completion_reward = {
+				random_owned_controlled_state = {
+				prioritize = { 644 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+			    add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = infrastructure	
+					level = 2
+				}
+			}
+							random_owned_controlled_state = {
+				prioritize = { 516 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = infrastructure	
+					level = 2
+				}
+			}
+							random_owned_controlled_state = {
+				prioritize = { 579 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				    type = infrastructure	
+					level = 2
+				}
+			}
+	    }
+	}
+	Focus = {
+	
+	id = SIB_educate_the_people
+	
+	
+	x = 0
+	y = 3
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_found_university_of_vladivostok }
+	completion_reward = { 
+	add_ideas = educated_builders
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_experiment_with_synthetics
+	
+	
+	x = -2
+	y = 3
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_mining_program }
+	completion_reward = {
+				random_owned_controlled_state = {
+				prioritize = { 563 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = synthetic_refinery
+					level = 1
+				}
+			}
 	
 	}
 	

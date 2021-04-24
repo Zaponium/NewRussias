@@ -11,8 +11,6 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 	support = {
 		#recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
@@ -20,49 +18,6 @@ division_template = {
 		artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 	}
 }
-
-division_template = {
-	name = "Gornostrelkovaya Diviziya"		# Mountain Division
-	division_names_group = SOV_MNT_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }	
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }	
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }	
-		mountaineers = { x = 2 y = 1 }	
-		mountaineers = { x = 2 y = 2 }	
-		mountaineers = { x = 3 y = 0 }	
-		mountaineers = { x = 3 y = 1 }	
-		mountaineers = { x = 3 y = 2 }	
-	}
-	support = {
-		engineer = { x = 0 y = 0 } 		# Engineer bn
-		artillery = { x = 0 y = 1 } 	# Heavy Arty Regiment had 2x 122mm bn
-	}
-}
-
-division_template = {
-	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
-	division_names_group = SOV_MOT_01
-											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns) 
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-	}
-	support = {
-		#recon = { x = 0 y = 0 } 		# Recon bn had 16x L tanks, 45 ACs #Eng and recon removed and they seem rather OP. Could revisit if balance changes 
-		#engineer = { x = 0 y = 1 } 	# (mot) Engineer bn
-	}
-}
-
 division_template = {
 	name = "Kavaleriyskaya Diviziya" 	# Cavalry Division
 	division_names_group = SOV_CAV_01
@@ -72,50 +27,6 @@ division_template = {
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-	}
-}
-
-division_template = {
-	name = "NKVD Pogranichnaya Diviziya"			# NKVD Border Guard Division - Garrison units (older experience, older equipment)
-	division_names_group = SOV_GAR_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }	
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-	support = 	{
-		military_police = { x = 0 y = 0 }
-	}
-	priority = 0
-}
-division_template = {
-	name = "Mekhanizirovaniy Korpus" 				# Represents regular mechanized corps (4 existed in 1935-38); 
-	division_names_group = SOV_MEC_01
-												# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
-													# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 1 y = 0 }		
-		light_armor = { x = 1 y = 1 }		
-		light_armor = { x = 1 y = 2 }		
-		motorized = { x = 2 y = 0 }		
-		motorized = { x = 2 y = 1 }	
-		motorized = { x = 2 y = 2 }		
-		motorized = { x = 2 y = 3 }		
-	}
-}
-division_template = {
-	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
-	division_names_group = SOV_PAR_01
-
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
 	}
 }
 
@@ -201,69 +112,6 @@ units = {
 		start_equipment_factor = 0.85
 
 	}			
-	division= {	# "72ya 'Turkestan.' Gornostrelk. Div."		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 72
-		}
-		location = 7624
-		division_template = "Gornostrelkovaya Diviziya"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
-
-	}
-	division= {			
-		name = "LVO Mekhanizirovanaya Gruppa"		
-		location = 1450
-		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
-
-	}
-
-	### Leningraskaya Gruppa Armiya (Leningrad Army Group) -- Leningrad ###
-	#  NKVD Leningradksii Korpus -- NKVD Border Guard and RR units	
-	division= {	# "1ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 3711
-		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}			
-	division= {	# "4ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location = 7554
-		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}			
-	division= {			
-		name = "7ya Mekhanizirovaniy Korpus"		
-		location = 1455
-		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
-		start_experience_factor = 0.3
-	}
-	# Subordinate to AG
-	division= {			
-		name = "11ya Mekhanizirovaniy Korpus"		
-		location = 9632
-		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge
-		start_experience_factor = 0.3
-	}
-	
-		
-	#### Belorusskii Voennyii Okrug (Belorussian Military District) -- Velikie Luki, Minsk ####			
-	# 4ya Strelkoviy Korpus
 	division= {	# "27ya 'Omskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
@@ -297,15 +145,6 @@ units = {
 		start_equipment_factor = 0.85
 
 	}			
-	division= {			
-		name = "1ya BVO Mekhanizirovanaya Gruppa"		
-		location = 11664
-		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
-
-	}
-
 	# 5ya Strelkoviy Korpus
 	division= {	# "5ya 'Vitebskaya' Strelk. Div."		
 		division_name = {
@@ -340,15 +179,6 @@ units = {
 		start_equipment_factor = 0.85
 
 	}			
-	division= {			
-		name = "2ya BVO Mekhanizirovanaya Gruppa"		
-		location = 3529
-		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
-
-	}
-
 	# 6ya Kavaleriyskiy Korpus
 	division= {	# "6ya 'Chongarskaya' Kav. Div."		
 		division_name = {
@@ -430,57 +260,6 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 
-	}
-
-	# NKVD Belorusskiy Korpus -- NKVD Border Guard and RR units	
-	division= {	# "2ya NKVD Pogranichnaya Diviziya"		
-			division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-	location = 6197
-		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}			
-	division= {	# "3ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 11032
-		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}			
-	division= {	# "8ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 11080
-		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}			
-
-
-	#### Moskva Voennyii Okrug (Moscow Military District) -- Moscow ####
-	# 2ya Strelkoviy Korpus		
-	division= {		# "Moskva Proletarskaya Motostrelk. Div."		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 9097
-		division_template = "Motostrelkovaya Diviziya"
-		start_experience_factor = 0.3
 	}			
 	division= {	# "6ya 'Orlovskaya' Strelk. Div."		
 		division_name = {
@@ -503,17 +282,7 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 
-	}			
-	division= {			
-		name = "MVO Mekhanizirovanaya Gruppa"		
-		location = 9120
-		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.85
-
-	}
-
-	# 3ya Strelkoviy Korpus		
+	}					
 	division= {	# "17ya 'Gor'kovskaya' Strelk. Div."		
 		division_name = {
 			is_name_ordered = yes
@@ -546,44 +315,7 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 
-	}			
-
-
-	### Moskva Gruppa Armiya (Moscow Army Group) -- Moscow ###		
-	# NKVD Moskva Gruppa -- NKVD Border Guard and RR units	
-	division= {	# "14ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 14
-		}
-		location = 11259
-		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}			
-	division= {	# "17ya NKVD Pogranichnaya Diviziya"		
-		division_name = {
-			is_name_ordered = yes
-			name_order = 17
-		}
-		location = 9430
-		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
-		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}			
-	# Subordinate to AG
-	division= {			
-		name = "5ya Mekhanizirovaniy Korpus"		
-		location = 11434
-		division_template = "Mekhanizirovaniy Korpus"		# 2x Mekh Bge, 1x Mot Bge
-		start_experience_factor = 0.3
-	}
-
-
+	}									
 	#### Ural'skii Voennyii Okrug (Urals Military District) -- Smolensk ####
 	# 10ya Strelkoviy Korpus		
 	division= {	# "14ya 'Krivorozhskaya' Strelk. Div."		
@@ -717,101 +449,6 @@ units = {
 
 ### Air Wings
 air_wings = {
-	# LVO Aviatsya Komandovaniya -- Leningrad
-	195 = { 
-		# 15ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 94
-		}
-		# 18ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
-			owner = "SOV" 
-			amount = 60
-		}
-	}
-
-	# MVO Aviatsya Komandovaniya
-	219 = {
-		# 2ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 94
-		}
-		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
-		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
-			owner = "SOV" 
-			amount = 48
-		}
-		# TODO -- 46ya Transporta Aviabrigada -- transport planes
-	}
-
-	# BOVO Aviatsya Komandovaniya -- Minsk
-	206 = {
-		# 8ya Istrebitel'nye Aviabrigada
-		fighter_equipment_1 = {
-			owner = "SOV" 
-			amount = 94
-		}
-		# 14ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 94
-		}
-		# 16ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
-			owner = "SOV" 
-			amount = 60
-		}
-	}
-
-	# KOVO Aviatsya Komandovaniya -- Kiev
-	202 = {
-		# 17ya Istrebitel'nye Aviabrigada
-		fighter_equipment_1 = {
-			owner = "SOV" 
-			amount = 94
-		}
-		# 1ya Bombardirovochnye Aviabrigada
-		# 10ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
-			owner = "SOV" 
-			amount = 120
-		}
-	}
-
-	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock	
-	408 = {
-		# 12ya Istrebitel'nye Aviabrigada
-		# 20ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 188
-		}
-		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
-			owner = "SOV" 
-			amount = 24
-		}
-	}
-
-	# VVS - KBF Aviatsya Komandovaniya -- Leningrad
-	195 = {
-		# 8ya VMF Aviabrigada
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 54
-		}
-	}
-	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
-	137 = {
-		# 4ya VMF Aviabrigada
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 54
-		}
-	}
 }
 
 
@@ -849,46 +486,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = strat_bomber_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.2
 		efficiency = 50
 	}
 }
