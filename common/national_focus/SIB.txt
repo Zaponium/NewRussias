@@ -46,7 +46,7 @@ focus_tree = {
 	}
 	
 	}
-		Focus = {
+	Focus = {
 	
 	id = SIB_the_real_communist_way
 	
@@ -64,7 +64,7 @@ focus_tree = {
 	}
 	
 	}
-		Focus = {
+	Focus = {
 	
 	id = SIB_new_world_order
 	
@@ -82,7 +82,7 @@ focus_tree = {
 	}
 	
 	}
-		Focus = {
+	Focus = {
 	
 	id = SIB_restore_the_monarchy
 	
@@ -100,7 +100,7 @@ focus_tree = {
 	}
 	
 	}
-		Focus = {
+	Focus = {
 	
 	id = SIB_our_democrat
 	
@@ -118,7 +118,7 @@ focus_tree = {
 	}
 	
 	}
-			Focus = {
+	Focus = {
 	
 	id = SIB_the_russian_exile
 	
@@ -136,7 +136,7 @@ focus_tree = {
 	}
 	
 	}
-			Focus = {
+	Focus = {
 	
 	id = SIB_mongolian_question
 	
@@ -154,7 +154,7 @@ focus_tree = {
 	}
 	
 	}
-				Focus = {
+	Focus = {
 	
 	id = SIB_empower_the_workers
 
@@ -172,7 +172,7 @@ focus_tree = {
 	}
 	
 	}
-				Focus = {
+	Focus = {
 	
 	id = SIB_north_sakhalin_for_alliance
 	
@@ -190,7 +190,7 @@ focus_tree = {
 	}
 	
 	}
-					Focus = {
+	Focus = {
 	
 	id = SIB_visit_to_denmark
 	
@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	
 	}
-					Focus = {
+	Focus = {
 	
 	id = SIB_establish_gulags
 
@@ -226,7 +226,7 @@ focus_tree = {
 	}
 	
 	}
-						Focus = {
+	Focus = {
 	
 	id = SIB_approach_himmler
 
@@ -244,7 +244,7 @@ focus_tree = {
 	}
 	
 	}
-						Focus = {
+	Focus = {
 	
 	id = SIB_Nikolai_Kulikovsky
 	
@@ -262,7 +262,7 @@ focus_tree = {
 	}
 	
 	}
-						Focus = {
+	Focus = {
 	
 	id = SIB_Return_of_the_tsar
 	
@@ -280,7 +280,7 @@ focus_tree = {
 	}
 	
 	}
-					    Focus = {
+	Focus = {
 	
 	id = SIB_new_royal_house
 	
@@ -291,6 +291,258 @@ focus_tree = {
 	cost = 5
 	mutually_exclusive = { focus = SIB_visit_to_denmark}
 	prerequisite = { focus = SIB_restore_the_monarchy }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_stop_payments
+	
+	
+	x = 26
+	y = 7
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_Return_of_the_tsar }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_secure_good_economy
+	
+	
+	x = 24
+	y = 7
+	
+	cost = 5
+	mutually_exclusive = {} 
+	prerequisite = { focus = SIB_Return_of_the_tsar }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_revive_the_white_army
+	
+	
+	x = 28
+	y = 7
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_Return_of_the_tsar }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_industrial_buildup
+	
+	
+	x = 50
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = {}
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_siberian_naval_act
+	
+	
+	x = 4
+	y = 0
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = {}
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_ironside
+	
+	
+	x = 1
+	y = 3
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_seawolf focus = SIB_air_controller_navy}
+	prerequisite = { focus = SIB_marine_project }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_seawolf
+	
+	
+	x = 4
+	y = 3
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_ironside focus = SIB_air_controller_navy}
+	prerequisite = { focus = SIB_marine_project }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_air_controller_navy
+	
+	
+	x = 7
+	y = 3
+	
+	cost = 5
+	mutually_exclusive = { focus = SIB_ironside focus = SIB_seawolf}
+	prerequisite = { focus = SIB_marine_project }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_naval_bombers
+	
+	
+	x = 3
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_siberian_naval_act }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_order_destoryers
+	
+	
+	x = 5
+	y = 1
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_siberian_naval_act }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_seek_american_models
+	
+	
+	x = 1
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_ironside }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	 Focus = {
+	
+	id = SIB_seek_japanese_models
+	
+	
+	x = 7
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_air_controller_navy }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_seek_german_models
+	
+	
+	x = 4
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_seawolf }
+	completion_reward = { 
+	add_political_power = 50
+	
+	
+	}
+	
+	}
+	Focus = {
+	
+	id = SIB_marine_project
+	
+	
+	x = 4
+	y = 2
+	
+	cost = 5
+	mutually_exclusive = {}
+	prerequisite = { focus = SIB_naval_bombers focus = SIB_order_destoryers }
 	completion_reward = { 
 	add_political_power = 50
 	
