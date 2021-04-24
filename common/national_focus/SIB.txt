@@ -366,6 +366,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_industrial_buildup
+	icon = GFX_goal_generic_construction
 	
 	
 	x = 50
@@ -1218,7 +1219,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_establish_munitions_factories
-	
+	icon = GFX_goal_generic_construct_mil_factory
 	
 	x = -1
 	y = 1
@@ -1246,6 +1247,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_establish_civilian_factories
+	icon = GFX_goal_generic_construct_civ_factory
 	
 	
 	x = 1
@@ -1300,7 +1302,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_found_university_of_vladivostok
-	
+	icon = GFX_focus_research
 	
 	x = 0
 	y = 2
@@ -1320,6 +1322,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_mining_program
+	icon = GFX_goal_generic_construction2
 	
 	
 	x = -2
@@ -1338,6 +1341,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_industrialise_the_wasteland
+	icon = GFX_goal_generic_construct_civilian
 	
 	
 	x = 2
@@ -1377,6 +1381,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_upgrading_siberian_railroads
+	icon = GFX_goal_generic_construct_infrastructure
 	
 	
 	x = 2
@@ -1425,6 +1430,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_educate_the_people
+	icon = GFX_goal_generic_scientific_exchange
 	
 	
 	x = 0
@@ -1444,6 +1450,7 @@ focus_tree = {
 	Focus = {
 	
 	id = SIB_experiment_with_synthetics
+	icon = GFX_goal_generic_oil_refinery
 	
 	
 	x = -2
