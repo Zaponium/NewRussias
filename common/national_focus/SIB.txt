@@ -1472,7 +1472,58 @@ focus_tree = {
 					level = 1
 				}
 			}
-	
+			add_tech_bonus = {
+			name = synthetic_refinery
+			bonus = 1.0
+			uses = 1
+			category = construction
+		}
 	}
 	
+	}
+	Focus = {
+	
+	id = SIB_continue_industrialisation_of_wasteland
+	icon = GFX_goal_generic_construct_civilian
+	
+	
+	x = 2
+	y = 4
+	
+	cost = 5
+	mutually_exclusive = {}
+	relative_position_id = SIB_industrial_buildup
+	prerequisite = { focus = SIB_upgrading_siberian_railroads }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 580 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 577 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+
+			random_owned_controlled_state = {
+				prioritize = { 576 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				prioritize = { 575 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
 	}
