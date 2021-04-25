@@ -2,13 +2,17 @@
 
      ###Ukraine######
 	
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_romania_deal"
 		texturefile = "gfx/interface/goals/mod/romania_deal.dds"
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_poland_deal"
 		texturefile = "gfx/interface/goals/Mod/poland_deal.dds"
+	}
+	SpriteType = {
+		name = "GFX_army_problem"
+		texturefile = "gfx/interface/goals/Mod/army_problem.dds"
 	}
 	
 	

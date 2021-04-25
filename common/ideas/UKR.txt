@@ -1,49 +1,144 @@
 ideas = {
     country = { 
-	
-	UKR_Corruption = {
-	removal_cost = -1
+	##ISSUE##
+	three_issues = {
 	picture = x
 	Modifier = {
-	
+	}
+	}
+	three_issues1 = {
+	picture = x
+	Modifier = {
+	war_support_weekly = 0.005
+	political_power_gain = 0.3
+	stability_weekly_factor = 0.005
+	}
+	}
+	three_issues2 = {
+	picture = x
+	Modifier = {
+	war_support_weekly = 0.005
+	}
+	}
+	three_issues3 = {
+	picture = x
+	Modifier = {
+	political_power_gain = 0.3
+	}
+	}
+	three_issues4 = {
+	picture = x
+	Modifier = {
+	stability_weekly_factor = 0.005
+	}
 	}
 	
+	
+	
+	three_issues5 = {
+	picture = x
+	Modifier = {
+	war_support_weekly = 0.005
+	political_power_gain = 0.3
+	}
+	}
+	three_issues6 = {
+	picture = x
+	Modifier = {
+	stability_weekly_factor = 0.005
+	political_power_gain = 0.3
+	}
+	}
+	three_issues7 = {
+	picture = x
+	Modifier = {
+	war_support_weekly = 0.005
+	stability_weekly_factor = 0.005
+	}
+	}
+	
+
+	
+	
+	
+	
+	
+	##Corruption##
+	UKR_Corruption = {
+	picture = chi_war_of_resistance3
+	Modifier = {
+	drift_defence_factor = -0.5
+	war_support_factor = -0.15
+	surrender_limit = -0.6
+	consumer_goods_factor = 0.15
+	}
+	}
+	UKR_Corruption_2 = {
+	picture = chi_war_of_resistance2
+	Modifier = {
+	drift_defence_factor = -0.3
+	war_support_factor = -0.10
+	surrender_limit = -0.4
+	consumer_goods_factor = 0.10
+	}
+	}
+	UKR_Corruption_3 = {
+	picture = chi_war_of_resistance
+	Modifier = {
+	drift_defence_factor = -0.1
+	war_support_factor = -0.05
+	surrender_limit = -0.2
+	consumer_goods_factor = 0.05
+	}
 	}
 	
 	Soviet_remnants = {
-	removal_cost = -1
 	picture = generic_communism_drift_bonus
 	Modifier = {
-	
-	}
-	
+	political_advisor_cost_factor = 0.25
+	political_power_cost = 0.1
+	stability_factor = -0.2
+	communism_drift = 0.05
+	}	
 	}
 	
 	Treaty_of_Lwow = {
-	removal_cost = -1
 	picture = generic_deal_with_the_devil
 	Modifier = {
-	
+	recruitable_population_factor  = -0.01
+	research_speed_factor = -0.1
+	}	
+	rule = { can_join_factions = no }
+	rule = { can_send_volunteers = no }
 	}
 	
-	}
-	treaty_of_lwow_ii = {
-	removal_cost = -1
+	treaty_of_lwow_2 = {
 	picture = generic_deal_with_the_devil2
 	Modifier = {
-	
+	recruitable_population_factor  = -0.015
+	research_speed_factor = -0.1
+	production_factory_max_efficiency_factor = -0.1
+	production_speed_arms_factory_factor = -0.6
+	production_speed_dockyard_factor = -0.5
+	production_speed_industrial_complex_factor = -0.3
 	}
-	
+    rule = { can_join_factions = no }
+	rule = { can_send_volunteers = no }	
 	}
 	
 	##Military##
 	Revolutionary_military = {
-	removal_cost = -1
-	picture = mex_politicised_army_2
+	picture = MEX_revolutionary_army
 	Modifier = {
-	
-	}
-	
+	command_power_gain = -0.75
+	max_command_power = -40 
+	army_leader_cost_factor = 1
+	offence = -0.6
+	defence = -0.4
+	army_org_factor = -0.5
+	army_org_regain = -0.6
+	dig_in_speed_factor = 0.5
+	}	
 	}
 	
   }

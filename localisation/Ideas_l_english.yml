@@ -1,4 +1,32 @@
 ﻿l_english:
 
+##People##
 Ihor_Kistiakovsky:0 "Ihor Kistiakovsky"
 Igor_Kerensky:0 "Igor Kerensky"
+
+##Ukraine##
+
+#SOVIET#
+Soviet_remnants:0 "Soviet escapees"
+
+#MILITARY#
+Revolutionary_military:0 "Revolutionary Military"
+
+#TREATY#
+Treaty_of_Lwow:0 "The Treaty of Lwow" 
+treaty_of_lwow_2:0 ""The Second Treaty of Lwow"
+
+#CORRUPTION#
+UKR_Corruption:0 "Rampant Corruption"
+UKR_Corruption_2:0 "Medium Corruption"
+UKR_Corruption_3:0 "Low Corruption"
+
+#ISSUES#
+three_issues:0 "The Three Problems"
+three_issues1:0 "The Three Solutions"
+three_issues2:0 "The Three Problems"
+three_issues3:0 "The Three Problems"
+three_issues4:0 "The Three Problems" 
+three_issues5:0 "The Three Problems" 
+three_issues6:0 "The Three Problems"
+three_issues7:0 "The Three Problems"

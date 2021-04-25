@@ -10,26 +10,6 @@ focus_tree = {
         }
     }
 	
-	
-	Focus = {
-	
-	id = x
-	GFX = x
-	
-	x = x
-	Y = x
-	
-	cost = x
-	mutually_exclusive = {}
-	prerequisite = {}
-	completion_reward = {
-	
-	
-	
-	}
-	}
-	
-	
 	Focus = {
 	
 	id = alleviate_dmzs
@@ -38,7 +18,7 @@ focus_tree = {
 	x = 25
 	Y = 2
 	
-	cost = 2
+	cost = 5
 	mutually_exclusive = {}
 	prerequisite = { focus = UKR_ownpath focus = UKR_polishconnection}
 	completion_reward = {
@@ -59,7 +39,7 @@ focus_tree = {
 	x = 27
 	Y = 3
 	
-	cost = x
+	cost = 3
 	mutually_exclusive = {}
 	prerequisite = { focus = alleviate_dmzs }
 	completion_reward = {
@@ -75,7 +55,7 @@ focus_tree = {
 	x = 23
 	Y = 3
 	
-	cost = x
+	cost = 3
 	mutually_exclusive = {}
 	prerequisite = { focus = alleviate_dmzs }
 	completion_reward = {
@@ -85,7 +65,7 @@ focus_tree = {
 	Focus = {
 	
 	id = begin_reform_government
-	icon = x
+	icon = GFX_focus_hol_the_foundations_of_defense
 	
 	x = 25
 	Y = 4
@@ -94,16 +74,14 @@ focus_tree = {
 	mutually_exclusive = {}
 	prerequisite = { focus = alleviate_dmzs }
 	completion_reward = {
-	
-	
-	
+	swap_ideas = { add_idea = UKR_Corruption_2 remove_idea = UKR_Corruption }
 	}
 	}
 	
 		Focus = {
 	
 	id = rewrite_constitution
-	icon = x
+	icon = GFX_goal_generic_forceful_treaty
 	
 	x = 25
 	Y = 7
@@ -111,18 +89,16 @@ focus_tree = {
 	cost = 5
 	mutually_exclusive = {}
 	prerequisite = { focus = begin_reform_government }
-	prerequisite = { focus = pavloskoropadskyi_government focus = fascist_ministers }
+	prerequisite = { focus = pavloskoropadskyi_government focus = fascist_ministers focus = social_democrats focus = keep_levytsky }
 	completion_reward = {
-	
-	
-	
+	swap_ideas = { add_idea = UKR_Corruption_3 remove_idea§ = UKR_Corruption_2 }
 	}
 	}
 	
 			Focus = {
 	
 	id = rid_the_corruption
-	icon = x
+	icon = GFX_goal_tripartite_pact
 	
 	x = 25
 	Y = 8
@@ -131,26 +107,31 @@ focus_tree = {
 	mutually_exclusive = {}
 	prerequisite = { focus = rewrite_constitution }
 	completion_reward = {
-	
-	
-	
+	remove_ideas = UKR_Corruption_3
 	}
 	}
 	Focus = {
 	
 	id = the_remnants
-	icon = x
+	icon = GFX_goal_generic_war_with_comintern
 	
-	x = 29
+	x = 31
 	Y = 9
 	
 	cost = 5
 	mutually_exclusive = {}
 	prerequisite = { focus = rid_the_corruption }
 	completion_reward = {
-	
-	
-	
+	if = { limit = { has_idea = three_issues2 }
+				swap_ideas = { remove_idea = three_issues2 add_idea = three_issues7  }
+		}
+	if = { limit = { has_idea = three_issues3 }
+				swap_ideas = { remove_idea = three_issues3 add_idea = three_issues6  }
+		}
+	if = { limit = { has_idea = three_issues }
+		         swap_ideas = { remove_idea = three_issues add_idea = three_issues4  }
+		}
+		
 	}
 	}
 	Focus = {
@@ -158,7 +139,7 @@ focus_tree = {
 	id = challenge_remnants
 	icon = x
 	
-	x = 32
+	x = 33
 	Y = 10
 	
 	cost = 5
@@ -176,7 +157,7 @@ focus_tree = {
 	id = absorb_remnants
 	icon = x
 	
-	x = 30
+	x = 31
 	Y = 10
 	
 	cost = 5
@@ -194,7 +175,7 @@ focus_tree = {
 	id = decriminalize_remnants
 	icon = x
 	
-	x = 28
+	x = 29
 	Y = 10
 	
 	cost = 5
@@ -210,7 +191,7 @@ focus_tree = {
 	Focus = {
 	
 	id = the_treaty
-	icon = x
+	icon = GFX_goal_generic_dangerous_deal
 	
 	x = 25
 	Y = 9
@@ -219,26 +200,83 @@ focus_tree = {
 	mutually_exclusive = {}
 	prerequisite = { focus = rid_the_corruption }
 	completion_reward = {
+	if = { limit = { has_idea = three_issues2 }
+				swap_ideas = { remove_idea = three_issues2 add_idea = three_issues5  }
+		}
+	if = { limit = { has_idea = three_issues4 }
+				swap_ideas = { remove_idea = three_issues3 add_idea = three_issues7  }
+		}
+	if = { limit = { has_idea = three_issues }
+		         swap_ideas = { remove_idea = three_issues add_idea = three_issues3  }
+		}
+	}
+	}
+	Focus = {
 	
+	id = friends_with_benefits
+	icon = GFX_idea_gre_schachtplan3
 	
+	x = 23
+	Y = 10
+	
+	cost = 5
+	mutually_exclusive = { focus = slow_approach focus = denounce_treaty }
+	prerequisite = { focus = the_treaty }
+	completion_reward = {
+	remove_ideas = Treaty_of_Lwow
 	
 	}
 	}
 	Focus = {
 	
-	id = the_army_problem
-	icon = x
+	id = slow_approach
+	icon = GFX_idea_gre_schachtplan
 	
-	x = 21
+	x = 25
+	Y = 10
+	
+	cost = 5
+	mutually_exclusive = { focus = friends_with_benefits focus = denounce_treaty }
+	prerequisite = { focus = the_treaty }
+	completion_reward = {
+	}
+	}
+	Focus = {
+	
+	id = denounce_treaty
+	icon = GFX_focus_renounce_the_treaty_of_trianon
+	
+	x = 27
+	Y = 10
+	
+	cost = 5
+	mutually_exclusive = { focus = friends_with_benefits focus = slow_approach }
+	prerequisite = { focus = the_treaty }
+	completion_reward = {
+	remove_ideas = Treaty_of_Lwow
+	}
+	}
+	Focus = {
+	
+	id = the_army_problem
+	icon = GFX_army_problem
+	
+	x = 19
 	Y = 9
 	
 	cost = 5
 	mutually_exclusive = {}
 	prerequisite = { focus = rid_the_corruption }
 	completion_reward = {
-	
-	
-	
+	if = { limit = { has_idea = three_issues4 }
+				swap_ideas = { remove_idea = three_issues2 add_idea = three_issues7  }
+		}
+	if = { limit = { has_idea = three_issues3 }
+				swap_ideas = { remove_idea = three_issues3 add_idea = three_issues5  }
+		}
+	if = { limit = { has_idea = three_issues }
+		         swap_ideas = { remove_idea = three_issues add_idea = three_issues2  }
+		}
 	}
 	}
 	
@@ -254,11 +292,43 @@ focus_tree = {
 	mutually_exclusive = { focus = provide_ministers }
 	prerequisite = { focus = begin_reform_government }
 	completion_reward = {
-	
-	
-	
+	add_political_power = 50
+	add_stability = 0.05
 	}
 	}
+	Focus = {
+	
+	id = social_democrats
+	icon = x
+	
+	x = 23
+	Y = 6
+	
+	cost = 5
+	mutually_exclusive = { focus = keep_levytsky }
+	prerequisite = { focus = elect_ministers }
+	completion_reward = {
+	add_political_power = 50
+	add_stability = 0.05
+	}
+	}
+	Focus = {
+	
+	id = keep_levytsky
+	icon = x
+	
+	x = 21
+	Y = 6
+	
+	cost = 5
+	mutually_exclusive = { focus = social_democrats }
+	prerequisite = { focus = elect_ministers }
+	completion_reward = {
+	add_party_popularity = { ideology = democratic popularity = 0.1}
+	add_stability = 0.1
+	}
+	}
+	
 	
 			Focus = {
 	
@@ -272,9 +342,8 @@ focus_tree = {
 	mutually_exclusive = { focus = elect_ministers}
 	prerequisite = { focus = begin_reform_government }
 	completion_reward = {
-	
-	
-	
+	country_event = UKR.10
+	add_political_power = 75
 	}
 	}
 	
