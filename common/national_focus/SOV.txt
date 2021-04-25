@@ -84,7 +84,7 @@
 	Focus = {
 
     id = empower_the_workers
-    x = 0
+    x = -4
     y = 2
     cost = 5
     mutually_exclusive = {}
@@ -97,7 +97,7 @@
 	Focus = {
 
     id = stabilise_politics
-    x = 0
+    x = -4
     y = 3
     cost = 10
     mutually_exclusive = {}
@@ -110,7 +110,7 @@
 	Focus = {
 
     id = secure_new_field_marshals
-    x = -1
+    x = -5
     y = 4
     cost = 5
     mutually_exclusive = {}
@@ -123,7 +123,7 @@
 	Focus = {
 
     id = show_of_strength
-    x = 1
+    x = -3
     y = 4
     cost = 5
     mutually_exclusive = {}
@@ -136,7 +136,7 @@
 	Focus = {
 
     id = establish_munitions_factories
-    x = 0
+    x = -4
     y = 5
     cost = 5
     mutually_exclusive = {}
@@ -149,7 +149,7 @@
 	Focus = {
 
     id = organise_the_army
-    x = -2
+    x = -6
     y = 5
     cost = 5
     mutually_exclusive = {}
@@ -163,7 +163,7 @@
 	Focus = {
 
     id = tighten_army_rule
-    x = 2
+    x = -2
     y = 5
     cost = 5
     mutually_exclusive = {}
@@ -177,7 +177,7 @@
 	Focus = {
 
     id = bring_back_the_true_leader
-    x = 0
+    x = -4
     y = 6
     cost = 10
     mutually_exclusive = {}
@@ -191,7 +191,7 @@
 	Focus = {
 
     id = union_with_ros
-    x = 0
+    x = -4
     y = 7
     cost = 5
     mutually_exclusive = {}
@@ -204,12 +204,12 @@
 	Focus = {
 
     id = form_the_kgb
-    x = 0
-    y = 8
+    x = 4
+    y = 2
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
-    prerequisite = {focus = union_with_ros}
+    prerequisite = {focus = lift_ban_on_communism}
     required = {}
     completion_reward = { 
         }
@@ -217,8 +217,8 @@
 	Focus = {
 
     id = interfere_with_ukraine
-    x = -1
-    y = 9
+    x = 3
+    y = 3
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -230,8 +230,8 @@
 	Focus = {
 
     id = interfere_with_belarus
-    x = 1
-    y = 9
+    x = 5
+    y = 3
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -243,8 +243,8 @@
 	Focus = {
 
     id = influence_the_baltics
-    x = 0
-    y = 10
+    x = 4
+    y = 4
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -257,8 +257,8 @@
 	Focus = {
 
     id = take_back_the_caucasus
-    x = -2
-    y = 10
+    x = 2
+    y = 4
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -271,8 +271,8 @@
 	Focus = {
 
     id = take_back_finnish_territory
-    x = 2
-    y = 10
+    x = 6
+    y = 4
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -285,8 +285,8 @@
 	Focus = {
 
     id = reintegrate_northern_lands
-    x = -1
-    y = 11
+    x = 3
+    y = 5
     cost = 4
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -299,8 +299,8 @@
 	Focus = {
 
     id = reintegrate_caucasus
-    x = 1
-    y = 11
+    x = 5
+    y = 5
     cost = 4
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -313,8 +313,8 @@
 	Focus = {
 
     id = prepare_for_the_east
-    x = 0
-    y = 12
+    x = 4
+    y = 6
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -327,8 +327,8 @@
 	Focus = {
 
     id = strike_the_east
-    x = 0
-    y = 13
+    x = 4
+    y = 7
     cost = 10
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -341,11 +341,12 @@
 
     id = comintern
     x = -1
-    y = 14
+    y = 8
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
     prerequisite = {focus = strike_the_east}
+	prepare_for_the_east = {focus = union_with_ros}
     required = {}
     completion_reward = { 
         }
@@ -354,11 +355,12 @@
 
     id = invest_in_tanks
     x = 1
-    y = 14
+    y = 8
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
     prerequisite = {focus = strike_the_east}
+	prerequisite = {focus = union_with_ros}
     required = {}
     completion_reward = { 
         }
@@ -367,7 +369,7 @@
 
     id = demand_strait_control
     x = 0
-    y = 15
+    y = 9
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -381,7 +383,7 @@
 
     id = influence_moldova
     x = -2
-    y = 15
+    y = 9
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
@@ -395,12 +397,42 @@
 
     id = influence_romania
     x = 2
-    y = 15
+    y = 9
     cost = 5
     mutually_exclusive = {}
 	relative_position_id = ease_communist_tensions
     prerequisite = {focus = comintern}
 	prerequisite = {focus = invest_in_tanks}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = intergrate_ssrs
+    x = 1
+    y = 10
+    cost = 5
+    mutually_exclusive = {focus = build_up_ssrs}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = influence_moldova}
+	prerequisite = {focus = influence_romania}
+	prerequisite = {focus = demand_strait_control}
+    required = {}
+    completion_reward = { 
+        }
+    }
+	Focus = {
+
+    id = build_up_ssrs
+    x = -1
+    y = 10
+    cost = 5
+    mutually_exclusive = {focus = intergrate_ssrs}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = influence_moldova}
+	prerequisite = {focus = influence_romania}
+	prerequisite = {focus = demand_strait_control}
     required = {}
     completion_reward = { 
         }
