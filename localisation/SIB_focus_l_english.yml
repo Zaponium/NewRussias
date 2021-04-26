@@ -2,21 +2,30 @@
 
 TFSR_neutrality:0 "Free Siberian Region"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 TFSR_neutrality_ADJ:0 "The Free Siberian Region"
+=======
+TFSR_neutrality_ADJ:0 "Siberian"
+>>>>>>> Stashed changes
 TFSR_neutrality_DEF:0 "The Free Siberian Region"
 SIBE_neutrality:0 "Siberia"
-SIBE_neutrality_ADJ:0 "Siberia"
+SIBE_neutrality_ADJ:0 "Siberian"
 SIBE_neutrality_DEF:0 "Siberia"
 TTOS_neutrality:0 "The Tsardom of Siberia"
-TTOS_neutrality_ADJ:0 "The Tsardom of Siberia"
+TTOS_neutrality_ADJ:0 "Siberian"
 TTOS_neutrality_DEF:0 "The Tsardom of Siberia"
 TTOR_neutrality:0 "Tsardom of Russia"
-TTOR_neutrality_ADJ:0 "The Tsardom of Russia"
+TTOR_neutrality_ADJ:0 "Russian"
 TTOR_neutrality_DEF:0 "The Tsardom of Russia"
 TORE_neutrality:0 "Tsardom of Russia Empire"
+<<<<<<< Updated upstream
 TORE_neutrality_ADJ:0 "The Tsardom of Russia Empire"
 TORE_neutrality_DEF:0 "The Tsardom of Russia Empire"
 =======
+>>>>>>> Stashed changes
+=======
+TORE_neutrality_ADJ:0 "Russian"
+TORE_neutrality_DEF:0 "The Tsardom of Russian Empire"
 >>>>>>> Stashed changes
 
 SIB_industrial_buildup:0 "Industrial Buildup"
