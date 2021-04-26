@@ -22,7 +22,6 @@ ideas = {
 	OR = {
 	has_completed_focus = bring_back_the_true_leader
 	}
-<<<<<<< Updated upstream
 	}	
 	}
 	destroyed_economy = {
@@ -43,7 +42,6 @@ ideas = {
 			 can_not_declare_war = yes 
 		}
 	}
-=======
 
 politcal_advisor = {	
 		
@@ -74,5 +72,5 @@ politcal_advisor = {
 			}
 		}
 	}
+ }
 }
->>>>>>> Stashed changes
