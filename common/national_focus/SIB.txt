@@ -94,6 +94,7 @@ focus_tree = {
 	prerequisite = { focus = SIB_our_own_way }
 	completion_reward = { 
 	set_cosmetic_tag = SIBE_neutrality
+	add_stability = 0.05
 	
 	}
 	
@@ -203,7 +204,7 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_restore_the_monarchy }
 	completion_reward = { 
-	add_political_power = 50
+	add_political_power = 250
 	
 	
 	}
@@ -260,7 +261,7 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_visit_to_denmark }
 	completion_reward = { 
-	add_political_power = 50
+	add_political_power = 100
 	
 	
 	}
@@ -279,7 +280,8 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_Nikolai_Kulikovsky }
 	completion_reward = { 
-	add_political_power = 50
+	add_stability = 0.10
+	add_war_support = 0.10
 	
 	
 	}
@@ -317,7 +319,7 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_Return_of_the_tsar }
 	completion_reward = { 
-	add_political_power = 50
+	remove_ideas = payments_to_the_us
 	
 	
 	}
@@ -355,9 +357,10 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_Return_of_the_tsar }
 	completion_reward = { 
-	add_political_power = 50
-	
-	
+	swap_ideas = {
+	    add_idea = white_army_revived
+	    remove_idea = disorganised_army
+		}
 	}
 	
 	}
@@ -584,9 +587,10 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_revive_the_white_army }
 	completion_reward = { 
-	add_political_power = 50
-	
-	
+	swap_ideas = {
+	    add_idea = white_army
+	    remove_idea = white_army_revived
+	    }
 	}
 	
 	}
@@ -603,9 +607,34 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_stop_payments }
 	completion_reward = { 
-	add_political_power = 50
-	
-	
+	create_wargoal = {
+	type = take_state_focus
+	target = MON
+	generator = { 330 }
+        }
+		available = {
+		has_army_control = { size > 199999 }
+		}
+		cancel = {
+			OR = {
+				is_subject = yes
+				has_war_with = MON
+			}
+		}
+		bypass = {
+			OR = {
+				MON = {
+					OR = {
+						is_subject = yes
+						exists = no 
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = SIB }
+						}
+					}
+				}
+			}
+		}
 	}
 	
 	}

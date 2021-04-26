@@ -1,5 +1,7 @@
 ﻿l_english:
 
+###Names###
+
 TFSR_neutrality:0 "Free Siberian Region"
 TFSR_neutrality_ADJ:0 "Siberian"
 TFSR_neutrality_DEF:0 "The Free Siberian Region"
@@ -16,6 +18,8 @@ TORE_neutrality:0 "Tsardom of Russia Empire"
 TORE_neutrality_ADJ:0 "Russian"
 TORE_neutrality_DEF:0 "The Tsardom of Russia Empire"
 
+###Focuses###
+
 SIB_industrial_buildup:0 "Industrial Buildup"
 SIB_industrial_buildup_desc:0 "Siberian enviroment is not well-known for it's terrain being suitable for industry, it's time to change that once and for all."
 SIB_establish_munitions_factories:0 "Establish Munitions Facroties"
@@ -28,3 +32,16 @@ SIB_found_university_of_vladivostok:0 "Found University of Vladivostok"
 SIB_found_university_of_vladivostok_desc:0 "A New Nation needs to educate it's people in order to maintain good research for the future of Siberia."
 SIB_industrialise_the_wasteland:0 "Industrialise the Wasteland"
 SIB_industrialise_the_wasteland_desc:0 "Much of Siberia is inhabited by useless and rocky land, however with a bit of landscaping we are able to start making some of the land useable"
+
+###National Spirits###
+
+payments_to_the_us:0 "Payments to the US"
+rogue_militias:0 "Rogue Militias"
+disorganised_army:0 "Disorganised Army"
+white_army_revived:0 "White Army Revived"
+white_army:0 "White Army"
+new_economy:0 "New Economy"
+rising_economy:0 "Rising Economy"
+stable_economy:0 "Improving Economy"
+roaring_economy:0 "Roaring Economy"
+economic_boom:0 "Economic Boom"
