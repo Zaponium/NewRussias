@@ -437,4 +437,19 @@
     completion_reward = { 
         }
     }
+	    
+	
+	id = pressure_Belarus
+    x = 5
+    y = 20
+    cost = 5
+    mutually_exclusive = {}
+	relative_position_id = ease_communist_tensions
+    prerequisite = {focus = influence_moldova}
+	prerequisite = {focus = influence_romania}
+	prerequisite = {focus = demand_strait_control}
+    required = {}
+    completion_reward = { 
+        }
+    }
 }

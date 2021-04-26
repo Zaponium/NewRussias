@@ -22,6 +22,7 @@ ideas = {
 	OR = {
 	has_completed_focus = bring_back_the_true_leader
 	}
+<<<<<<< Updated upstream
 	}	
 	}
 	destroyed_economy = {
@@ -42,3 +43,36 @@ ideas = {
 			 can_not_declare_war = yes 
 		}
 	}
+=======
+
+politcal_advisor = {	
+		
+	    vladislav_yemum = {
+			
+			visible = {
+			original_tag = SOV
+			}
+
+			available = {
+			has_completed_focus = lift_ban_on_communism
+			}
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				#country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}
+>>>>>>> Stashed changes
