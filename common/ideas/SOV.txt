@@ -1,97 +1,43 @@
 ideas = {
 
 	country = {
-		broken_political_system = {
-			picture = 
-			allowed = {
-			  tag = SOV  
-			}
-			available = { 
-			}
-			
-			cancel = {
-			}
-			
-
-		    allowed_civil_war = {
-				always = yes
-			}
-
-			
-			modifier = {
-				political_power_factor = -0.25
-				drift_defence_factor = -0.5
-				stability_factor = -0.75
-			}
-		}
-		
-		disbanded_army = {
-			picture = 
-			
-			allowed = {
-			  tag = SOV  
-			}
-			
-			available = { 
-			}
-			
-			cancel = {
-			}
-			
-
-		    allowed_civil_war = {
-				always = yes
-			}
-
-			
-			modifier = {
-				army_org_factor = -0.5
-				army_attack_factor = -0.35
-				army_defence_factor = -0.35
-				army_speed_factor = -0.3
-				war_support_factor = -0.75
-			}
-
-
-		     allowed_to_remove = {
-                OR = {
-                   has_completed_focus = army
-				   
-                }
-			}
-
-		}
-		
-		destroyed_economy = {
-			picture = 
-			
-			allowed = {
-			  tag = SOV  
-			}
-			
-			available = { 
-			}
-			
-			cancel = {
-			}
-			
-
-		    allowed_civil_war = {
-				always = yes
-			}
-
-			
-			modifier = {
-			production_speed_industrial_complex_factor = -0.5
-			industrial_capacity_factory = -0.4
-			base_fuel_gain_factor = -0.75
-				
-				
-				
-			}
-		}
-		
+	broken_political_system = {
+	picture = x
+	Modifier = {
+	political_power_factor = -0.25
+	drift_defence_factor = -0.5
+	stability_factor = -0.75
+	}	
 	}
-		
-	
-}
+	disbanded_army = {
+	picture = x
+	Modifier = {
+	army_org_factor = -0.5
+	army_attack_factor = -0.35
+	army_defence_factor = -0.35
+	army_speed_factor = -0.3
+    war_support_factor = -0.75
+	}
+    allowed_to_remove = {
+	OR = {
+	has_completed_focus = bring_back_the_true_leader
+	}
+	}	
+	}
+	destroyed_economy = {
+	picture = x
+	Modifier = {
+	production_speed_industrial_complex_factor = -0.5
+	industrial_capacity_factory = -0.4
+	base_fuel_gain_factor = -0.75
+	}	
+	}
+	treaty_of_vladivostok = {
+	picture = GFX_idea_HUN_treaty_of_trianon
+	Modifier = {
+	recruitable_population_factor = -0.01
+	}
+	rule = { can_join_faction = no }
+    rule = { can_send_volunteers = no }	
+    rule = { can_not_declare_war = no }
+	}

@@ -276,6 +276,7 @@ add_ideas = {
 	disbanded_army
 	destroyed_economy
     disarmed_nation
+	treaty_of_vladivostok
 }
 
 create_country_leader = {
