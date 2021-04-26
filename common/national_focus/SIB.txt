@@ -22,8 +22,7 @@ focus_tree = {
 	mutually_exclusive = { focus = SIB_the_american_dream }
 	prerequisite = {}
 	completion_reward = { 
-	add_political_power = 50
-	
+	add_timed_idea = { idea = crack_down_on_democracy days = 1095 }
 	
 	}
 	
@@ -94,8 +93,7 @@ focus_tree = {
 	mutually_exclusive = { focus = SIB_new_world_order focus = SIB_the_real_communist_way }
 	prerequisite = { focus = SIB_our_own_way }
 	completion_reward = { 
-	add_political_power = 50
-	
+	set_cosmetic_tag = SIBE_neutrality
 	
 	}
 	

@@ -1,28 +1,6 @@
 ideas = {
 
 	country = {
-		our_own_way = {
-			picture = x
-			allowed = {
-			  tag = SIB  
-			}
-			available = { 
-			}
-			
-			cancel = {
-			}
-			
-
-		    allowed_civil_war = {
-				always = yes
-			}
-
-			
-			modifier = {
-				democratic_drift = -0.03
-				
-			}
-		}
 		the_american_dream = {
 			picture = x
 			allowed = {
@@ -290,6 +268,27 @@ ideas = {
 		    production_speed_buildings_factor = 0.10
 		}
 	}
+    crack_down_on_democracy = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			modifier = {
+			    democratic_drift = -0.05
+			}
+		}
 }
     political_advisor = {
 	
