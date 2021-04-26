@@ -14,6 +14,14 @@
 		name = "GFX_army_problem"
 		texturefile = "gfx/interface/goals/Mod/army_problem.dds"
 	}
+	SpriteType = {
+		name = "GFX_own_path"
+		texturefile = "gfx/interface/goals/Mod/own_path.dds"
+	}
+	SpriteType = {
+		name = "GFX_kievan_rus"
+		texturefile = "gfx/interface/goals/Mod/kievan_rus.dds"
+	}
 	
 	
 	

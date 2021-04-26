@@ -1,14 +1,20 @@
 spriteTypes = {	
+    ##MOD##
 
+   
+    SpriteType = {
+		name = "GFX_idea_three_problems"
+		texturefile = "gfx/interface/ideas/mod/three_errors.dds"
+	}
+	
 
-
+	### new tfv nat spirit icons
+	
 	SpriteType = {
 		name = "GFX_idea_traits_strip"
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
 		noOfFrames = 15		
 	}
-
-	### new tfv nat spirit icons
 
 	spriteType = {
 		name = "GFX_idea_generic_degauss_ship_hulls"

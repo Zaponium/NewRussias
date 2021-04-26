@@ -342,7 +342,7 @@ focus_tree = {
 	mutually_exclusive = { focus = elect_ministers}
 	prerequisite = { focus = begin_reform_government }
 	completion_reward = {
-	country_event = UKR.10
+	country_event = UKR.11
 	add_political_power = 75
 	}
 	}
@@ -394,7 +394,8 @@ focus_tree = {
 	mutually_exclusive = { focus = UKR_ownpath }
 	prerequisite = {}
 	completion_reward = {
-	
+	add_popularity = { ideology = neutrality popularity = 0.1 }
+	add_stability = 0.15
 	
 	
 	}
@@ -403,7 +404,7 @@ focus_tree = {
 	Focus = {
 	
 	id = UKR_ownpath
-	icon = x
+	icon = GFX_own_path
 	
 	x = 30
 	Y = 1
@@ -412,8 +413,9 @@ focus_tree = {
 	mutually_exclusive = { focus = UKR_polishconnection }
 	prerequisite = {}
 	completion_reward = {
-	
-	
+	country_event = UKR.10
+	add_popularity = { ideology = neutrality popularity = 0.1 }
+	add_popularity = { ideology = fascism popularity= 0.05 }
 	
 	}
     }
@@ -421,12 +423,12 @@ focus_tree = {
     Focus = {
 	
 	id = UKR_daysofold
-	icon = x
+	icon = GFX_kievan_rus
 	
 	x = 35
 	Y = 2
 	
-	cost = 5
+	cost = 4
 	mutually_exclusive = {}
 	prerequisite = { focus = UKR_ownpath }
 	completion_reward = {
