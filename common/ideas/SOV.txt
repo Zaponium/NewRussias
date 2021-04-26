@@ -9,6 +9,53 @@ ideas = {
 	stability_factor = -0.75
 	}	
 	}
+	
+	
+		broken_political_system_1 = {
+	picture = x
+	Modifier = {
+	political_power_factor = -0.25
+	drift_defence_factor = -0.25
+	stability_factor = -0.60
+	}	
+	}
+	
+	
+	
+		broken_political_system_2 = {
+	picture = x
+	Modifier = {
+	political_power_factor = -0.15
+	drift_defence_factor = -0.25
+	stability_factor = -0.45
+	}	
+	}
+	
+	
+		broken_political_system_3 = {
+	picture = x
+	Modifier = {
+	political_power_factor = -0.15
+	drift_defence_factor = -0.10
+	stability_factor = -0.30
+	}	
+	}
+	
+	
+		broken_political_system_4 = {
+	picture = x
+	Modifier = {
+	stability_factor = -0.1
+	}	
+	}
+	
+	
+			broken_political_system_5 = {
+	picture = x
+	Modifier = {
+	}	
+	}
+	
 	disbanded_army = {
 	picture = x
 	Modifier = {
@@ -32,6 +79,14 @@ ideas = {
 	base_fuel_gain_factor = -0.75
 	}	
 	}
+		destroyed_economy_2 = {
+	picture = x
+	Modifier = {
+	production_speed_industrial_complex_factor = -0.5
+	industrial_capacity_factory = -0.3
+	base_fuel_gain_factor = -0.75
+	}	
+	}
 	treaty_of_vladivostok = {
 	picture = GFX_idea_HUN_treaty_of_trianon
 	Modifier = {
@@ -42,35 +97,21 @@ ideas = {
 			 can_not_declare_war = yes 
 		}
 	}
+}
+political_advisor = {
 
-politcal_advisor = {	
-		
-	    vladislav_yemum = {
-			
-			visible = {
-			original_tag = SOV
-			}
+    valdislaw_yemum = {
+    visible = {
+            original_tag = SOV	
+            }
+    picture = generic_political_advisor_europe_5
+    available = {
+            Has_completed_focus = lift_ban_on_communism
+            }
+    traits = {}
+    cost = 50
+    }
 
-			available = {
-			has_completed_focus = lift_ban_on_communism
-			}
-			
-			traits = { communist_revolutionary }
-	
-			on_add = {
-				#country_event = political.1
-			}
-	
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-	
-			ai_will_do = {
-				factor = 0
-			}
-		}
-	}
+  }
  }
 }

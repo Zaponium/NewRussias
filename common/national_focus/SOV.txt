@@ -58,13 +58,15 @@
     id = ease_communist_tensions
     x = 5
     y = 1
-    cost = 5
+    cost = 10
     mutually_exclusive = {}
 	relative_position_id = dealing_with_vlad
     prerequisite = {focus = dealing_with_vlad}
     required = {}
     completion_reward = { 
       add_political_power = 120
+	  swap_ideas = { add_idea = broken_political_system_1 remove_idea = broken_political_system }
+	  
 
         }
     }
@@ -79,6 +81,7 @@
     prerequisite = {focus = ease_communist_tensions}
     required = {}
     completion_reward = { 
+	 swap_ideas = { add_idea = broken_political_system_2 remove_idea = broken_political_system_1 }
         }
     }
 	Focus = {
@@ -91,7 +94,10 @@
 	relative_position_id = ease_communist_tensions
     prerequisite = {focus = lift_ban_on_communism}
     required = {}
-    completion_reward = { 
+    completion_reward = {
+	swap_ideas = { add_idea = destroyed_economy_2 remove_idea = destroyed_economy }
+	 swap_ideas = { add_idea = broken_political_system_3 remove_idea = broken_political_system_2 }
+     add_popularity = { ideology = communism popularity = 0.1 }	 
         }
     }
 	Focus = {
@@ -105,6 +111,7 @@
     prerequisite = {focus = empower_the_workers}
     required = {}
     completion_reward = { 
+	 swap_ideas = { add_idea = broken_political_system_4 remove_idea = broken_political_system_3 }
         }
     }
 	Focus = {
@@ -211,8 +218,10 @@
 	relative_position_id = ease_communist_tensions
     prerequisite = {focus = lift_ban_on_communism}
     required = {}
-    completion_reward = { 
-        }
+    completion_reward = {
+	swap_ideas = { add_idea = broken_political_system_5 remove_idea = broken_political_system_4 }
+			add_popularity = { ideology = communism popularity = 0.1 }
+		}
     }
 	Focus = {
 
@@ -439,17 +448,4 @@
     }
 	    
 	
-	id = pressure_Belarus
-    x = 5
-    y = 20
-    cost = 5
-    mutually_exclusive = {}
-	relative_position_id = ease_communist_tensions
-    prerequisite = {focus = influence_moldova}
-	prerequisite = {focus = influence_romania}
-	prerequisite = {focus = demand_strait_control}
-    required = {}
-    completion_reward = { 
-        }
-    }
 }
