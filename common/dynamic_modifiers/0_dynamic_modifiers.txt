@@ -30,8 +30,15 @@
 
 ##MODDED##
 
+rogue_militias = {
+	enable = { always = yes }
 
-
+	icon = x
+	
+	state_resources_factor = -0.25
+	recruitable_population_factor = -0.75
+	state_production_speed_buildings_factor = -0.25
+}
 
 
 

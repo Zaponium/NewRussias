@@ -77,6 +77,31 @@ set_convoys = 100
 	}
 }
 
+    579 = {
+			add_dynamic_modifier = { modifier = rogue_militias }
+		}
+	580 = {
+			add_dynamic_modifier = { modifier = rogue_militias }
+		}
+	516 = {
+			add_dynamic_modifier = { modifier = rogue_militias }
+		}
+	577 = {
+			add_dynamic_modifier = { modifier = rogue_militias }
+		}
+	576 = {
+			add_dynamic_modifier = { modifier = rogue_militias }
+		}
+	575 = {
+			add_dynamic_modifier = { modifier = rogue_militias }
+		}
+	644 = {
+			add_dynamic_modifier = { modifier = rogue_militias }
+		}
+	562 = {
+			add_dynamic_modifier = { modifier = rogue_militias }
+		}
+
 
 set_politics = {
 	ruling_party = neutrality
