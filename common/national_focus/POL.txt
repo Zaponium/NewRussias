@@ -69,7 +69,7 @@ focus_tree = {
     y = 0
     cost = 5
     ai_will_do = { factor = 100	}
-    mutually_exclusive = { }
+    mutually_exclusive = {  }
     prerequisite = { focus = the_royalty_lives_on }
 	available = {
 			is_puppet = no
@@ -83,25 +83,7 @@ focus_tree = {
     }
 	
 	
-	Focus = {
-
-	id = slavs_strong_together
-    x = 9
-    y = 0
-    cost = 5
-    ai_will_do = { factor = 100	}
-    mutually_exclusive = { focus = form_the_commonwealth }
-    prerequisite = {  }
-	available = {
-			is_puppet = no
-			has_army_manpower = { size > 499999 }
-		}
-    required = {}
-    completion_reward = { 
-      add_political_power = 120
-
-        }
-    }
+	
 	
 		
 	Focus = {
@@ -112,7 +94,7 @@ focus_tree = {
     cost = 5
     ai_will_do = { factor = 100	}
     mutually_exclusive = { }
-    prerequisite = { focus = form_the_commonwealth focus = slavs_strong_together }
+    prerequisite = { focus = form_the_commonwealth or focus = slavs_strong_together }
     required = {}
     completion_reward = { 
       add_political_power = 120
@@ -127,7 +109,7 @@ focus_tree = {
     y = 2
     cost = 5
     ai_will_do = { factor = 100	}
-    mutually_exclusive = { focus = focus_on_economy }
+    mutually_exclusive = {  }
     prerequisite = { focus = one_true_enemy }
     required = {}
     completion_reward = { 
@@ -143,7 +125,7 @@ focus_tree = {
     y = 2
     cost = 5
     ai_will_do = { factor = 100	}
-    mutually_exclusive = { focus = full_mobilisation}
+    mutually_exclusive = { }
     prerequisite = { focus = one_true_enemy }
     required = {}
     completion_reward = { 
@@ -156,7 +138,7 @@ focus_tree = {
 	#unlocks new advisors
 	
 	id = acquire_new_advisors
-    x = 25
+    x = 26
     y = 1
     cost = 5
     ai_will_do = { factor = 100	}
@@ -169,6 +151,21 @@ focus_tree = {
         }
     }
 	
+	Focus = {
+	
+	id = political_focus_no3
+    x = 24
+    y = 2
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = acquire_new_advisors focus = hold_royal_parade }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
 	
 	Focus = {
 	#stability increase and war support
@@ -179,6 +176,135 @@ focus_tree = {
     ai_will_do = { factor = 100	}
     mutually_exclusive = { }
     prerequisite = { focus = the_royalty_lives_on }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+
+	id = polish_railroads
+    x = 15
+    y = 3
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = focus_on_economy }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+
+	id = oil_refining
+    x = 9
+    y = 3
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = full_mobilisation }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+#efficiency cap +
+	id = invest_in_weapons
+    x = 11
+    y = 3
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = full_mobilisation }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+#resource gain efficiency
+	id = new_mining_technologies
+    x = 13
+    y = 3
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = focus_on_economy }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	
+	Focus = {
+
+	id = infrastructure_overhaul
+    x = 12.5
+    y = 4
+    cost = 10
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = new_mining_technologies focus = polish_railroads focus = invest_in_weapons focus = oil_refining }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+
+	id = infrastructure_overhaul
+    x = 12.5
+    y = 4
+    cost = 10
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = new_mining_technologies focus = polish_railroads focus = invest_in_weapons focus = oil_refining }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+
+	id = infrastructure_overhaul
+    x = 12.5
+    y = 4
+    cost = 10
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = new_mining_technologies focus = polish_railroads focus = invest_in_weapons focus = oil_refining }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+
+	id = split_czechoslovakia
+    x = 19
+    y = 5
+    cost = 10
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = infrastructure_overhaul focus =  }
     required = {}
     completion_reward = { 
       add_political_power = 120
