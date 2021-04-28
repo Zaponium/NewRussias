@@ -124,7 +124,8 @@
 	relative_position_id = ease_communist_tensions
     prerequisite = {focus = stabilise_politics}
     required = {}
-    completion_reward = { 
+    completion_reward = {
+    swap_ideas = { add_idea = disbanded_army_1 remove_idea = disbanded_army }	
         }
     }
 	Focus = {
@@ -138,6 +139,7 @@
     prerequisite = {focus = stabilise_politics}
     required = {}
     completion_reward = { 
+	swap_ideas = { add_idea = disbanded_army_2 remove_idea = disbanded_army_1 }	
         }
     }
 	Focus = {
@@ -151,6 +153,36 @@
     prerequisite = {focus = show_of_strength focus = secure_new_field_marshals}
     required = {}
     completion_reward = { 
+	random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+	random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
         }
     }
 	Focus = {
@@ -165,6 +197,7 @@
 	prerequisite = {focus = secure_new_field_marshals}
     required = {}
     completion_reward = { 
+	swap_ideas = { add_idea = disbanded_army_3 remove_idea = disbanded_army_2 }	
         }
     }
 	Focus = {
@@ -179,6 +212,7 @@
 	prerequisite = {focus = secure_new_field_marshals}
     required = {}
     completion_reward = { 
+	swap_ideas = { add_idea = disbanded_army_4 remove_idea = disbanded_army_3 }	
         }
     }
 	Focus = {

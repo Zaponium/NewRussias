@@ -71,6 +71,66 @@ ideas = {
 	}
 	}	
 	}
+	
+	
+	disbanded_army_1 = {
+	picture = x
+	Modifier = {
+	army_org_factor = -0.25
+	army_attack_factor = -0.35
+	army_defence_factor = -0.35
+    war_support_factor = -0.50
+	}
+    allowed_to_remove = {
+	OR = {
+	has_completed_focus = bring_back_the_true_leader
+	}
+	}	
+	}
+	
+	
+
+	disbanded_army_2 = {
+	picture = x
+	Modifier = {
+	army_org_factor = -0.25
+	army_attack_factor = -0.20
+	army_defence_factor = -0.20
+	}
+    allowed_to_remove = {
+	OR = {
+	has_completed_focus = bring_back_the_true_leader
+	}
+	}	
+	}
+	
+	
+	disbanded_army_3 = {
+	picture = x
+	Modifier = {
+	army_attack_factor = -0.1
+	army_defence_factor = -0.1
+	}
+    allowed_to_remove = {
+	OR = {
+	has_completed_focus = bring_back_the_true_leader
+	}
+	}	
+	}
+	
+	disbanded_army_4 = {
+	picture = x
+	Modifier = {
+	}
+    allowed_to_remove = {
+	OR = {
+	has_completed_focus = bring_back_the_true_leader
+	}
+	}	
+	}
+	
+	
+	
 	destroyed_economy = {
 	picture = x
 	Modifier = {
@@ -108,7 +168,13 @@ political_advisor = {
     available = {
             Has_completed_focus = lift_ban_on_communism
             }
-    traits = {}
+    traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
     cost = 50
     }
 

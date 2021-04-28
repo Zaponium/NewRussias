@@ -1,0 +1,187 @@
+focus_tree = {
+    id = poland
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = POL
+        }
+    }
+	
+	Focus = {
+
+    id = oppose_moscicki
+    x = 20
+    y = -2
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { focus = strength_in_moscicki }
+    prerequisite = {}
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+
+    id = strength_in_moscicki
+    x = 30
+    y = -2
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { focus = oppose_moscicki }
+    prerequisite = { }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	      
+	
+	Focus = {
+
+    #jadwiga pilsudzka becomes queen
+	id = the_royalty_lives_on
+    x = 20
+    y = 0
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = oppose_moscicki }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	
+	Focus = {
+
+    #war goal on lithunia and ability to form commonwealth
+	id = form_the_commonwealth
+    x = 15
+    y = 0
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = the_royalty_lives_on }
+	available = {
+			is_puppet = no
+			has_army_manpower = { size > 499999 }
+		}
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	
+	Focus = {
+
+	id = slavs_strong_together
+    x = 9
+    y = 0
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { focus = form_the_commonwealth }
+    prerequisite = {  }
+	available = {
+			is_puppet = no
+			has_army_manpower = { size > 499999 }
+		}
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+		
+	Focus = {
+
+	id = one_true_enemy
+    x = 12.5
+    y = 1
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = form_the_commonwealth focus = slavs_strong_together }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+#will give milis
+	id = full_mobilisation
+    x = 10
+    y = 2
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { focus = focus_on_economy }
+    prerequisite = { focus = one_true_enemy }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+#will give civis
+	id = focus_on_economy
+    x = 14
+    y = 2
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { focus = full_mobilisation}
+    prerequisite = { focus = one_true_enemy }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	Focus = {
+	#unlocks new advisors
+	
+	id = acquire_new_advisors
+    x = 25
+    y = 1
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = the_royalty_lives_on }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
+	
+	
+	Focus = {
+	#stability increase and war support
+	id = hold_royal_parade
+    x = 22
+    y = 1
+    cost = 5
+    ai_will_do = { factor = 100	}
+    mutually_exclusive = { }
+    prerequisite = { focus = the_royalty_lives_on }
+    required = {}
+    completion_reward = { 
+      add_political_power = 120
+
+        }
+    }
