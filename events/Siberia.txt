@@ -1,0 +1,22 @@
+
+add_namespace = SIB
+
+country_event = {
+     id = SIB.1
+     title = SIB.1.t
+     desc = SIB.1.d
+     is_triggered_only = yes
+
+     option = {
+         name = SIB.1.a
+         SIB = {
+          579 = { remove_dynamic_modifier = rogue_militias }
+         }
+     }
+     option = {
+         name = SIB.1.b
+         SIB = {
+          country_event = { id = SIB.2 }
+         }
+     }
+}
