@@ -32,9 +32,6 @@ ideas = {
 	stability_weekly_factor = 0.005
 	}
 	}
-	
-	
-	
 	three_issues5 = {
 	picture = x
 	Modifier = {
@@ -59,11 +56,42 @@ ideas = {
 	
 	##Rusian##
 	
-	three_issues7 = {
+	rus_sentiment = {
 	picture = x
 	Modifier = {
-	war_support_weekly = 0.005
-	stability_weekly_factor = 0.005
+	justify_war_goal_time = -0.25
+	}
+	}
+	rus_sentiment1 = {
+	picture = x
+	Modifier = {
+	justify_war_goal_time = -0.25
+	conscription = 0.1
+	}
+	}
+	rus_sentiment2 = {
+	picture = x
+	Modifier = {
+	justify_war_goal_time = -0.25
+	research_speed_factor = 0.01
+	}
+	}
+	rus_sentiment3 = {
+	picture = x
+	Modifier = {
+	justify_war_goal_time = -0.25
+	research_speed_factor = 0.01
+	conscription = 0.1
+	}
+	}
+	rus_people = {
+	picture = x
+	Modifier = {
+	justify_war_goal_time = -0.25
+	research_speed_factor = 0.01
+	conscription = 0.1
+	compliance_growth_on_our_occupied_states = 0.5
+	
 	}
 	}
 
@@ -155,9 +183,8 @@ ideas = {
 	political_advisor = {
 	
 	Ihor_Kistiakovsky = {
-	
 	visible = {
-				original_tag = UKR
+			original_tag = UKR
 			}
 	picture = generic_political_advisor_europe_5
 	available = {
