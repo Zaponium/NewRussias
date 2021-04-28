@@ -606,35 +606,16 @@ focus_tree = {
 	mutually_exclusive = {}
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_stop_payments }
+	available = {
+			is_puppet = no
+			has_army_manpower = { size > 249999 }
+		}
 	completion_reward = { 
 	create_wargoal = {
 	type = take_state_focus
 	target = MON
 	generator = { 330 }
         }
-		available = {
-		has_army_control = { size > 199999 }
-		}
-		cancel = {
-			OR = {
-				is_subject = yes
-				has_war_with = MON
-			}
-		}
-		bypass = {
-			OR = {
-				MON = {
-					OR = {
-						is_subject = yes
-						exists = no 
-						AND = {
-							is_in_faction = yes
-							NOT = { is_in_faction_with = SIB }
-						}
-					}
-				}
-			}
-		}
 	}
 	
 	}
