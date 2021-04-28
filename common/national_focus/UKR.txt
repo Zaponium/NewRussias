@@ -432,9 +432,7 @@ focus_tree = {
 	mutually_exclusive = {}
 	prerequisite = { focus = UKR_ownpath }
 	completion_reward = {
-	
-	
-	
+	add_ideas = rus_sentiment
 	}
 	}
 	
@@ -450,9 +448,12 @@ focus_tree = {
 	mutually_exclusive = {}
 	prerequisite = { focus = UKR_daysofold }
 	completion_reward = {
-	
-	
-	
+	add_research_slot = 1
+	custom_effect_tooltip = expand_rus
+	if = { limit = { has_idea = rus_sentiment }
+				swap_ideas = { remove_idea = rus_sentiment add_idea = rus_sentiment2  } }
+	if = { limit = { has_idea = rus_sentiment1 }
+				swap_ideas = { remove_idea = rus_sentiment1 add_idea = rus_sentiment3  } }		
 	}
 	}
 	
@@ -468,9 +469,11 @@ focus_tree = {
 	mutually_exclusive = {}
 	prerequisite = { focus = UKR_daysofold }
 	completion_reward = {
-	
-	
-	
+	custom_effect_tooltip = expand_rus  
+	if = { limit = { has_idea = rus_sentiment }
+				swap_ideas = { remove_idea = rus_sentiment add_idea = rus_sentiment1  } }
+	if = { limit = { has_idea = rus_sentiment2 }
+				swap_ideas = { remove_idea = rus_sentiment2 add_idea = rus_sentiment3  } }
 	}
 	}
 	Focus = {
@@ -558,9 +561,7 @@ focus_tree = {
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = elect_pavloskoropadskyi }
 	completion_reward = {
-	
-	
-	
+	add_ideas = rus_people
 	}
 	}
 	
