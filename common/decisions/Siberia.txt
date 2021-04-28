@@ -1,0 +1,22 @@
+category_deal_with_rogue_militias = {
+    rid_salekhard_militias = {
+    cost = 50
+    icon = GFX
+        avalible = {
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    fire_only_once = yes
+        visible = { 
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    complete_effect = {
+    SIB = { 579 = { remove_dynamic_modifier = { modifier = rogue militias } } }
+    }
+    }
+}

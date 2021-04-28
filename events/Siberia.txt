@@ -10,7 +10,7 @@ country_event = {
      option = {
          name = SIB.1.a
          SIB = {
-          579 = { remove_dynamic_modifier = rogue_militias }
+          579 = {  }
          }
      }
      option = {
