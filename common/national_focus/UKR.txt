@@ -333,7 +333,7 @@ focus_tree = {
 			Focus = {
 	
 	id = provide_ministers
-	icon = x
+	icon = GFX_focus_usa_voter_registration_act
 	
 	x = 28
 	Y = 5

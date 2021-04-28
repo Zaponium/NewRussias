@@ -10,6 +10,14 @@ Igor_Kerensky:0 "Igor Kerensky"
 
 ##Ukraine##
 
+#RUS#
+rus_sentiment:0 "Rusian Sentiment"
+rus_sentiment1:0 " Increased Rus Sentiment"
+rus_sentiment2:0 " Increased Rus Sentiment"
+rus_sentiment3:0 " Heavy Rus Sentiment"
+rus_people:0 "The people of the Rus"
+
+
 #SOVIET#
 Soviet_remnants:0 "Soviet escapees"
 
@@ -34,3 +42,9 @@ three_issues4:0 "The Three Problems"
 three_issues5:0 "The Three Problems" 
 three_issues6:0 "The Three Problems"
 three_issues7:0 "The Three Problems"
+
+
+
+
+
+

@@ -78,6 +78,10 @@ if = {
 	}
 }
 
+137 = {
+add_dynamic_modifier = { modifier = crimean_dispute }
+}
+
 create_country_leader = {
 	name = "Kost Levytsky"
 	desc = ""
