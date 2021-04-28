@@ -283,7 +283,7 @@ focus_tree = {
 		Focus = {
 	
 	id = elect_ministers
-	icon = x
+	icon = GFX_voter_cabinet
 	
 	x = 22
 	Y = 5

@@ -22,6 +22,10 @@
 		name = "GFX_kievan_rus"
 		texturefile = "gfx/interface/goals/Mod/kievan_rus.dds"
 	}
+	SpriteType = {
+		name = "GFX_voter_cabinet"
+		texturefile = "gfx/interface/goals/Mod/voter_cabinet.dds"
+	}
 	
 	
 	
