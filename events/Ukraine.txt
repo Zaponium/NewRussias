@@ -139,4 +139,15 @@ country_event = {
 		 add_stability = -0.1
 		 }
 	 }
+country_event = {
+     id = UKR.20
+	 title = UKR.20.t
+	 desc = UKR.20.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.20.a
+		 add_opinion_modifier = { target = UKR modifier = large_decrease }
+		 }
+	 }
 }
