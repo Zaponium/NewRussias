@@ -1021,7 +1021,7 @@ focus_tree = {
 	set_capital = 195
 	set_province_name = {
     id = 3151
-    name = "Petrograd`"
+    name = "Petrograd"
     }
 	
 	}
