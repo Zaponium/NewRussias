@@ -91,7 +91,7 @@ focus_tree = {
 	prerequisite = { focus = begin_reform_government }
 	prerequisite = { focus = pavloskoropadskyi_government focus = fascist_ministers focus = social_democrats focus = keep_levytsky }
 	completion_reward = {
-	swap_ideas = { add_idea = UKR_Corruption_3 remove_idea§ = UKR_Corruption_2 }
+	swap_ideas = { add_idea = UKR_Corruption_3 remove_idea = UKR_Corruption_2 }
 	}
 	}
 	
