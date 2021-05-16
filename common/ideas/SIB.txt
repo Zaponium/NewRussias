@@ -337,6 +337,133 @@ ideas = {
 			    democratic_drift = -0.05
 			}
 		}
+	baltic_expansion = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			targeted_modifier = {
+				tag = EST
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = LAT
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = LIT
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+	caucas_expansion = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			targeted_modifier = {
+				tag = GEO
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ARM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = AZR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+	northern_expansion = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			targeted_modifier = {
+				tag = FIN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+	european_expansion = {
+			picture = x
+			allowed = {
+			  tag = SIB  
+			}
+			available = { 
+			}
+			
+			cancel = {
+			}
+			
+
+		    allowed_civil_war = {
+				always = yes
+			}
+
+			
+			targeted_modifier = {
+				tag = BLR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = UKR
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = MOL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
 }
     political_advisor = {
 	

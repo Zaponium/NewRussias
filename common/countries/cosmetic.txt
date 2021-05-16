@@ -1,0 +1,8 @@
+TTOR = {
+ color = rgb { 45 186 30 }
+ color_ui = rgb { 45 186 30 }
+}
+TORE = {
+ color = rgb { 45 186 30 }
+ color_ui = rgb { 45 186 30 }
+}
