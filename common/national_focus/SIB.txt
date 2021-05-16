@@ -327,7 +327,7 @@ focus_tree = {
 	}
 	Focus = {
 	
-	id = SIB_secure_the_miltias
+	id = SIB_secure_the_militias
 	
 	
 	x = -4
@@ -626,7 +626,7 @@ focus_tree = {
 	cost = 5
 	mutually_exclusive = {}
 	relative_position_id = SIB_restore_the_monarchy
-	prerequisite = { focus = SIB_secure_the_miltias }
+	prerequisite = { focus = SIB_secure_the_militias }
 	completion_reward = { 
 	add_political_power = 50
 	
@@ -719,7 +719,7 @@ focus_tree = {
 	}
 	Focus = {
 	
-	id = SIB_move_capital
+	id = SIB_rename_the_cities
 	
 	
 	x = -2
@@ -731,11 +731,17 @@ focus_tree = {
 	prerequisite = { focus = SIB_claim_tsardom_of_russia }
 	available = { 
 	    219 = { is_fully_controlled_by = ROOT }
+		217 = { is_fully_controlled_by = ROOT }
 	}
 	completion_reward = { 
-	set_capital = 219
-	
-	
+	set_province_name = {
+    id = 6380
+    name = "Moskva"
+    }
+	set_province_name = {
+    id = 3529
+    name = "Tsaritsyn"
+    }
 	}
 	
 	}
@@ -790,7 +796,7 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_establish_control_of_kazakhs }
 	prerequisite = { focus = SIB_establish_control_of_russia }
-	prerequisite = { focus = SIB_move_capital }
+	prerequisite = { focus = SIB_rename_the_cities }
 	completion_reward = { 
 	add_state_core = 229
 	add_state_core = 230
@@ -1001,7 +1007,7 @@ focus_tree = {
 	}
 	Focus = {
 	
-	id = SIB_rename_nevanlinna
+	id = SIB_move_the_capital
 	
 	
 	x = -2
@@ -1012,8 +1018,11 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_demand_annexation  focus = SIB_ultimatum_for_old_lands }
 	completion_reward = { 
-	add_political_power = 50
-	
+	set_capital = 195
+	set_province_name = {
+    id = 3151
+    name = "Petrograd"
+    }
 	
 	}
 	
@@ -1088,7 +1097,7 @@ focus_tree = {
 	mutually_exclusive = {}
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_ultimatum_to_lithuania }
-	prerequisite = { focus = SIB_rename_nevanlinna }
+	prerequisite = { focus = SIB_move_the_capital }
 	prerequisite = { focus = SIB_ultimatum_to_armenia }
 	completion_reward = { 
 	add_ideas = european_expansion
