@@ -86,7 +86,7 @@ focus_tree = {
 	x = 25
 	Y = 7
 	
-	cost = 5
+	cost = 10
 	mutually_exclusive = {}
 	prerequisite = { focus = begin_reform_government }
 	prerequisite = { focus = pavloskoropadskyi_government focus = fascist_ministers focus = social_democrats focus = keep_levytsky }
@@ -118,7 +118,7 @@ focus_tree = {
 	x = 31
 	Y = 9
 	
-	cost = 5
+	cost = 15
 	mutually_exclusive = {}
 	prerequisite = { focus = rid_the_corruption }
 	completion_reward = {
@@ -142,7 +142,7 @@ focus_tree = {
 	x = 33
 	Y = 10
 	
-	cost = 5
+	cost = 2
 	mutually_exclusive = { focus = decriminalize_remnants focus = absorb_remnants }
 	available = { OR = { has_completed_focus = stay_the_course has_completed_focus = elect_pavloskoropadskyi } }
 	prerequisite = { focus = the_remnants }
@@ -160,7 +160,7 @@ focus_tree = {
 	x = 31
 	Y = 10
 	
-	cost = 5
+	cost = 2
 	mutually_exclusive = { focus = decriminalize_remnants focus = challenge_remnants }
 	available = { has_completed_focus = the_people_pov }
 	prerequisite = { focus = the_remnants }
@@ -178,7 +178,7 @@ focus_tree = {
 	x = 29
 	Y = 10
 	
-	cost = 5
+	cost = 2
 	mutually_exclusive = { focus = absorb_remnants focus = challenge_remnants }
 	available = { has_completed_focus = UKR_polishconnection }
 	prerequisite = { focus = the_remnants }
@@ -196,7 +196,7 @@ focus_tree = {
 	x = 25
 	Y = 9
 	
-	cost = 5
+	cost = 15
 	mutually_exclusive = {}
 	prerequisite = { focus = rid_the_corruption }
 	completion_reward = {
@@ -219,9 +219,10 @@ focus_tree = {
 	x = 23
 	Y = 10
 	
-	cost = 5
+	cost = 2
 	mutually_exclusive = { focus = slow_approach focus = denounce_treaty }
 	prerequisite = { focus = the_treaty }
+	available = { always = NOT }
 	completion_reward = {
 	remove_ideas = Treaty_of_Lwow
 	
@@ -235,10 +236,11 @@ focus_tree = {
 	x = 25
 	Y = 10
 	
-	cost = 5
+	cost = 2
 	mutually_exclusive = { focus = friends_with_benefits focus = denounce_treaty }
 	prerequisite = { focus = the_treaty }
 	completion_reward = {
+	custom_effect_tooltip = slow_remilitarize
 	}
 	}
 	Focus = {
@@ -249,11 +251,12 @@ focus_tree = {
 	x = 27
 	Y = 10
 	
-	cost = 5
+	cost = 2
 	mutually_exclusive = { focus = friends_with_benefits focus = slow_approach }
 	prerequisite = { focus = the_treaty }
 	completion_reward = {
 	remove_ideas = Treaty_of_Lwow
+	POL = { country_event = UKR.20 }
 	}
 	}
 	Focus = {
@@ -264,7 +267,7 @@ focus_tree = {
 	x = 19
 	Y = 9
 	
-	cost = 5
+	cost = 15
 	mutually_exclusive = {}
 	prerequisite = { focus = rid_the_corruption }
 	completion_reward = {
@@ -279,6 +282,52 @@ focus_tree = {
 		}
 	}
 	}
+	Focus = {
+	
+	id = wargames_results
+	icon = x
+	
+	x = 17
+	Y = 10
+	
+	cost = 2
+	mutually_exclusive = { focus = return_old_officers focus = purge_the_ranks }
+	prerequisite = { focus = the_army_problem }
+	completion_reward = {
+	
+	}
+	}
+	Focus = {
+	
+	id = return_old_officers
+	icon = x
+	
+	x = 19
+	Y = 10
+	
+	cost = 2
+	mutually_exclusive = { focus = wargames_results focus = purge_the_ranks }
+	prerequisite = { focus = the_army_problem }
+	completion_reward = {
+	
+	}
+	}
+	Focus = {
+	
+	id = purge_the_ranks
+	icon = x
+	
+	x = 21
+	Y = 10
+	
+	cost = 2
+	mutually_exclusive = { focus = return_old_officers focus = wargames_results	}
+	prerequisite = { focus = the_army_problem }
+	completion_reward = {
+	
+	}
+	}
+	
 	
 		Focus = {
 	
