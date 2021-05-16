@@ -14,9 +14,9 @@ TTOS_neutrality_DEF:0 "The Tsardom of Siberia"
 TTOR_neutrality:0 "Tsardom of Russia"
 TTOR_neutrality_ADJ:0 "Russian"
 TTOR_neutrality_DEF:0 "The Tsardom of Russia"
-TORE_neutrality:0 "Tsardom of Russia Empire"
+TORE_neutrality:0 "Tsardom of the Russia the Empire"
 TORE_neutrality_ADJ:0 "Russian"
-TORE_neutrality_DEF:0 "The Tsardom of Russia Empire"
+TORE_neutrality_DEF:0 "The Tsardom of the Russia Empire"
 
 ###Events###
 

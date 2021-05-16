@@ -522,7 +522,7 @@ focus_tree = {
 	id = SIB_seek_japanese_models
 	
 	
-	x = 0
+	x = 3
 	y = 4
 	
 	cost = 5
@@ -541,7 +541,7 @@ focus_tree = {
 	id = SIB_seek_german_models
 	
 	
-	x = 3
+	x = 0
 	y = 4
 	
 	cost = 5
@@ -652,10 +652,16 @@ focus_tree = {
 	prerequisite = { focus = SIB_provoke_russia}
 	prerequisite = { focus = SIB_secure_mongolia}
 	prerequisite = { focus = SIB_strengthen_white_army}
+	available = {
+			is_puppet = no
+			has_army_manpower = { size > 399999 }
+		}
 	completion_reward = { 
-	add_political_power = 50
-	
-	
+	create_wargoal = {
+	type = take_state_focus
+	target = ROS
+	generator = { 583 }
+        }
 	}
 	
 	}
@@ -671,10 +677,16 @@ focus_tree = {
 	mutually_exclusive = {}
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_around_the_urals }
+	available = {
+			is_puppet = no
+			has_army_manpower = { size > 499999 }
+		}
 	completion_reward = { 
-	add_political_power = 50
-	
-	
+	create_wargoal = {
+	type = take_state_focus
+	target = SOV
+	generator = { 219 }
+        }
 	}
 	
 	}
@@ -691,8 +703,8 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_around_the_urals }
 	completion_reward = { 
-	add_political_power = 50
-	
+	set_cosmetic_tag = TTOS_neutrality
+	add_war_support = 0.05
 	
 	}
 	
@@ -711,8 +723,8 @@ focus_tree = {
 	prerequisite = { focus = SIB_claim_tsardom_of_siberia }
 	prerequisite = { focus = SIB_strike_russia }
 	completion_reward = { 
-	add_political_power = 50
-	
+	set_cosmetic_tag = TTOR_neutrality
+	add_war_support = 0.1
 	
 	}
 	
@@ -729,8 +741,11 @@ focus_tree = {
 	mutually_exclusive = {}
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_claim_tsardom_of_russia }
+	available = { 
+	    219 = { is_fully_controlled_by = ROOT }
+	}
 	completion_reward = { 
-	add_political_power = 50
+	set_capital = 219
 	
 	
 	}
@@ -789,7 +804,55 @@ focus_tree = {
 	prerequisite = { focus = SIB_establish_control_of_russia }
 	prerequisite = { focus = SIB_move_capital }
 	completion_reward = { 
-	add_political_power = 50
+	add_state_core = 229
+	add_state_core = 230
+	add_state_core = 231
+	add_state_core = 195
+	add_state_core = 216
+	add_state_core = 215
+	add_state_core = 147
+	add_state_core = 213
+	add_state_core = 146
+	add_state_core = 191
+	add_state_core = 13
+	add_state_core = 12
+	add_state_core = 190
+	add_state_core = 189
+	add_state_core = 188
+	add_state_core = 11
+	add_state_core = 784
+	add_state_core = 137
+	add_state_core = 196
+	add_state_core = 200
+	add_state_core = 227
+	add_state_core = 228
+	add_state_core = 221
+	add_state_core = 226
+	add_state_core = 259
+	add_state_core = 225
+	add_state_core = 193
+	add_state_core = 197
+	add_state_core = 192
+	add_state_core = 766
+	add_state_core = 78
+	add_state_core = 80
+	add_state_core = 203
+	add_state_core = 202
+	add_state_core = 201
+	add_state_core = 198
+	add_state_core = 199
+	add_state_core = 93
+	add_state_core = 91
+	add_state_core = 89
+	add_state_core = 241
+	add_state_core = 207
+	add_state_core = 206
+	add_state_core = 204
+	add_state_core = 194
+	add_state_core = 96
+	add_state_core = 95
+	add_state_core = 94
+	add_state_core = 722
 	
 	
 	}
@@ -1484,7 +1547,7 @@ focus_tree = {
 			name = synthetic_refinery
 			bonus = 1.0
 			uses = 1
-			category = construction
+			category = synth_resources
 		}
 	}
 	
@@ -1568,6 +1631,14 @@ focus_tree = {
 	relative_position_id = SIB_industrial_buildup
 	prerequisite = { focus = SIB_experiment_with_synthetics }
 	completion_reward = {
+	random_owned_controlled_state = {
+	limit = { has_resources_amount = { resource = oil amount > 10 } }
+
+	add_resource = {
+		type = oil
+		amount = 8
+	    }
+    }
 	}
 	
 	}
@@ -1585,12 +1656,36 @@ focus_tree = {
 	prerequisite = { focus = SIB_excavate_oil }
 	prerequisite = { focus = SIB_rising_economy }
 	completion_reward = {
+	random_owned_controlled_state = {
+				prioritize = { 566 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	random_owned_controlled_state = {
+				prioritize = { 564 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 	}
 	
 	}
     Focus = {
 	
-	id = SIB_finish_the_industrialisation_of_wastelandv
+	id = SIB_finish_the_industrialisation_of_wasteland
 	
 	
 	x = 1
@@ -1602,6 +1697,34 @@ focus_tree = {
 	prerequisite = { focus = SIB_continue_industrialisation_of_wasteland }
 	prerequisite = { focus = SIB_rising_economy }
 	completion_reward = {
+	random_owned_controlled_state = {
+				prioritize = { 574 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+	random_owned_controlled_state = {
+				prioritize = { 562 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+	random_owned_controlled_state = {
+				prioritize = { 637 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+	random_owned_controlled_state = {
+				prioritize = { 654 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 	}
 	
 	}
