@@ -1,0 +1,11 @@
+category_deal_with_rogue_militias = {
+    icon = idea_collectivism
+	picture = GFX_british_parlament
+	priority = 2
+	allowed = {
+	original_tag = SIB
+	}
+	visible = { 
+	has_completed_focus = SIB_secure_the_militias
+	}
+}

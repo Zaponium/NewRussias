@@ -1,6 +1,6 @@
 category_deal_with_rogue_militias = {
     rid_salekhard_militias = {
-    cost = 50
+    cost = 25
     icon = GFX
         available = {
 		OR = {
@@ -14,6 +14,125 @@ category_deal_with_rogue_militias = {
     }
     complete_effect = {
     SIB = { 579 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
+    }
+    }
+	rid_tobolsk_militias = {
+    cost = 25
+    icon = GFX
+        available = {
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    fire_only_once = yes
+        visible = { 
+		always = yes
+    }
+    complete_effect = {
+    SIB = { 580 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
+    }
+    }
+	rid_northwestern_siberia_militias = {
+    cost = 25
+    icon = GFX
+        available = {
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    fire_only_once = yes
+        visible = { 
+		always = yes
+    }
+    complete_effect = {
+    SIB = { 516 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
+    }
+    }
+	rid_surgut_militias = {
+    cost = 25
+    icon = GFX
+        available = {
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    fire_only_once = yes
+        visible = { 
+		always = yes
+    }
+    complete_effect = {
+    SIB = { 577 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
+    }
+    }
+	rid_yeniseisk_militias = {
+    cost = 25
+    icon = GFX
+        available = {
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    fire_only_once = yes
+        visible = { 
+		always = yes
+    }
+    complete_effect = {
+    SIB = { 576 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
+    }
+    }
+	rid_kirensk_militias = {
+    cost = 25
+    icon = GFX
+        available = {
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    fire_only_once = yes
+        visible = { 
+		always = yes
+    }
+    complete_effect = {
+    SIB = { 575 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
+    }
+    }
+	rid_northeast_siberia_militias = {
+    cost = 25
+    icon = GFX
+        available = {
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    fire_only_once = yes
+        visible = { 
+		always = yes
+    }
+    complete_effect = {
+    SIB = { 644 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
+    }
+    }
+	rid_okhotsk_militias = {
+    cost = 25
+    icon = GFX
+        available = {
+		OR = {
+		is_debug = yes
+    has_completed_focus = SIB_secure_the_militias
+	}
+    }
+    fire_only_once = yes
+        visible = { 
+		always = yes
+    }
+    complete_effect = {
+    SIB = { 562 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
     }
     }
 }
