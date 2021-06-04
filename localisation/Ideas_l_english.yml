@@ -5,12 +5,26 @@
 expand_rus:0 "This focus will improve the §BRus Sentiment§! National Spirit"
 slow_remilitarize:0 "Completing this focus unlocks decitions to reduce the effects of, and eventually get rid of the §BTreaty of Lwow§!"
 deal_with_rogue_militias:0 "Completing this focus unlocks decisions to get rid of the §YRogue Militias§!"
+romaniadivisionblike:0 "§RWARNING§! This focus will have much higher chances of going out peacefully if you have taken §BBelarus§!. If you take this focus before that, it will probably lead to war"
 
 ##People##
 Ihor_Kistiakovsky:0 "Ihor Kistiakovsky"
 Igor_Kerensky:0 "Igor Kerensky"
 
 ##Ukraine##
+
+#DECISIONS#
+
+category_core_belarus:0 "The Integration Progress of Belarus"
+
+core_mozyr:0 "Integrate Mozyr"
+core_polesie:0 "Integrate Polesie"
+core_bobruysk:0 "Integrate Bobruysk"
+core_nowogrodek:0 "Integrate Nowogródek"
+core_minsk:0 "Integrate Minsk"
+core_gomel:0 "Integrate Gomel"
+core_wilejka:0 "Integrate Wilejka"
+core_vitebsk:0 "Integrate Vitebsk"
 
 #RUS#
 rus_sentiment:0 "Rusian Sentiment"

@@ -1,17 +1,123 @@
-category_swedish_russia = {
+category_core_belarus = {
 
-    move_on_latvia = {
-	cost = 50
-	icon = GFX_
-	    avalible = {
-		
+    core_mozyr = {
+	cost = 30
+	    available = {
+		194 = { is_fully_controlled_by = UKR } 
+		has_country_flag = belarusdenies
 }
 	fire_only_once = yes
-		visible = {
+		visible = { 
 	always = yes
 }
 	complete_effect = {
-
+	remove_state_claim = 194
+	add_state_core = 194
+}
+	}
+	core_polesie = {
+	cost = 30
+	    available = {
+		94 = { is_fully_controlled_by = UKR }
+		has_country_flag = belarusdenies
+}
+	fire_only_once = yes
+		visible = { 
+	always = yes
+}
+	complete_effect = {
+	remove_state_claim = 94
+	add_state_core = 94
+}
+	}
+	core_bobruysk = {
+	cost = 30
+	    available = {
+		204 = { is_fully_controlled_by = UKR }
+		has_country_flag = belarusdenies
+}
+	fire_only_once = yes
+		visible = { 
+	always = yes
+}
+	complete_effect = {
+	remove_state_claim = 204
+	add_state_core = 204
+}
+	}
+	core_nowogrodek = {
+	cost = 30
+	    available = {
+		95 = { is_fully_controlled_by = UKR }
+		has_country_flag = belarusdenies
+}
+	fire_only_once = yes
+		visible = { 
+	always = yes
+}
+	complete_effect = {
+	remove_state_claim = 95
+	add_state_core = 95
+}
+	}
+	core_minsk = {
+	cost = 30
+	    available = {
+		206 = { is_fully_controlled_by = UKR }
+		has_country_flag = belarusdenies
+}
+	fire_only_once = yes
+		visible = { 
+	always = yes
+}
+	complete_effect = {
+	remove_state_claim = 206
+	add_state_core = 206
+}
+	}
+	core_gomel = {
+	cost = 30
+	    available = {
+		241 = { is_fully_controlled_by = UKR }
+		has_country_flag = belarusdenies
+}
+	fire_only_once = yes
+		visible = { 
+	always = yes
+}
+	complete_effect = {
+	remove_state_claim = 241
+	add_state_core = 241
+}
+	}
+	core_wilejka = {
+	cost = 30
+	    available = {
+		96 = { is_fully_controlled_by = UKR }
+		has_country_flag = belarusdenies
+}
+	fire_only_once = yes
+		visible = { 
+	always = yes
+}
+	complete_effect = {
+	remove_state_claim = 96
+	add_state_core = 96
+}
+	}
+	core_vitebsk = {
+	cost = 30
+	    available = {
+		207 = { is_fully_controlled_by = UKR }
+		has_country_flag = belarusdenies
+}
+	fire_only_once = yes
+		visible = { 
+	always = yes
+}
+	complete_effect = {
+	remove_state_claim = 207
+	add_state_core = 207
 }
 	}
 	

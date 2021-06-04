@@ -7,6 +7,7 @@ TKVR_neutrality_DEF:0 "The Kievan Rus"
 TKVE_neutrality:0 "Slavic Empire"
 TKVE_neutrality_ADJ:0 "Slav"
 TKVE_neutrality_DEF:0 "The Slavs"
+belarusdenies:0 "Belarus denied unification"
 
 ##EVENTS##
 UKR.1.t:0 "Ukraine seeks to remilitarize its border with us"
@@ -44,9 +45,86 @@ UKR.12.t:0 "The people take up arms!"
 
 UKR.20.t:0 "Ukraine denounces the Lwow Treaty"
 
+UKR.30.t:0 "Pavlo?"
+
+UKR.31.t:0 "A letter from Kiev"
+UKR.31.d:0 "Today we got a letter. A letter from Kiev, with love. The newly formed Rus, or Kievan Rus, has under the leadership of Pavlo requested that belarus rejoin them as the northern state of 'Byelorussia-Minsk'. It'd mean our gouvernments total surrender to the Rus, and who knows what will happen to us. However, they have a great army, and the people behind them, so there is reason to oblige. How should we proceed?"
+UKR.31.a:0 "It's not like we can do anything about it"
+UKR.31.b:0 "We will not bow down to anyone!"
+
+UKR.32.t:0 "Our friends in minsk"
+UKR.32.d:0 "Minsk has responded in a upmost fashionable way. The Prime Minister of Belarus decided to take a trip to Kiev, and whilst visiting our great Pavlo in his recidency, heated talks ensued. It ended in laughted and smiles from both sides, as with the stroke of a pen, a union had been formed. Byelorussia-Minsk will be at once integrated into the great Kievan Rus, on the condition that the Prime Minister gets to remain Terratorial Regent of the area, taking care of local matters."
+UKR.32.a:0 "A good man, Mr Prime Minister"
+
+UKR.33.t:0 "Nuts!"
+UKR.33.d:0 "It didn't take long untill we got our answer. In a very un-fashionly manner, the prime minister sent us a letter back. It reads "You are simply Nuts, if you think we will let you march to Minsk without bloodshed" It is clear they have right up refused, and even mocked our request for a personal bond. We can not let this go.
+UKR.33.a:0 "Then we shall march to Minsk, and make sure we shed as much Byelorussian blood as possible"
+
+UKR.34.t:0 "Our capital in eyes from the Powerful Kievan Rus"
+UKR.34.d:0 "After the recently quick and unexpected annexation of Belarus by the newly formed Kievan Rus, the nation continues looking west. After a public speech by their leader Pavlo, they would, quote 'Continue expanding to all people of the rus'. Shortly after the speech, a letter was recieved from their embassy in Vilnius. The city has strong historic ties with the Kievan Rus, and proposes that our capital get echanged to their hands. Although knowing we won't hand our capital over haphazardly, they will pay us quite good amounts and ensure our safety. However, if we reject, an invasion might stirr german precense in North Prussia to the breaking point once again."
+UKR.34.a:0 "We cannot risk utter disaster"
+
+UKR.35.t:0 "Our capital in threat from the War-Mongering Kievan Rus"
+UKR.35.d:0 "After the recent byelo-kievan war, the war mongering kievan state continues looking west. After a public speech by their leader Pavlo, they would, quote 'Continue expanding to all people of the rus'. Shortly after the speech, a letter was recieved from their embassy in Vilnius. The city has strong historic ties with the Kievan Rus, and proposes that our capital get echanged to their hands. Although knowing we won't hand our capital over haphazardly, they will pay us quite good amounts and ensure our safety. However, if we reject, an invasion might stirr german precense in North Prussia to the breaking point once again."
+UKR.35.a:0 "As shown, war against them would only lead to worse disasters than they offer peacefully"
+
+UKR.36.t:0 "Our freedom was short lived"
+
+UKR.40.t:0 "Our freedom was short lived"
+UKR.40.d:0 "Our freedom was short lived"
+UKR.40.a:0 "Our freedom was short lived"
+
+UKR.42.t:0 "Our freedom was short lived"
+UKR.42.d:0 "Our freedom was short lived"
+UKR.42.a:0 "Our freedom was short lived"
+UKR.42.b:0 "Our freedom was short lived"
+
 ##START##
 UKR_polishconnection:0 "Our Trustworthy Ally"
 UKR_ownpath:0 "A path of our own"
+
+##PAVLO##
+
+UKR_daysofold:0 "The days of old"
+educate_the_young:0 "History is our best friend"
+books_for_people:0 "Education is key"
+elect_pavloskoropadskyi:0 "The grand Election"
+ressurect_rus:0 "A new people from old roots"
+invite_belarus:0 "The northern lands"
+denial_belarus:0 "A Denial from Belarus"
+demand_wilno:0 "Lithuanias Capital"
+vassalise_moldova:0 "A reorganization of the border state"
+ally_romania:0 "Romania Allied"
+take_moldova:0 "A border state no more"
+seek_new_allies:0 "The second option"
+divide_romania:0 "Romania Divided"
+tackle_the_bear:0 "The bear on our border"
+the_lands_of_old:0 "Lands to reclaim"
+slavic_will:0 "The will of Slavs"
+
+#Protect#
+
+protect_the_slavs:0 "Ensure slavic protection"
+international_slavic_alliance:0 "A faction of slavs"
+yugoslavia_invited:0 "Yugoslavs Invited"
+bohemia_united:0 "Bohemia United"
+poles_awaited:0 "The Poles Awaited"
+true_slavs:0 "Slavs are Slavs"
+balkan_solidarity:0 "A faction to heal wounds"
+bulgaria_ahead:0 "The last letter"
+
+
+#Empire#
+one_slavic_empire:0 "Kiev's never satisfied"
+strike_the_centre:0 "A centre strike"
+german_conference:0 "The cold talk"
+polish_advance:0 "The state without history once more"
+strike_the_balkans:0 "A balkan strike"
+look_at_danzig:0 "A second Gdansk"
+acceptable_corridor:0 "A corridor of allies"
+ultimatum_bulgaria:0 "Ultimatum for the Bulgars"
+ultimatum_yugoslavia:0 "Ultimatum for the First Slav State"
+slavs_united_at_last:0 "A union at last!"
 
 ##MIDDLE##
 alleviate_dmzs:0 "Militarization of the Demilitarized Zones"

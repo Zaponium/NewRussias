@@ -2,7 +2,7 @@
 ##### SWEDISH KINGDOM ######
 ############################
 
-category_swedish_russia = {
+category_core_belarus = {
     icon = idea_collectivism
 	picture = GFX_british_parlament
 	priority = 2
@@ -10,6 +10,9 @@ category_swedish_russia = {
 	original_tag = UKR
 	}
 	visible = {
-	always = yes
+	OR = {
+	has_completed_focus = invite_belarus
+	is_debug = yes
+	}
 	}
 }

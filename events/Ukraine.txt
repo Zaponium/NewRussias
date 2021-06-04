@@ -150,4 +150,152 @@ country_event = {
 		 add_opinion_modifier = { target = UKR modifier = large_decrease }
 		 }
 	 }
+country_event = {
+     id = UKR.30
+	 title = UKR.30.t
+	 desc = UKR.30.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.30.a
+		 }
+	 }
+country_event = {
+     id = UKR.31
+	 title = UKR.31.t
+	 desc = UKR.31.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.31.a
+		 UKR = { country_event = UKR.32 }
+		 }
+	 option = {
+	     name = UKR.31.b
+		 UKR = { country_event = UKR.33 }
+		 }
+	
+	 }
+country_event = {
+     id = UKR.32
+	 title = UKR.32.t
+	 desc = UKR.32.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.32.a
+		 annex_country = { target = BLR transfer_troops = yes }
+		 hidden_effect = {
+		 add_state_core = 94
+		 add_state_core = 194
+		 add_state_core = 20
+         add_state_core = 95
+         add_state_core = 96
+         add_state_core = 207		 
+		 add_state_core = 204
+		 add_state_core = 206 
+		 add_state_core = 241
+		 }
+		 }
+	 }
+country_event = {
+     id = UKR.33
+	 title = UKR.33.t
+	 desc = UKR.33.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.33.a
+		 complete_national_focus = denial_belarus
+		 create_wargoal = {
+                    type = take_state_focus
+                    target = BLR
+                    expire = 0
+                    generator = { 37 }
+		
+         }
+		hidden_effect = {
+		 add_state_claim = 94
+		 add_state_claim = 194
+		 add_state_claim = 20
+         add_state_claim = 95
+         add_state_claim = 96
+         add_state_claim = 207		 
+		 add_state_claim = 204
+		 add_state_claim = 206 
+		 add_state_claim = 241
+		 }
+		 }
+	 }
+country_event = {
+     id = UKR.34
+	 title = UKR.34.t
+	 desc = UKR.34.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.34.a
+		 UKR = { add_state_core = 784 transfer_state = 784 }
+		 }
+	 }
+country_event = {
+     id = UKR.35
+	 title = UKR.35.t
+	 desc = UKR.35.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.35.a
+		 UKR = { add_state_core = 784 transfer_state = 784 }
+		 }
+	 }
+country_event = {
+     id = UKR.36
+	 title = UKR.36.t
+	 desc = UKR.36.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.36.a
+		 UKR = { puppet = MOL }
+		 }
+	 }
+country_event = {
+     id = UKR.37
+	 title = UKR.37.t
+	 desc = UKR.37.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.37.a
+		 UKR = { add_to_faction = HUN }
+		 }
+	 }
+country_event = {
+     id = UKR.40
+	 title = UKR.40.t
+	 desc = UKR.40.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.40.a
+		 
+		 }
+	 }
+country_event = {
+     id = UKR.42
+	 title = UKR.42.t
+	 desc = UKR.42.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.42.a
+		 
+		 }
+	 option = {
+	     name = UKR.42.b
+		 
+		 }
+	 }
+  }
 }

@@ -586,14 +586,17 @@ focus_tree = {
 	x = 50
 	Y = 4
 	
-	cost = 5
+	cost = 10
 	mutually_exclusive = {}
 	prerequisite = { focus = educate_the_young }
 	prerequisite = { focus = books_for_people }
 	completion_reward = {
-	
-	
-	
+	add_popularity = { ideology = neutrality popularity = 0.1 }
+	set_politics = {
+	ruling_party = neutrality
+	elections_allowed = no
+	}
+	country_event = UKR.30
 	}
 	}
 	
@@ -605,12 +608,15 @@ focus_tree = {
 	x = 0
 	Y = 1
 	
-	cost = x
+	cost = 2
+	
 	mutually_exclusive = {}
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = elect_pavloskoropadskyi }
 	completion_reward = {
-	add_ideas = rus_people
+	swap_ideas = { remove_idea = rus_sentiment3 add_idea = rus_people }
+	set_rule = { can_create_factions = yes }
+	create_faction = "Mizhnarodna fraktsiya Kyyevo-Ruskoyi"
 	}
 	}
 	
@@ -622,14 +628,43 @@ focus_tree = {
 	x = -3
 	Y = 2
 	
-	cost = x
+	cost = 4
 	mutually_exclusive = {}
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = ressurect_rus }
 	completion_reward = {
+	add_political_power = -25
+	BLR = { country_event = UKR.31 }
+	}
+	}
 	
+	Focus = {
 	
+	id = denial_belarus
+	icon = x
 	
+	x = -4
+	Y = 3
+	
+	cost = 0
+	allow_branch = {
+		AND = {
+		has_completed_focus = invite_belarus
+		not = { has_country_flag = belarusdenies }
+	}
+	}
+	available = {
+	AND = {
+		has_completed_focus = invite_belarus
+		not = { has_country_flag = belarusdenies }
+	}
+	}
+	mutually_exclusive = {}
+	relative_position_id = elect_pavloskoropadskyi 
+	prerequisite = { focus = invite_belarus }
+	completion_reward = {
+	add_political_power = -50
+	set_country_flag = belarusdenies
 	}
 	}
 	
@@ -641,14 +676,27 @@ focus_tree = {
 	x = -3
 	Y = 4
 	
-	cost = x
+	cost = 4
+	available = { AND = { 96 = { is_core_of = UKR } 95 = { is_core_of = UKR } }}
 	mutually_exclusive = {}
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = invite_belarus }
 	completion_reward = {
 	
-	
-	
+	if = {
+                limit = {
+                    has_country_flag = belarusdenies
+                }
+                LIT = { country_event = UKR.35}
+                 				 
+            }
+	if = {
+                limit = {
+                   NOT = { has_country_flag = belarusdenies }
+                }
+                LIT = { country_event = UKR.34}
+                 				 
+            }
 	}
 	}
 	
@@ -660,14 +708,12 @@ focus_tree = {
 	x = 0
 	Y = 2
 	
-	cost = x
+	cost = 4
 	mutually_exclusive = { focus = take_moldova }
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = ressurect_rus }
 	completion_reward = {
-	
-	
-	
+	MOL = { country_event = UKR.36 }
 	}
 	}
 	
@@ -679,14 +725,12 @@ focus_tree = {
 	x = 0
 	Y = 4
 	
-	cost = x
+	cost = 4
 	mutually_exclusive = {}
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = vassalise_moldova }
 	completion_reward = {
-	
-	
-	
+	add_to_faction = ROM
 	}
 	}
 	
@@ -698,14 +742,17 @@ focus_tree = {
 	x = 3
 	Y = 2
 	
-	cost = x
+	cost = 4
 	mutually_exclusive = { focus = vassalise_moldova }
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = ressurect_rus }
 	completion_reward = {
-	
-	
-	
+	create_wargoal = {
+                    type = take_state_focus
+                    target = MOL
+                    expire = 0
+                    generator = { 37 }
+                }
 	}
 	}
 	
@@ -717,14 +764,12 @@ focus_tree = {
 	x = 3
 	Y = 3
 	
-	cost = x
+	cost = 3
 	mutually_exclusive = {}
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = take_moldova }
 	completion_reward = {
-	
-	
-	
+	HUN = { country_event = UKR.37 }
 	}
 	}
 	
@@ -736,16 +781,20 @@ focus_tree = {
 	x = 3
 	Y = 4
 	
-	cost = x
+	cost = 4
 	mutually_exclusive = {}
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = seek_new_allies }
 	completion_reward = {
-	
-	
-	
-	}
-	}
+	custom_effect_tooltip = romaniadivisionblike
+	IF = { limit = { has_completed_focus = invite_belarus }
+	ROM = { country_event = UKR.40 }
+	     }
+    IF = { limit = { NOT = { has_completed_focus = invite_belarus } }
+	ROM = { country_event = UKR.42 }
+	     }
+	  }
+   }
 	
     	Focus = {
 	
