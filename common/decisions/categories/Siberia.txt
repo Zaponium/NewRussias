@@ -1,11 +1,33 @@
 category_deal_with_rogue_militias = {
     icon = idea_collectivism
-	picture = GFX_british_parlament
+	picture = x
 	priority = 2
 	allowed = {
 	original_tag = SIB
 	}
 	visible = { 
 	has_completed_focus = SIB_secure_the_militias
+	}
+}
+category_core_kazakhs = {
+    icon = idea_collectivism
+	picture = x
+	priority = 2
+	allowed = {
+	original_tag = SIB
+	}
+	visible = { 
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+}
+category_core_russia = {
+    icon = idea_collectivism
+	picture = x
+	priority = 1
+	allowed = {
+	original_tag = SIB
+	}
+	visible = { 
+	has_completed_focus = SIB_establish_control_of_russia
 	}
 }

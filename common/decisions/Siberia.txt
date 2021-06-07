@@ -1,6 +1,7 @@
 category_deal_with_rogue_militias = {
     rid_salekhard_militias = {
     cost = 25
+	days_remove = 20
     icon = GFX
         available = {
 		OR = {
@@ -12,36 +13,13 @@ category_deal_with_rogue_militias = {
         visible = { 
 		always = yes
     }
-    complete_effect = {
+    remove_effect = {
     SIB = { 579 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
-	if = { limit = { has_idea = rogue_militias }
-                swap_ideas = { remove_idea = rogue_militias add_idea = rogue_militias2  }
-        }
-    if = { limit = { has_idea = rogue_militias2 }
-                swap_ideas = { remove_idea = rogue_militias2 add_idea = rogue_militias3  }
-        }
-	if = { limit = { has_idea = rogue_militias3 }
-                swap_ideas = { remove_idea = rogue_militias3 add_idea = rogue_militias4  }
-        }
-	if = { limit = { has_idea = rogue_militias4 }
-                swap_ideas = { remove_idea = rogue_militias4 add_idea = rogue_militias5  }
-        }
-	if = { limit = { has_idea = rogue_militias5 }
-                swap_ideas = { remove_idea = rogue_militias5 add_idea = rogue_militias6  }
-        }
-	if = { limit = { has_idea = rogue_militias6 }
-                swap_ideas = { remove_idea = rogue_militias6 add_idea = rogue_militias7  }
-        }
-	if = { limit = { has_idea = rogue_militias7 }
-                swap_ideas = { remove_idea = rogue_militias7 add_idea = rogue_militias8  }
-        }
-	if = { limit = { has_idea = rogue_militias8 }
-                swap_ideas = { remove_idea = rogue_militias8 }
-        }
     }
-	}
+    }
 	rid_tobolsk_militias = {
     cost = 25
+	days_remove = 20
     icon = GFX
         available = {
 		OR = {
@@ -53,36 +31,13 @@ category_deal_with_rogue_militias = {
         visible = { 
 		always = yes
     }
-    complete_effect = {
+    remove_effect = {
     SIB = { 580 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
-	if = { limit = { has_idea = rogue_militias }
-                swap_ideas = { remove_idea = rogue_militias add_idea = rogue_militias2  }
-        }
-    if = { limit = { has_idea = rogue_militias2 }
-                swap_ideas = { remove_idea = rogue_militias2 add_idea = rogue_militias3  }
-        }
-	if = { limit = { has_idea = rogue_militias3 }
-                swap_ideas = { remove_idea = rogue_militias3 add_idea = rogue_militias4  }
-        }
-	if = { limit = { has_idea = rogue_militias4 }
-                swap_ideas = { remove_idea = rogue_militias4 add_idea = rogue_militias5  }
-        }
-	if = { limit = { has_idea = rogue_militias5 }
-                swap_ideas = { remove_idea = rogue_militias5 add_idea = rogue_militias6  }
-        }
-	if = { limit = { has_idea = rogue_militias6 }
-                swap_ideas = { remove_idea = rogue_militias6 add_idea = rogue_militias7  }
-        }
-	if = { limit = { has_idea = rogue_militias7 }
-                swap_ideas = { remove_idea = rogue_militias7 add_idea = rogue_militias8  }
-        }
-	if = { limit = { has_idea = rogue_militias8 }
-                swap_ideas = { remove_idea = rogue_militias8 }
-        }
     }
     }
 	rid_northwestern_siberia_militias = {
     cost = 25
+	days_remove = 20
     icon = GFX
         available = {
 		OR = {
@@ -94,36 +49,13 @@ category_deal_with_rogue_militias = {
         visible = { 
 		always = yes
     }
-    complete_effect = {
+    remove_effect = {
     SIB = { 516 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
-	if = { limit = { has_idea = rogue_militias }
-                swap_ideas = { remove_idea = rogue_militias add_idea = rogue_militias2  }
-        }
-    if = { limit = { has_idea = rogue_militias2 }
-                swap_ideas = { remove_idea = rogue_militias2 add_idea = rogue_militias3  }
-        }
-	if = { limit = { has_idea = rogue_militias3 }
-                swap_ideas = { remove_idea = rogue_militias3 add_idea = rogue_militias4  }
-        }
-	if = { limit = { has_idea = rogue_militias4 }
-                swap_ideas = { remove_idea = rogue_militias4 add_idea = rogue_militias5  }
-        }
-	if = { limit = { has_idea = rogue_militias5 }
-                swap_ideas = { remove_idea = rogue_militias5 add_idea = rogue_militias6  }
-        }
-	if = { limit = { has_idea = rogue_militias6 }
-                swap_ideas = { remove_idea = rogue_militias6 add_idea = rogue_militias7  }
-        }
-	if = { limit = { has_idea = rogue_militias7 }
-                swap_ideas = { remove_idea = rogue_militias7 add_idea = rogue_militias8  }
-        }
-	if = { limit = { has_idea = rogue_militias8 }
-                swap_ideas = { remove_idea = rogue_militias8 }
-        }
     }
     }
 	rid_surgut_militias = {
     cost = 25
+	days_remove = 20
     icon = GFX
         available = {
 		OR = {
@@ -135,36 +67,13 @@ category_deal_with_rogue_militias = {
         visible = { 
 		always = yes
     }
-    complete_effect = {
+    remove_effect = {
     SIB = { 577 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
-	if = { limit = { has_idea = rogue_militias }
-                swap_ideas = { remove_idea = rogue_militias add_idea = rogue_militias2  }
-        }
-    if = { limit = { has_idea = rogue_militias2 }
-                swap_ideas = { remove_idea = rogue_militias2 add_idea = rogue_militias3  }
-        }
-	if = { limit = { has_idea = rogue_militias3 }
-                swap_ideas = { remove_idea = rogue_militias3 add_idea = rogue_militias4  }
-        }
-	if = { limit = { has_idea = rogue_militias4 }
-                swap_ideas = { remove_idea = rogue_militias4 add_idea = rogue_militias5  }
-        }
-	if = { limit = { has_idea = rogue_militias5 }
-                swap_ideas = { remove_idea = rogue_militias5 add_idea = rogue_militias6  }
-        }
-	if = { limit = { has_idea = rogue_militias6 }
-                swap_ideas = { remove_idea = rogue_militias6 add_idea = rogue_militias7  }
-        }
-	if = { limit = { has_idea = rogue_militias7 }
-                swap_ideas = { remove_idea = rogue_militias7 add_idea = rogue_militias8  }
-        }
-	if = { limit = { has_idea = rogue_militias8 }
-                swap_ideas = { remove_idea = rogue_militias8 }
-        }
     }
     }
 	rid_yeniseisk_militias = {
     cost = 25
+	days_remove = 20
     icon = GFX
         available = {
 		OR = {
@@ -176,36 +85,13 @@ category_deal_with_rogue_militias = {
         visible = { 
 		always = yes
     }
-    complete_effect = {
+    remove_effect = {
     SIB = { 576 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
-	if = { limit = { has_idea = rogue_militias }
-                swap_ideas = { remove_idea = rogue_militias add_idea = rogue_militias2  }
-        }
-    if = { limit = { has_idea = rogue_militias2 }
-                swap_ideas = { remove_idea = rogue_militias2 add_idea = rogue_militias3  }
-        }
-	if = { limit = { has_idea = rogue_militias3 }
-                swap_ideas = { remove_idea = rogue_militias3 add_idea = rogue_militias4  }
-        }
-	if = { limit = { has_idea = rogue_militias4 }
-                swap_ideas = { remove_idea = rogue_militias4 add_idea = rogue_militias5  }
-        }
-	if = { limit = { has_idea = rogue_militias5 }
-                swap_ideas = { remove_idea = rogue_militias5 add_idea = rogue_militias6  }
-        }
-	if = { limit = { has_idea = rogue_militias6 }
-                swap_ideas = { remove_idea = rogue_militias6 add_idea = rogue_militias7  }
-        }
-	if = { limit = { has_idea = rogue_militias7 }
-                swap_ideas = { remove_idea = rogue_militias7 add_idea = rogue_militias8  }
-        }
-	if = { limit = { has_idea = rogue_militias8 }
-                swap_ideas = { remove_idea = rogue_militias8 }
-        }
     }
     }
 	rid_kirensk_militias = {
     cost = 25
+	days_remove = 20
     icon = GFX
         available = {
 		OR = {
@@ -217,36 +103,13 @@ category_deal_with_rogue_militias = {
         visible = { 
 		always = yes
     }
-    complete_effect = {
+    remove_effect = {
     SIB = { 575 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
-	if = { limit = { has_idea = rogue_militias }
-                swap_ideas = { remove_idea = rogue_militias add_idea = rogue_militias2  }
-        }
-    if = { limit = { has_idea = rogue_militias2 }
-                swap_ideas = { remove_idea = rogue_militias2 add_idea = rogue_militias3  }
-        }
-	if = { limit = { has_idea = rogue_militias3 }
-                swap_ideas = { remove_idea = rogue_militias3 add_idea = rogue_militias4  }
-        }
-	if = { limit = { has_idea = rogue_militias4 }
-                swap_ideas = { remove_idea = rogue_militias4 add_idea = rogue_militias5  }
-        }
-	if = { limit = { has_idea = rogue_militias5 }
-                swap_ideas = { remove_idea = rogue_militias5 add_idea = rogue_militias6  }
-        }
-	if = { limit = { has_idea = rogue_militias6 }
-                swap_ideas = { remove_idea = rogue_militias6 add_idea = rogue_militias7  }
-        }
-	if = { limit = { has_idea = rogue_militias7 }
-                swap_ideas = { remove_idea = rogue_militias7 add_idea = rogue_militias8  }
-        }
-	if = { limit = { has_idea = rogue_militias8 }
-                swap_ideas = { remove_idea = rogue_militias8 }
-        }
     }
     }
 	rid_northeast_siberia_militias = {
     cost = 25
+	days_remove = 20
     icon = GFX
         available = {
 		OR = {
@@ -258,36 +121,13 @@ category_deal_with_rogue_militias = {
         visible = { 
 		always = yes
     }
-    complete_effect = {
+    remove_effect = {
     SIB = { 644 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
-	if = { limit = { has_idea = rogue_militias }
-                swap_ideas = { remove_idea = rogue_militias add_idea = rogue_militias2  }
-        }
-    if = { limit = { has_idea = rogue_militias2 }
-                swap_ideas = { remove_idea = rogue_militias2 add_idea = rogue_militias3  }
-        }
-	if = { limit = { has_idea = rogue_militias3 }
-                swap_ideas = { remove_idea = rogue_militias3 add_idea = rogue_militias4  }
-        }
-	if = { limit = { has_idea = rogue_militias4 }
-                swap_ideas = { remove_idea = rogue_militias4 add_idea = rogue_militias5  }
-        }
-	if = { limit = { has_idea = rogue_militias5 }
-                swap_ideas = { remove_idea = rogue_militias5 add_idea = rogue_militias6  }
-        }
-	if = { limit = { has_idea = rogue_militias6 }
-                swap_ideas = { remove_idea = rogue_militias6 add_idea = rogue_militias7  }
-        }
-	if = { limit = { has_idea = rogue_militias7 }
-                swap_ideas = { remove_idea = rogue_militias7 add_idea = rogue_militias8  }
-        }
-	if = { limit = { has_idea = rogue_militias8 }
-                swap_ideas = { remove_idea = rogue_militias8 }
-        }
     }
     }
 	rid_okhotsk_militias = {
     cost = 25
+	days_remove = 20
     icon = GFX
         available = {
 		OR = {
@@ -299,32 +139,26 @@ category_deal_with_rogue_militias = {
         visible = { 
 		always = yes
     }
-    complete_effect = {
+    remove_effect = {
     SIB = { 562 = { remove_dynamic_modifier = { modifier = rogue_militias } } }
-	if = { limit = { has_idea = rogue_militias }
-                swap_ideas = { remove_idea = rogue_militias add_idea = rogue_militias2  }
-        }
-    if = { limit = { has_idea = rogue_militias2 }
-                swap_ideas = { remove_idea = rogue_militias2 add_idea = rogue_militias3  }
-        }
-	if = { limit = { has_idea = rogue_militias3 }
-                swap_ideas = { remove_idea = rogue_militias3 add_idea = rogue_militias4  }
-        }
-	if = { limit = { has_idea = rogue_militias4 }
-                swap_ideas = { remove_idea = rogue_militias4 add_idea = rogue_militias5  }
-        }
-	if = { limit = { has_idea = rogue_militias5 }
-                swap_ideas = { remove_idea = rogue_militias5 add_idea = rogue_militias6  }
-        }
-	if = { limit = { has_idea = rogue_militias6 }
-                swap_ideas = { remove_idea = rogue_militias6 add_idea = rogue_militias7  }
-        }
-	if = { limit = { has_idea = rogue_militias7 }
-                swap_ideas = { remove_idea = rogue_militias7 add_idea = rogue_militias8  }
-        }
-	if = { limit = { has_idea = rogue_militias8 }
-                swap_ideas = { remove_idea = rogue_militias8 }
-        }
     }
     }
+}
+category_core_kazakhs = {
+    core_semipalatinsk = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { 588 = { add_core } }
+	}
 }
