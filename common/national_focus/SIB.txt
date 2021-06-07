@@ -338,7 +338,6 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_Return_of_the_tsar }
 	completion_reward = { 
-	add_political_power = 50
 	custom_effect_tooltip = deal_with_rogue_militias
 	
 	}
