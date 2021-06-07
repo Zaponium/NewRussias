@@ -627,8 +627,28 @@ focus_tree = {
 	mutually_exclusive = {}
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_secure_the_militias }
+	select_effect = {
+			SOV = { country_event = { id = SIB.1 days = 1 } }
+		}
 	completion_reward = { 
-	add_political_power = 50
+	start_border_war = {
+    change_state_after_war = no
+    attacker = {
+        state = 572
+        num_provinces = 4
+        on_win = SIB.2
+        on_lose = SIB.3
+        on_cancel = SIB.4
+    }
+				
+    defender = {
+        state = 582
+        num_provinces = 4
+        on_win = SOV.1
+        on_lose = SOV.2
+        on_cancel = SOV.3
+    }
+}
 	
 	
 	}
@@ -798,55 +818,55 @@ focus_tree = {
 	prerequisite = { focus = SIB_establish_control_of_russia }
 	prerequisite = { focus = SIB_rename_the_cities }
 	completion_reward = { 
-	add_state_core = 229
-	add_state_core = 230
-	add_state_core = 231
-	add_state_core = 195
-	add_state_core = 216
-	add_state_core = 215
-	add_state_core = 147
-	add_state_core = 213
-	add_state_core = 146
-	add_state_core = 191
-	add_state_core = 13
-	add_state_core = 12
-	add_state_core = 190
-	add_state_core = 189
-	add_state_core = 188
-	add_state_core = 11
-	add_state_core = 784
-	add_state_core = 137
-	add_state_core = 196
-	add_state_core = 200
-	add_state_core = 227
-	add_state_core = 228
-	add_state_core = 221
-	add_state_core = 226
-	add_state_core = 259
-	add_state_core = 225
-	add_state_core = 193
-	add_state_core = 197
-	add_state_core = 192
-	add_state_core = 766
-	add_state_core = 78
-	add_state_core = 80
-	add_state_core = 203
-	add_state_core = 202
-	add_state_core = 201
-	add_state_core = 198
-	add_state_core = 199
-	add_state_core = 93
-	add_state_core = 91
-	add_state_core = 89
-	add_state_core = 241
-	add_state_core = 207
-	add_state_core = 206
-	add_state_core = 204
-	add_state_core = 194
-	add_state_core = 96
-	add_state_core = 95
-	add_state_core = 94
-	add_state_core = 722
+	add_state_claim = 229
+	add_state_claim = 230
+	add_state_claim = 231
+	add_state_claim = 195
+	add_state_claim = 216
+	add_state_claim = 215
+	add_state_claim = 147
+	add_state_claim = 213
+	add_state_claim = 146
+	add_state_claim = 191
+	add_state_claim = 13
+	add_state_claim = 12
+	add_state_claim = 190
+	add_state_claim = 189
+	add_state_claim = 188
+	add_state_claim = 11
+	add_state_claim = 784
+	add_state_claim = 137
+	add_state_claim = 196
+	add_state_claim = 200
+	add_state_claim = 227
+	add_state_claim = 228
+	add_state_claim = 221
+	add_state_claim = 226
+	add_state_claim = 259
+	add_state_claim = 225
+	add_state_claim = 193
+	add_state_claim = 197
+	add_state_claim = 192
+	add_state_claim = 766
+	add_state_claim = 78
+	add_state_claim = 80
+	add_state_claim = 203
+	add_state_claim = 202
+	add_state_claim = 201
+	add_state_claim = 198
+	add_state_claim = 199
+	add_state_claim = 93
+	add_state_claim = 91
+	add_state_claim = 89
+	add_state_claim = 241
+	add_state_claim = 207
+	add_state_claim = 206
+	add_state_claim = 204
+	add_state_claim = 194
+	add_state_claim = 96
+	add_state_claim = 95
+	add_state_claim = 94
+	add_state_claim = 722
 	
 	
 	}
