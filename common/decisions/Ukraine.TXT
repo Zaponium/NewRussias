@@ -1,124 +1,135 @@
 category_core_belarus = {
 
-    core_mozyr = {
-	cost = 30
-	    available = {
-		194 = { is_fully_controlled_by = UKR } 
-		has_country_flag = belarusdenies
-}
-	fire_only_once = yes
-		visible = { 
-	always = yes
-}
-	complete_effect = {
-	remove_state_claim = 194
-	add_state_core = 194
-}
-	}
-	core_polesie = {
-	cost = 30
+    core_volyn = {
+	cost = 50
+	days_remove = 25
+	on_map_move = map_only
+	highlight_states = { state = 95 }
 	    available = {
 		94 = { is_fully_controlled_by = UKR }
-		has_country_flag = belarusdenies
+		95 = { is_fully_controlled_by = UKR } 
 }
 	fire_only_once = yes
 		visible = { 
-	always = yes
+	has_completed_focus = invite_belarus
 }
-	complete_effect = {
+	remove_effect = {
 	remove_state_claim = 94
+	remove_state_claim = 95
 	add_state_core = 94
-}
+	add_state_core = 95
+    }
 	}
-	core_bobruysk = {
-	cost = 30
+	core_polotsk = {
+	cost = 50
+	days_remove = 25
+	on_map_move = map_only
+	highlight_states = { state = 206 }
 	    available = {
 		204 = { is_fully_controlled_by = UKR }
-		has_country_flag = belarusdenies
+		206 = { is_fully_controlled_by = UKR } 
+		207 = { is_fully_controlled_by = UKR }
+		96 = { is_fully_controlled_by = UKR } 
 }
 	fire_only_once = yes
 		visible = { 
-	always = yes
+	has_completed_focus = invite_belarus
 }
-	complete_effect = {
+	remove_effect = {
 	remove_state_claim = 204
-	add_state_core = 204
-}
-	}
-	core_nowogrodek = {
-	cost = 30
-	    available = {
-		95 = { is_fully_controlled_by = UKR }
-		has_country_flag = belarusdenies
-}
-	fire_only_once = yes
-		visible = { 
-	always = yes
-}
-	complete_effect = {
-	remove_state_claim = 95
-	add_state_core = 95
-}
-	}
-	core_minsk = {
-	cost = 30
-	    available = {
-		206 = { is_fully_controlled_by = UKR }
-		has_country_flag = belarusdenies
-}
-	fire_only_once = yes
-		visible = { 
-	always = yes
-}
-	complete_effect = {
 	remove_state_claim = 206
+	remove_state_claim = 207
+	remove_state_claim = 96
+	add_state_core = 204
 	add_state_core = 206
-}
+	add_state_core = 207
+	add_state_core = 96
+    }
 	}
-	core_gomel = {
-	cost = 30
+	core_kiev = {
+	cost = 50
+	days_remove = 25
+	on_map_move = map_only
+	highlight_states = { state = 194 }
+	    available = {
+		194 = { is_fully_controlled_by = UKR }
+}
+	fire_only_once = yes
+		visible = { 
+	has_completed_focus = invite_belarus
+}
+	remove_effect = {
+	remove_state_claim = 194
+	add_state_core = 194
+    }
+	}
+	core_chermigovsmolensk = {
+	cost = 50
+	days_remove = 25
+	on_map_move = map_only
+	highlight_states = { state = 241 }
 	    available = {
 		241 = { is_fully_controlled_by = UKR }
-		has_country_flag = belarusdenies
 }
 	fire_only_once = yes
 		visible = { 
-	always = yes
+	has_completed_focus = invite_belarus
 }
-	complete_effect = {
+	remove_effect = {
 	remove_state_claim = 241
 	add_state_core = 241
-}
+    }
 	}
-	core_wilejka = {
-	cost = 30
+	core_helych1 = {
+	cost = 50
+	days_remove = 25
+	on_map_move = map_only
+	highlight_states = { state = 78 }
 	    available = {
-		96 = { is_fully_controlled_by = UKR }
-		has_country_flag = belarusdenies
+		78 = { is_fully_controlled_by = UKR }
 }
 	fire_only_once = yes
 		visible = { 
-	always = yes
+	has_completed_focus = take_moldova
 }
-	complete_effect = {
-	remove_state_claim = 96
-	add_state_core = 96
-}
+	remove_effect = {
+	remove_state_claim = 78
+	add_state_core = 78
+    }
 	}
-	core_vitebsk = {
-	cost = 30
+	core_helych2 = {
+	cost = 50
+	days_remove = 25
+	on_map_move = map_only
+	highlight_states = { state = 80 }
 	    available = {
-		207 = { is_fully_controlled_by = UKR }
-		has_country_flag = belarusdenies
+		80 = { is_fully_controlled_by = UKR }
 }
 	fire_only_once = yes
 		visible = { 
-	always = yes
+	has_completed_focus = take_moldova
 }
-	complete_effect = {
-	remove_state_claim = 207
-	add_state_core = 207
+	remove_effect = {
+	remove_state_claim = 80
+	add_state_core = 80
+    }
+	}
+	core_moldova = {
+	cost = 50
+	days_remove = 25
+	on_map_move = map_only
+	highlight_states = { state = 79 }
+	    available = {
+		79 = { is_fully_controlled_by = UKR }
 }
+	fire_only_once = yes
+		visible = { 
+	has_completed_focus = take_moldova
+}
+	remove_effect = {
+	remove_state_claim = 79
+	add_state_core = 79
+    }
 	}
 	
 }

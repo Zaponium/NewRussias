@@ -750,9 +750,10 @@ focus_tree = {
 	create_wargoal = {
                     type = take_state_focus
                     target = MOL
-                    expire = 0
+                    expire = 1000
                     generator = { 37 }
                 }
+	add_state_claim = 78	
 	}
 	}
 	
@@ -804,7 +805,7 @@ focus_tree = {
 	x = 0
 	Y = 5	
 	
-	cost = 1
+	cost = 10
 	mutually_exclusive = {}
 	relative_position_id = elect_pavloskoropadskyi 
 	prerequisite = { focus = divide_romania focus = ally_romania }
@@ -819,13 +820,16 @@ focus_tree = {
                 create_wargoal = {
                     type = take_state_focus
                     target = SOV
-                    expire = 0
+                    expire = 1000
                     generator = { 37 }
                 }
             }
+	add_state_claim = 210 add_state_claim = 209 add_state_claim = 208 add_state_claim = 808 add_state_claim = 244 add_state_claim = 263 add_state_claim = 246 add_state_claim = 264 add_state_claim = 247 add_state_claim = 219 add_state_claim = 242 add_state_claim = 243 add_state_claim = 205 add_state_claim = 224 add_state_claim = 234 add_state_claim = 218 add_state_claim = 217 add_state_claim = 220 add_state_claim = 222 add_state_claim = 223 add_state_claim = 254 add_state_claim = 253 add_state_claim = 248 add_state_claim = 351 add_state_claim = 214 add_state_claim = 807
+	
 	
 	
 	}
+	
 	}
 	
 	Focus = {

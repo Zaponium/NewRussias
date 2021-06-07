@@ -186,15 +186,15 @@ country_event = {
 	     name = UKR.32.a
 		 annex_country = { target = BLR transfer_troops = yes }
 		 hidden_effect = {
-		 add_state_core = 94
-		 add_state_core = 194
-		 add_state_core = 20
-         add_state_core = 95
-         add_state_core = 96
-         add_state_core = 207		 
-		 add_state_core = 204
-		 add_state_core = 206 
-		 add_state_core = 241
+		 add_state_claim = 94
+		 add_state_claim = 194
+		 add_state_claim = 20
+         add_state_claim = 95
+         add_state_claim = 96
+         add_state_claim = 207		 
+		 add_state_claim = 204
+		 add_state_claim = 206 
+		 add_state_claim = 241
 		 }
 		 }
 	 }
@@ -279,6 +279,27 @@ country_event = {
 	 
 	 option = {
 	     name = UKR.40.a
+		 ai_will_do = { base = 70 }
+		  UKR = { puppet = ROM add_state_claim = 79 transfer_state = 79 add_state_claim = 80 transfer_state = 80 }
+		  HUN = { add_state_core = 76 transfer_state = 76 add_state_core = 83 transfer_state = 83 add_state_core = 84 transfer_state = 84 }
+		  BUL = { add_state_core = 77 transfer_state = 77 }
+		  YUG = { add_state_core = 82 transfer_state = 82 }
+		 }
+		 
+	 option = {
+	     name = UKR.40.b
+		 ai_will_do = { base = 30 }
+		 UKR = { country_event = UKR.41 }
+		 }
+	 }
+country_event = {
+     id = UKR.41
+	 title = UKR.41.t
+	 desc = UKR.41.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.41.a
 		 
 		 }
 	 }
@@ -290,12 +311,15 @@ country_event = {
 	 
 	 option = {
 	     name = UKR.42.a
-		 
+		 ai_will_do = { base = 20 }
+		  UKR = { puppet = ROM add_state_claim = 79 transfer_state = 79 add_state_claim = 80 transfer_state = 80 }
+		  HUN = { add_state_core = 76 transfer_state = 76 add_state_core = 83 transfer_state = 83 add_state_core = 84 transfer_state = 84 }
+		  BUL = { add_state_core = 77 transfer_state = 77 }
+		  YUG = { add_state_core = 82 transfer_state = 82 }
 		 }
 	 option = {
 	     name = UKR.42.b
-		 
+		 ai_will_do = { base = 80 }
+		 UKR = { country_event = UKR.41 }
 		 }
 	 }
-  }
-}

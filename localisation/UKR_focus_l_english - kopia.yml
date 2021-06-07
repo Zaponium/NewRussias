@@ -70,14 +70,18 @@ UKR.35.a:0 "As shown, war against them would only lead to worse disasters than t
 
 UKR.36.t:0 "Our freedom was short lived"
 
-UKR.40.t:0 "Our freedom was short lived"
-UKR.40.d:0 "Our freedom was short lived"
-UKR.40.a:0 "Our freedom was short lived"
+UKR.37.t:0 "Out of nowhere"
+UKR.37.d:0 "That was out of nowhere"
+UKR.37.a:0 "Alliance it is"
 
-UKR.42.t:0 "Our freedom was short lived"
-UKR.42.d:0 "Our freedom was short lived"
-UKR.42.a:0 "Our freedom was short lived"
-UKR.42.b:0 "Our freedom was short lived"
+UKR.40.t:0 "Their next target"
+UKR.40.d:0 "Our freedom was short lived"
+UKR.40.a:0 "Well, atleast we have wallachia"
+
+UKR.42.t:0 "The  ground they claim"
+UKR.42.d:0 "They claim our ground"
+UKR.42.a:0 "We are not Madmen"
+UKR.42.b:0 "They're the Madmen"
 
 ##START##
 UKR_polishconnection:0 "Our Trustworthy Ally"

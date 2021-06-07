@@ -12,7 +12,9 @@ category_core_belarus = {
 	visible = {
 	OR = {
 	has_completed_focus = invite_belarus
+	has_completed_focus = take_moldova
 	is_debug = yes
 	}
 	}
+	on_map_area = { state = 94 state = 95 state = 96 state = 206 state = 204 state = 194 state = 207 state = 241 }
 }
