@@ -78,10 +78,31 @@ UKR.40.t:0 "Their next target"
 UKR.40.d:0 "Our freedom was short lived"
 UKR.40.a:0 "Well, atleast we have wallachia"
 
+UKR.41.t:0 "They called us MadMen"
+UKR.41.d:0 "After continous attempts by both us, and the hungarians, it would seem that the romanians have concluded any talks of moving the border of their nation, returning the people's to their rightful homes. After calling our noble ambassador a Madman, and that 'All of you are Madmen'. It would seem there is only one option left. The French and Yugo-Slavs have agreed to stay out of any matter surrounding Romania. Yugoslavia and Bulgaria have also noted that they may be interested in matters of Romania, on our side however."
+UKR.41.a:0 "Off to Bucharest we go"
+
 UKR.42.t:0 "The  ground they claim"
 UKR.42.d:0 "They claim our ground"
 UKR.42.a:0 "We are not Madmen"
 UKR.42.b:0 "They're the Madmen"
+
+UKR.47.t:0 "Bulgaria Marches"
+UKR.47.d:0 "Shortly after the official declaration of War was given to Romania, Reports came in of Bulgarian forces engaging in border-conflicts with the guards on their Border. Soon after the first village was taken, They too gave the Romanians a Letter of War."
+UKR.47.a:0 "How nice of them"
+
+UKR.48.t:0 "Bulgaria Marches"
+UKR.48.d:0 "Shortly after the official declaration of War was given to Romania, Reports came in of Bulgarian forces engaging in border-conflicts with the guards on their Border. However, it has since gone silent, and we believe hope of them joining in is futile"
+UKR.48.a:0 "Ah well, more for Us then!"
+
+UKR.49.t:0 "Yugoslavia Marches"
+UKR.49.d:0 "Shortly after the official declaration of War was given to Romania, Reports came in of Yugoslav forces engaging in border-conflicts with the guards on their Border. Soon after the first village was taken, They too gave the Romanians a Letter of War."
+UKR.49.a:0 "How nice of them"
+
+UKR.50.t:0 "Yugoslavia backs down"
+UKR.50.d:0 "Shortly after the official declaration of War was given to Romania, Reports came in of Yugoslav forces engaging in border-conflicts with the guards on their Border. However, it has since gone silent, and we believe hope of them joining in is futile"
+UKR.50.a:0 "Ah well, more for Hungary then!"
+
 
 ##START##
 UKR_polishconnection:0 "Our Trustworthy Ally"

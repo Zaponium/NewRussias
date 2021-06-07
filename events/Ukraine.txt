@@ -300,7 +300,12 @@ country_event = {
 	 
 	 option = {
 	     name = UKR.41.a
-		 
+		 UKR = { add_state_claim = 79 add_state_claim = 80 declare_war_on = { target = ROM type = puppet_wargoal_focus } }
+		 HUN = { add_state_claim = 76 add_state_claim = 82  add_state_claim = 83 add_state_claim = 84 declare_war_on = { target = ROM type = take_state_focus generator = 79 84 83 } }
+		 YUG = { country_event = UKR.46 diplomatic_relation = { country = ROM relation = guarantee active = no } }
+		 BUL = { country_event = UKR.45 }
+		 FRA = { diplomatic_relation = { country = ROM relation = guarantee active = no } }
+		
 		 }
 	 }
 country_event = {
@@ -323,3 +328,90 @@ country_event = {
 		 UKR = { country_event = UKR.41 }
 		 }
 	 }
+	 
+country_event = {
+     id = UKR.45
+	 title = UKR.45.t
+	 desc = UKR.45.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.45.a
+		 ai_will_do = { base = 80 }
+		 BUL = { add_state_claim = 77 declare_war_on = { target = ROM type = take_state_focus generator = 77 } }
+		 UKR = { country_event = UKR.47 add_to_faction = BUL }
+		 }
+	 option = {
+	     name = UKR.45.b
+		 ai_will_do = { base = 20 }
+		 UKR = { country_event = UKR.48 }
+		 }
+	 }
+country_event = {
+     id = UKR.46
+	 title = UKR.46.t
+	 desc = UKR.46.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.46.a
+		 ai_will_do = { base = 80 }
+		 YUG = { add_state_claim = 82 declare_war_on = { target = ROM type = take_state_focus generator = 82 } }
+		 HUN = { remove_state_claim = 82 }
+		 UKR = { country_event = UKR.49 add_to_faction = YUG }
+		 }
+	 option = {
+	     name = UKR.46.b
+		 ai_will_do = { base = 20 }
+		 UKR = { country_event = UKR.50 }
+		 }
+	 }
+
+country_event = {
+     id = UKR.47
+	 title = UKR.47.t
+	 desc = UKR.47.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.47.a
+		 
+		 }
+	 }
+country_event = {
+     id = UKR.48
+	 title = UKR.48.t
+	 desc = UKR.48.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.48.a
+		 
+		 }
+	 }
+
+
+country_event = {
+     id = UKR.49
+	 title = UKR.49.t
+	 desc = UKR.49.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.49.a
+		 
+		 }
+	 }
+country_event = {
+     id = UKR.50
+	 title = UKR.50.t
+	 desc = UKR.50.d
+	 is_triggered_only = yes
+	 
+	 option = {
+	     name = UKR.48.a
+		 
+		 }
+	 }
+
+	 
