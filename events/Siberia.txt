@@ -10,13 +10,42 @@ country_event = {
      option = {
          name = SIB.1.a
          SIB = {
-          579 = {  }
          }
      }
+}
+country_event = {
+     id = SIB.2
+     title = SIB.2.t
+     desc = SIB.2.d
+     is_triggered_only = yes
+
      option = {
-         name = SIB.1.b
+         name = SIB.2.a
          SIB = {
-          country_event = { id = SIB.2 }
+         }
+     }
+}
+country_event = {
+     id = SIB.3
+     title = SIB.3.t
+     desc = SIB.3.d
+     is_triggered_only = yes
+
+     option = {
+         name = SIB.3.a
+         SIB = {
+         }
+     }
+}
+country_event = {
+     id = SIB.4
+     title = SIB.4.t
+     desc = SIB.4.d
+     is_triggered_only = yes
+
+     option = {
+         name = SIB.4.a
+         SIB = {
          }
      }
 }

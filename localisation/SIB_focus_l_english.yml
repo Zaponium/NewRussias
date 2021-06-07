@@ -19,8 +19,25 @@ TORE_neutrality_ADJ:0 "Russian"
 TORE_neutrality_DEF:0 "The Tsardom of the Russia Empire"
 
 ###Events###
+SIB.1.t:0 "Siberian Presence on Magnitorsk Border"
+SIB.1.d:0 "Recently near our siberian border in Magnitorsk a lot of Siberian training has been held, perhaps they are trying to show their presence or maybe try to test our might."
+SIB.1.a:0 "Obviously an act of provocation"
 
+SIB.2.t:0 "Victory at Magnitorsk!"
+SIB.2.d:0 "Just as we predicted, the russians aren't ready for war and would suffer great losses if any big future conflict were to occur."
+SIB.2.a:0 "Victory was always assured"
 
+SIB.3.t:0 "Defeat at Magnitorsk"
+SIB.3.d:0 "The russian mob had caught us off-guard and overwhelmed our troops, russia may not be as weak as it seemed at first."
+SIB.3.a:0 "Luck was on their side"
+
+SIB.4.t:0 "Stalemate at Magnitorsk"
+SIB.4.d:0 "After a short-lived conflict on the border it appears that our forces were equally matched, both sides decided to agree to a stalemate and left, leaving no winner."
+SIB.4.a:0 "Stalemate!?"
+
+SIB.5.t:0 ""
+SIB.5.d:0 ""
+SIB.5.a:0 ""
 
 ###Focuses###
 

@@ -1,0 +1,39 @@
+
+add_namespace = SOV
+
+country_event = {
+     id = SOV.1
+     title = SOV.1.t
+     desc = SOV.1.d
+     is_triggered_only = yes
+
+     option = {
+         name = SOV.1.a
+         SOV = {
+         }
+     }
+}
+country_event = {
+     id = SOV.2
+     title = SOV.2.t
+     desc = SOV.2.d
+     is_triggered_only = yes
+
+     option = {
+         name = SOV.2.a
+         SOV = {
+         }
+     }
+}
+country_event = {
+     id = SOV.3
+     title = SOV.3.t
+     desc = SOV.3.d
+     is_triggered_only = yes
+
+     option = {
+         name = SOV.3.a
+         SOV = {
+         }
+     }
+}
