@@ -159,6 +159,230 @@ category_core_kazakhs = {
 	    visible = {
 		always = yes
 	}
-	remove_effect = { 588 = { add_core } }
+	remove_effect = { add_state_core = 588 }
+	}
+	core_akmolinsk = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 590 }
+	}
+	core_kustanay = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 583 }
+	}
+	core_kyzyl_orda = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 404 }
+	}
+	core_ayaguz = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 589 }
+	}
+	core_akhtubinsk = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 402 }
+	}
+	core_guryev = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 406 }
+	}
+	core_ural_sk = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 407 }
+	}
+	core_alma_ata = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 586 }
+	}
+	core_pamir = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 732 }
+	}
+	core_tashkent = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 405 }
+	}
+	core_stalinabad = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 742 }
+	}
+	core_ust_urt = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 587 }
+	}
+	core_urgench = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 585 }
+	}
+	core_ashkhabad = {
+	cost = 20
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_kazakhs
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 584 }
 	}
 }

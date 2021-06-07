@@ -729,6 +729,79 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_claim_tsardom_of_siberia }
 	prerequisite = { focus = SIB_strike_russia }
+	available = { 
+	    807 = { is_fully_controlled_by = ROOT }
+		214 = { is_fully_controlled_by = ROOT }
+		262 = { is_fully_controlled_by = ROOT }
+		581 = { is_fully_controlled_by = ROOT }
+		397 = { is_fully_controlled_by = ROOT }
+		398 = { is_fully_controlled_by = ROOT }
+		400 = { is_fully_controlled_by = ROOT }
+		351 = { is_fully_controlled_by = ROOT }
+		264 = { is_fully_controlled_by = ROOT }
+		244 = { is_fully_controlled_by = ROOT }
+		808 = { is_fully_controlled_by = ROOT }
+		208 = { is_fully_controlled_by = ROOT }
+		209 = { is_fully_controlled_by = ROOT }
+		263 = { is_fully_controlled_by = ROOT }
+		210 = { is_fully_controlled_by = ROOT }
+		246 = { is_fully_controlled_by = ROOT }
+		247 = { is_fully_controlled_by = ROOT }
+		248 = { is_fully_controlled_by = ROOT }
+		242 = { is_fully_controlled_by = ROOT }
+		219 = { is_fully_controlled_by = ROOT }
+		253 = { is_fully_controlled_by = ROOT }
+		252 = { is_fully_controlled_by = ROOT }
+		256 = { is_fully_controlled_by = ROOT }
+		249 = { is_fully_controlled_by = ROOT }
+		399 = { is_fully_controlled_by = ROOT }
+		651 = { is_fully_controlled_by = ROOT }
+		573 = { is_fully_controlled_by = ROOT }
+		582 = { is_fully_controlled_by = ROOT }
+		652 = { is_fully_controlled_by = ROOT }
+		251 = { is_fully_controlled_by = ROOT }
+		250 = { is_fully_controlled_by = ROOT }
+		255 = { is_fully_controlled_by = ROOT }
+		254 = { is_fully_controlled_by = ROOT }
+		223 = { is_fully_controlled_by = ROOT }
+		205 = { is_fully_controlled_by = ROOT }
+		243 = { is_fully_controlled_by = ROOT }
+		224 = { is_fully_controlled_by = ROOT }
+		222 = { is_fully_controlled_by = ROOT }
+		258 = { is_fully_controlled_by = ROOT }
+		257 = { is_fully_controlled_by = ROOT }
+		239 = { is_fully_controlled_by = ROOT }
+		401 = { is_fully_controlled_by = ROOT }
+		220 = { is_fully_controlled_by = ROOT }
+		240 = { is_fully_controlled_by = ROOT }
+		260 = { is_fully_controlled_by = ROOT }
+		265 = { is_fully_controlled_by = ROOT }
+		217 = { is_fully_controlled_by = ROOT }
+		245 = { is_fully_controlled_by = ROOT }
+		236 = { is_fully_controlled_by = ROOT }
+		237 = { is_fully_controlled_by = ROOT }
+		238 = { is_fully_controlled_by = ROOT }
+		218 = { is_fully_controlled_by = ROOT }
+		234 = { is_fully_controlled_by = ROOT }
+		235 = { is_fully_controlled_by = ROOT }
+		232 = { is_fully_controlled_by = ROOT }
+		233 = { is_fully_controlled_by = ROOT }
+		583 = { is_fully_controlled_by = ROOT }
+		590 = { is_fully_controlled_by = ROOT }
+		588 = { is_fully_controlled_by = ROOT }
+		589 = { is_fully_controlled_by = ROOT }
+		404 = { is_fully_controlled_by = ROOT }
+		402 = { is_fully_controlled_by = ROOT }
+		407 = { is_fully_controlled_by = ROOT }
+		406 = { is_fully_controlled_by = ROOT }
+		587 = { is_fully_controlled_by = ROOT }
+		585 = { is_fully_controlled_by = ROOT }
+		586 = { is_fully_controlled_by = ROOT }
+		732 = { is_fully_controlled_by = ROOT }
+		405 = { is_fully_controlled_by = ROOT }
+		742 = { is_fully_controlled_by = ROOT }
+		584 = { is_fully_controlled_by = ROOT }
+	}
 	completion_reward = { 
 	set_cosmetic_tag = TTOR
 	add_war_support = 0.1
@@ -777,7 +850,7 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_claim_tsardom_of_russia }
 	completion_reward = { 
-	add_political_power = 50
+	custom_effect_tooltip = core_russia
 	
 	
 	}
@@ -796,8 +869,7 @@ focus_tree = {
 	relative_position_id = SIB_restore_the_monarchy
 	prerequisite = { focus = SIB_claim_tsardom_of_russia }
 	completion_reward = { 
-	add_political_power = 50
-	
+	custom_effect_tooltip = core_kazakhs
 	
 	}
 	
