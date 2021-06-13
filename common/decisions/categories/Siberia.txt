@@ -23,7 +23,7 @@ category_core_kazakhs = {
 category_core_russia = {
     icon = idea_collectivism
 	picture = x
-	priority = 1
+	priority = 2
 	allowed = {
 	original_tag = SIB
 	}

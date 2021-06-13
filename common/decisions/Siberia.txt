@@ -386,3 +386,901 @@ category_core_kazakhs = {
 	remove_effect = { add_state_core = 584 }
 	}
 }
+category_core_russia = {
+    core_caucasus_mountains = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 233 }
+	}
+	core_grozny = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 232 }
+	}
+	core_stavropol = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 235 }
+	}
+	core_krasnodar = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 234 }
+	}
+	core_astrakhan = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 236 }
+	}
+	core_elista = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 237 }
+	}
+	core_volgodonsk = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 238 }
+	}
+	core_rostov = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 218 }
+	}
+	core_stalingrad = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 217 }
+	}
+	core_millerovo = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 245 }
+	}
+	core_kursk = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 220 }
+	}
+	core_belgorod = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 240 }
+	}
+	core_voronezh = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 260 }
+	}
+	core_orenburg = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 652 }
+	}
+	core_kuibyshev = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 251 }
+	}
+	core_engels = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 401 }
+	}
+	core_saratov = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 239 }
+	}
+	core_ulyanovsky = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 250 }
+	}
+	core_penza = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 255 }
+	}
+	core_ryazan = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 254 }
+	}
+	core_tambov = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 257 }
+	}
+	core_lipetsk = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 258 }
+	}
+	core_tula = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 223 }
+	}
+	core_orel = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 222 }
+	}
+	core_kaluga = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 205 }
+	}
+	core_roslavl = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 243 }
+	}
+	core_bryansk = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 224 }
+	}
+	core_smolensk = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 242 }
+	}
+	core_moscow = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 219 }
+	}
+	core_kalinin = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 247 }
+	}
+	core_rzhev = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 246 }
+	}
+	core_nevel = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 210 }
+	}
+	core_pskov = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 209 }
+	}
+	core_luga = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 208 }
+	}
+	core_novgorod = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 263 }
+	}
+	core_petrograd = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 808 }
+	}
+	core_volkhov = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 244 }
+	}
+	core_tikhvin = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 264 }
+	}
+	core_ivanovo = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 253 }
+	}
+	core_gorki = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 252 }
+	}
+	core_cheboksary = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 256 }
+	}
+	core_kazan = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 249 }
+	}
+	core_ufa = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 651 }
+	}
+	core_magnitogorsk = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 582 }
+	}
+	core_zlatoust = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 573 }
+	}
+	core_northern_urals = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 581 }
+	}
+	core_yaroslavl = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 248 }
+	}
+	core_vologda = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 351 }
+	}
+	core_kirov = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 400 }
+	}
+	core_izhevsk = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 399 }
+	}
+	core_perm = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 398 }
+	}
+	core_syktyvkar = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 397 }
+	}
+	core_pechora = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 262 }
+	}
+	core_arkhangelsk = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 214 }
+	}
+	core_vygozero = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 807 }
+	}
+	core_mikhaylovka = {
+	cost = 15
+	days_remove = 30
+	icon = GFX
+	    available = {
+		OR = {
+		is_debug = yes
+	has_completed_focus = SIB_establish_control_of_russia
+	}
+	}
+	fire_only_once = yes
+	    visible = {
+		always = yes
+	}
+	remove_effect = { add_state_core = 265 }
+	}
+}

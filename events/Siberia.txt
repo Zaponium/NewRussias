@@ -49,3 +49,35 @@ country_event = {
          }
      }
 }
+# Estonia Surrenders
+country_event = {
+	id = SIB.5
+	title = SIB.5.t
+	desc = SIB.5.d
+	picture = GFX_report_event_soviet_invasion_map
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = SIB.5.a
+		annex_country = { target = EST }
+	}
+}
+
+# Estonia Refuses
+country_event = {
+	id = SIB.6
+	title = SIB.6.t
+	desc = SIB.6.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = SIB.6.a
+		create_wargoal = {
+			type = annex_everything
+			target = EST
+		}		
+	}
+}

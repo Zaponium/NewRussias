@@ -8,13 +8,13 @@ SOV.1.t:0 "Victory in Magnitorsk"
 SOV.1.d:0 "Our brave soldiers fended off the siberians from Magnitorsk area and send them running, we congratulate them!"
 SOV.1.a:0 "Victory is assured"
 
-SIB.2.t:0 "Defeat at Magnitorsk"
-SIB.2.d:0 "The Siberian army caught us off guard and ambushed our border, our defeat was purely because of luck."
-SIB.2.a:0 "Luck was on t heir side"
+SOV.2.t:0 "Defeat in Magnitorsk"
+SOV.2.d:0 "The Siberian army caught us off guard and ambushed our border, our defeat was purely because of luck."
+SOV.2.a:0 "Luck was on their side"
 
-SIB.3.t:0 "Stalemate at Magnitorsk"
-SIB.3.d:0 "After a short-lived exchange at the border, both armies had suffered similar casualties with nothing being gained, they both decided to call a stalemate and leave."
-SIB.3.a:0 "Embrassing for both of us"
+SOV.3.t:0 "Stalemate in Magnitorsk"
+SOV.3.d:0 "After a short-lived exchange at the border, both armies had suffered similar casualties with nothing being gained, they both decided to call a stalemate and leave."
+SOV.3.a:0 "Embrassing for both of us"
 
 ###Focuses###
 
